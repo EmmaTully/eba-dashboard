@@ -210,7 +210,7 @@
           ? `From our own page beacon. Tracking started ${fmtDay(data.beaconSince)}, so earlier days are empty.`
           : "From our own page beacon.");
       const googleViewNote = hourly && r.todayProcessing
-        ? "Google has not processed today yet, so this chart is yesterday hour by hour."
+        ? "Google has not processed today yet, so this chart is yesterday hour by hour. Times are Central."
         : (hourly ? "From Google Analytics. Today can lag by a few hours. Times are Central." : "From Google Analytics.");
       const ai = r.ai || { in_window: 0, total: 0, byAgent: [], bySection: [], byDay: [], byHour: [] };
 
