@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Electric Bike Academy — Growth Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1420; --panel: #171e2e; --panel2: #1d2638; --border: #263248;
+    --text: #e8ecf4; --muted: #8b97ad; --accent: #ffb020; --accent2: #38bdf8;
+    --green: #34d399; --red: #f87171; --amber: #fbbf24;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, "Segoe UI", Roboto, sans-serif; padding: 24px; }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  h1 { font-size: 22px; font-weight: 700; }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 13px; }
+  .banner { background: #3b2f10; border: 1px solid #6b5518; color: var(--amber); border-radius: 10px; padding: 10px 16px; font-size: 13px; margin: 14px 0 22px; display: none; }
+  .banner.show { display: block; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 28px 0 12px; }
+  .grid { display: grid; gap: 14px; }
+  .kpis { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+  .kpi .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+  .kpi .value { font-size: 28px; font-weight: 700; margin: 6px 0 2px; }
+  .kpi .delta { font-size: 13px; font-weight: 600; }
+  .delta.up { color: var(--green); } .delta.down { color: var(--red); }
+  .charts { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+  .chart-card h3 { font-size: 14px; margin-bottom: 12px; color: var(--text); font-weight: 600; }
+  .chart-box { position: relative; height: 240px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { text-align: left; color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+  .pill.pass, .pill.connected, .pill.active { background: #123528; color: var(--green); }
+  .pill.warn, .pill.pending, .pill.target { background: #3b2f10; color: var(--amber); }
+  .pill.fail, .pill.missing { background: #3a1622; color: var(--red); }
+  .pill.unknown { background: #1d2638; color: var(--muted); }
+  .two-col { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+  .note { color: var(--muted); font-size: 12.5px; }
+  footer { margin-top: 34px; color: var(--muted); font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>⚡ Electric Bike Academy <span>Growth Dashboard</span></h1>
+    <div class="meta">Period: <span id="period">—</span> · Updated: <span id="updated">—</span></div>
+  </header>
+  <div class="banner" id="sampleBanner">⚠️ <strong>Sample data.</strong> Live numbers appear automatically once GA4, Google Ads, and Search Console API access is connected (see Connections below).</div>
+
+  <h2>Key Metrics</h2>
+  <div class="grid kpis" id="kpis"></div>
+
+  <h2>Performance</h2>
+  <div class="grid charts">
+    <div class="card chart-card"><h3>Sessions &amp; Enrollments</h3><div class="chart-box"><canvas id="trafficChart"></canvas></div></div>
+    <div class="card chart-card"><h3>Google Ads — Spend vs Conversions</h3><div class="chart-box"><canvas id="adsChart"></canvas></div></div>
+    <div class="card chart-card"><h3>Organic Search (Search Console)</h3><div class="chart-box"><canvas id="gscChart"></canvas></div></div>
+    <div class="card chart-card"><h3>Traffic by Channel</h3><div class="chart-box"><canvas id="channelChart"></canvas></div></div>
+  </div>
+
+  <div class="grid two-col">
+    <div>
+      <h2>SEO / GEO Health (live audit)</h2>
+      <div class="card"><table id="seoTable"><thead><tr><th>Check</th><th>Status</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div>
+      <h2>Data Connections</h2>
+      <div class="card"><table id="connTable"><thead><tr><th>Source</th><th>Status</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+
+  <div class="grid two-col">
+    <div>
+      <h2>City &amp; District Partnerships</h2>
+      <div class="card"><table id="partnerTable"><thead><tr><th>Partner</th><th>Promo Code</th><th>Status</th></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div>
+      <h2>LLM / AI Search Visibility</h2>
+      <div class="card"><table id="llmTable"><thead><tr><th>Engine</th><th>Tracked Query</th><th>Cited?</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+
+  <footer>Electric Bike Academy · electricbikeacademy.com · Dashboard by Hammer Corp</footer>
+</div>
+
+<script>
+const fmt = { money: v => "$" + v.toLocaleString(undefined, {maximumFractionDigits: 2}), num: v => v.toLocaleString(), x: v => v.toFixed(2) + "×" };
+const KPI_DEFS = [
+  ["sessions", "Sessions", fmt.num], ["enrollments", "Enrollments", fmt.num], ["revenue", "Revenue", fmt.money],
+  ["adSpend", "Ad Spend", fmt.money], ["cpa", "Cost / Enrollment", fmt.money], ["roas", "ROAS", fmt.x]
+];
+const GRID = "#263248", MUTED = "#8b97ad";
+Chart.defaults.color = MUTED; Chart.defaults.borderColor = GRID; Chart.defaults.font.family = "Inter, sans-serif";
+
+fetch("data/metrics.json").then(r => r.json()).then(d => {
+  document.getElementById("period").textContent = d.period;
+  document.getElementById("updated").textContent = new Date(d.updated).toLocaleString();
+  if (d.sample) document.getElementById("sampleBanner").classList.add("show");
+
+  // KPIs — invert "good" direction for cost metrics
+  document.getElementById("kpis").innerHTML = KPI_DEFS.map(([key, label, f]) => {
+    const k = d.kpis[key]; if (!k) return "";
+    const goodDown = key === "cpa" || key === "adSpend";
+    const up = goodDown ? k.delta < 0 : k.delta > 0;
+    return `<div class="card kpi"><div class="label">${label}</div><div class="value">${f(k.value)}</div>
+      <div class="delta ${up ? "up" : "down"}">${k.delta > 0 ? "▲" : "▼"} ${Math.abs(k.delta)}% vs prior</div></div>`;
+  }).join("");
+
+  new Chart(trafficChart, { type: "line", data: { labels: d.traffic.labels, datasets: [
+    { label: "Sessions", data: d.traffic.sessions, borderColor: "#38bdf8", backgroundColor: "rgba(56,189,248,.12)", fill: true, tension: .35, yAxisID: "y" },
+    { label: "Enrollments", data: d.traffic.conversions, borderColor: "#ffb020", tension: .35, yAxisID: "y1" }]},
+    options: { maintainAspectRatio: false, scales: { y: { position: "left" }, y1: { position: "right", grid: { drawOnChartArea: false } } } } });
+
+  new Chart(adsChart, { data: { labels: d.ads.labels, datasets: [
+    { type: "bar", label: "Spend ($)", data: d.ads.spend, backgroundColor: "rgba(248,113,113,.55)", borderRadius: 6, yAxisID: "y" },
+    { type: "line", label: "Conversions", data: d.ads.conversions, borderColor: "#34d399", tension: .35, yAxisID: "y1" }]},
+    options: { maintainAspectRatio: false, scales: { y: { position: "left" }, y1: { position: "right", grid: { drawOnChartArea: false } } } } });
+
+  new Chart(gscChart, { type: "line", data: { labels: d.gsc.labels, datasets: [
+    { label: "Clicks", data: d.gsc.clicks, borderColor: "#ffb020", tension: .35, yAxisID: "y" },
+    { label: "Impressions", data: d.gsc.impressions, borderColor: "#8b97ad", borderDash: [5,4], tension: .35, yAxisID: "y1" }]},
+    options: { maintainAspectRatio: false, scales: { y: { position: "left" }, y1: { position: "right", grid: { drawOnChartArea: false } } } } });
+
+  new Chart(channelChart, { type: "doughnut", data: { labels: d.channels.labels, datasets: [{ data: d.channels.values,
+    backgroundColor: ["#38bdf8", "#34d399", "#ffb020", "#a78bfa", "#f87171"], borderColor: "#171e2e", borderWidth: 3 }] },
+    options: { maintainAspectRatio: false, plugins: { legend: { position: "right" } } } });
+
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  document.querySelector("#seoTable tbody").innerHTML = d.seoHealth.map(r =>
+    `<tr><td>${esc(r.item)}</td><td><span class="pill ${r.status}">${r.status}</span></td><td class="note">${esc(r.note)}</td></tr>`).join("");
+  document.querySelector("#connTable tbody").innerHTML = d.connections.map(r =>
+    `<tr><td>${esc(r.name)}<div class="note">${esc(r.id)}</div></td><td><span class="pill ${r.status}">${r.status}</span></td><td class="note">${esc(r.note)}</td></tr>`).join("");
+  document.querySelector("#partnerTable tbody").innerHTML = d.partnerships.map(r =>
+    `<tr><td>${esc(r.partner)}</td><td>${esc(r.code)}</td><td><span class="pill ${r.status}">${r.status}</span></td></tr>`).join("");
+  document.querySelector("#llmTable tbody").innerHTML = d.llmVisibility.map(r =>
+    `<tr><td>${esc(r.engine)}</td><td class="note">${esc(r.query)}</td><td><span class="pill ${r.cited === null ? "unknown" : r.cited ? "pass" : "fail"}">${r.cited === null ? "not checked" : r.cited ? "yes" : "no"}</span></td></tr>`).join("");
+});
+</script>
+</body>
+</html>

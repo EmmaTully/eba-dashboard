@@ -1,0 +1,68 @@
+{
+  "sample": true,
+  "client": "Electric Bike Academy",
+  "updated": "2026-09-04T21:00:00-05:00",
+  "period": "Last 30 days",
+  "connections": [
+    { "name": "Google Analytics 4", "id": "G-EPJGD8PC4C", "status": "pending", "note": "Awaiting property Admin access" },
+    { "name": "Google Ads", "id": "AW-1063475106", "status": "pending", "note": "Awaiting MCC link / Admin invite" },
+    { "name": "Search Console", "id": "electricbikeacademy.com", "status": "pending", "note": "Property may not exist yet" },
+    { "name": "Google Business Profile", "id": "—", "status": "missing", "note": "No profile found — needs creation" },
+    { "name": "Meta Pixel / Business", "id": "detected", "status": "pending", "note": "Pixel installed; need partner access" },
+    { "name": "Website / Hosting (Dotster)", "id": "206.188.193.183", "status": "pending", "note": "Awaiting FTP/panel login" },
+    { "name": "NDT Signup Platform", "id": "nationaldrivertraining.com", "status": "pending", "note": "Checkout + revenue source of truth" }
+  ],
+  "kpis": {
+    "sessions": { "value": 4820, "delta": 12.4 },
+    "enrollments": { "value": 96, "delta": 8.0 },
+    "revenue": { "value": 5230, "delta": 9.5 },
+    "adSpend": { "value": 1840, "delta": -3.2 },
+    "cpa": { "value": 19.17, "delta": -10.4 },
+    "roas": { "value": 2.84, "delta": 13.1 }
+  },
+  "traffic": {
+    "labels": ["Aug 6", "Aug 9", "Aug 12", "Aug 15", "Aug 18", "Aug 21", "Aug 24", "Aug 27", "Aug 30", "Sep 2"],
+    "sessions": [410, 385, 460, 520, 495, 610, 580, 540, 470, 350],
+    "conversions": [7, 6, 9, 11, 10, 14, 12, 11, 9, 7]
+  },
+  "channels": {
+    "labels": ["Paid Search", "Organic Search", "Direct", "Referral (districts/cities)", "Social"],
+    "values": [38, 24, 18, 16, 4]
+  },
+  "ads": {
+    "labels": ["Wk of Aug 3", "Wk of Aug 10", "Wk of Aug 17", "Wk of Aug 24", "Wk of Aug 31"],
+    "spend": [420, 445, 460, 390, 125],
+    "conversions": [18, 21, 24, 20, 8]
+  },
+  "gsc": {
+    "labels": ["Wk of Aug 3", "Wk of Aug 10", "Wk of Aug 17", "Wk of Aug 24", "Wk of Aug 31"],
+    "clicks": [95, 110, 128, 121, 42],
+    "impressions": [3100, 3400, 3900, 3700, 1300]
+  },
+  "seoHealth": [
+    { "item": "robots.txt", "status": "fail", "note": "404 — does not exist" },
+    { "item": "XML sitemap", "status": "fail", "note": "404 — does not exist" },
+    { "item": "llms.txt (LLM discoverability)", "status": "fail", "note": "Not present" },
+    { "item": "Canonical tags", "status": "fail", "note": "Missing on all pages; www + non-www both resolve" },
+    { "item": "Page titles / meta", "status": "warn", "note": "Generic titles (\"FAQ\", \"Our Story\") — no keyword targeting" },
+    { "item": "Structured data", "status": "warn", "note": "Product + OnlineStore only; missing Course, FAQPage, Organization" },
+    { "item": "Crawler access (Googlebot, GPTBot, ClaudeBot, PerplexityBot)", "status": "pass", "note": "All return 200; server blocks default UAs — allow-list explicitly" },
+    { "item": "Page speed", "status": "pass", "note": "TTFB ~0.35s, WebP images, 56KB HTML" },
+    { "item": "Cross-domain tracking (checkout on NDT domain)", "status": "warn", "note": "GA4 tag on both domains — config unverified" },
+    { "item": "Google Business Profile", "status": "fail", "note": "Not found" },
+    { "item": "Social links", "status": "fail", "note": "Facebook/Instagram links are dead placeholders" }
+  ],
+  "partnerships": [
+    { "partner": "Agoura Hills / Calabasas / Westlake Village (cities)", "code": "STREETSMART", "discount": "10%", "status": "active" },
+    { "partner": "Carlsbad Unified School District", "code": "Carlsbad10", "discount": "10%", "status": "active" },
+    { "partner": "Redondo Beach Unified School District", "code": "RBUSD10", "discount": "10%", "status": "active" },
+    { "partner": "Danville PD approved list", "code": "—", "discount": "—", "status": "target" },
+    { "partner": "San Dieguito UHSD approved list", "code": "—", "discount": "—", "status": "target" }
+  ],
+  "llmVisibility": [
+    { "engine": "ChatGPT", "query": "best e-bike safety course for teens", "cited": null, "lastChecked": null },
+    { "engine": "Perplexity", "query": "best e-bike safety course for teens", "cited": null, "lastChecked": null },
+    { "engine": "Gemini", "query": "e-bike certificate course California", "cited": null, "lastChecked": null },
+    { "engine": "Copilot/Bing", "query": "online e-bike safety certification", "cited": null, "lastChecked": null }
+  ]
+}

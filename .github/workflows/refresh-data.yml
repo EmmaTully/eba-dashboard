@@ -1,0 +1,38 @@
+name: Refresh dashboard data
+on:
+  schedule:
+    - cron: "0 11 * * *" # daily ~6am Central
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install API clients
+        run: pip install google-analytics-data google-api-python-client google-ads
+      - name: Write credentials
+        env:
+          SA_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          ADS_YAML: ${{ secrets.GOOGLE_ADS_YAML }}
+        run: |
+          if [ -n "$SA_JSON" ]; then echo "$SA_JSON" > /tmp/sa.json; echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/sa.json" >> "$GITHUB_ENV"; fi
+          if [ -n "$ADS_YAML" ]; then echo "$ADS_YAML" > /tmp/google-ads.yaml; echo "GOOGLE_ADS_CONFIGURATION_FILE_PATH=/tmp/google-ads.yaml" >> "$GITHUB_ENV"; fi
+      - name: Fetch metrics
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GOOGLE_ADS_CUSTOMER_ID: ${{ secrets.GOOGLE_ADS_CUSTOMER_ID }}
+        run: python scripts/fetch_metrics.py
+      - name: Commit if changed
+        run: |
+          git config user.name "eba-dashboard-bot"
+          git config user.email "actions@github.com"
+          git add data/metrics.json
+          git diff --cached --quiet || git commit -m "chore: refresh metrics data"
+          git push
