@@ -136,7 +136,7 @@
       const hour = Number(String(h).slice(-2));
       if (Number.isNaN(hour)) return "";
       const d = new Date(Date.UTC(2026, 0, 1, hour));
-      return d.toLocaleTimeString("en-US", { hour: "numeric", timeZone: "UTC" });
+      return d.toLocaleTimeString("en-US", { hour: "numeric", timeZone: "UTC" }) + " CT";
     }
     function fmtWhen(iso) {
       const d = new Date(iso);
@@ -146,12 +146,17 @@
 
     function barChart(series, key, tip, axis) {
       const max = Math.max(1, ...series.map((r) => r[key] || 0));
+      const last = series.length - 1;
+      const mid = Math.floor(last / 2);
+      const ticks = last > 1
+        ? `<span>${esc(axis(series[0]))}</span><span>${esc(axis(series[mid]))}</span><span>${esc(axis(series[last]))}</span>`
+        : `<span>${esc(axis(series[0]))}</span>${last > 0 ? `<span>${esc(axis(series[last]))}</span>` : ""}`;
       return `
         <div class="bars">${series.map((r) => {
           const v = r[key] || 0;
           return `<div class="b${v ? "" : " zero"}" data-tip="${esc(tip(r, v))}"><i style="height:${v ? Math.max(4, Math.round((v / max) * 100)) : 2}%"></i></div>`;
         }).join("")}</div>
-        <div class="chart-x"><span>${esc(axis(series[0]))}</span>${series.length > 1 ? `<span>${esc(axis(series[series.length - 1]))}</span>` : ""}</div>`;
+        <div class="chart-x">${ticks}</div>`;
     }
 
     function emptyTable(msg) {
@@ -210,8 +215,8 @@
           ? `From our own page beacon. Tracking started ${fmtDay(data.beaconSince)}, so earlier days are empty.`
           : "From our own page beacon.");
       const googleViewNote = hourly && r.todayProcessing
-        ? "Google has not processed today yet, so this chart is yesterday hour by hour. Times are Central."
-        : (hourly ? "From Google Analytics. Today can lag by a few hours. Times are Central." : "From Google Analytics.");
+        ? "Last 24 hours, Central. Google has not processed today yet, so this morning is empty on purpose."
+        : (hourly ? "Last 24 hours from Google Analytics, Central. Today can lag by a few hours." : "From Google Analytics.");
       const ai = r.ai || { in_window: 0, total: 0, byAgent: [], bySection: [], byDay: [], byHour: [] };
 
       app.innerHTML = `
@@ -380,7 +385,7 @@
     });
     document.addEventListener("scroll", () => { barTip.style.display = "none"; }, true);
 
-    fetch("data/metrics.json", { cache: "no-store" })
+    fetch("data/metrics.json?t=" + Date.now(), { cache: "no-store" })
       .then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); })
       .then((json) => { data = json; render(); })
       .catch(() => render());
