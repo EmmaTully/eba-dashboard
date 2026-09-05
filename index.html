@@ -55,7 +55,12 @@
       border-radius: 12px; padding: 10px 14px; margin-bottom: 16px;
     }
     .note strong { color: var(--ink); }
+    .half-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--faint); margin: 4px 0 12px;
+    }
     .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+    .stats.pair { grid-template-columns: 1fr 1fr; }
     .stat { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
     .stat .k { font-size: 12.5px; font-weight: 500; color: var(--muted); }
     .stat .v { font-family: var(--font-head); font-size: 28px; font-weight: 700; margin-top: 2px; }
@@ -190,17 +195,23 @@
         return;
       }
       const r = data.ranges[days];
+      const b = r.beacon || {};
+      const g = r.google || {};
       const allTime = data.allTime || {};
       const hourly = !!r.hourly;
       const label = r.label;
       const unit = hourly ? "hour" : "day";
-      const series = hourly ? (r.byHour || []) : (r.byDay || []);
+      const beaconSeries = hourly ? (b.byHour || []) : (b.byDay || []);
+      const googleSeries = hourly ? (g.byHour || []) : (g.byDay || []);
       const when = hourly ? ((row) => fmtHour(row.hour)) : ((row) => fmtDay(row.day));
-      const hourNote = r.fromBeacon
+      const beaconNote = hourly
         ? "From our own page beacon. Live, not waiting on Google."
-        : (hourly && r.todayProcessing
-          ? "Google's reports have not processed today yet, so this chart is yesterday hour by hour. Your visit right now is in Live now, not missing."
-          : (hourly ? "Hour by hour today." : ""));
+        : (data.beaconSince
+          ? `From our own page beacon. Tracking started ${fmtDay(data.beaconSince)}, so earlier days are empty.`
+          : "From our own page beacon.");
+      const googleViewNote = hourly && r.todayProcessing
+        ? "Google has not processed today yet, so this chart is yesterday hour by hour."
+        : (hourly ? "From Google Analytics. Today can lag by a few hours." : "From Google Analytics.");
       const ai = r.ai || { in_window: 0, total: 0, byAgent: [], bySection: [], byDay: [], byHour: [] };
 
       app.innerHTML = `
@@ -213,33 +224,70 @@
             ${RANGE_KEYS.map((n) => `<button class="abtn${n === days ? " primary" : ""}" data-days="${n}">${n === "1" ? "24h" : `${n}d`}</button>`).join("")}
           </div>
         </div>
-        <div class="stats">
+
+        <div class="half-label">Our tracking</div>
+        <div class="stats pair">
           <div class="stat">
             <div class="k">Visitors (${label})</div>
-            <div class="v">${num(r.visitors)}</div>
-            <div class="s">${r.fromBeacon ? "From our beacon, last 24 hours" : `${num(allTime.sessions)} sessions since tracking began`}</div>
+            <div class="v">${num(b.visitors)}</div>
+            <div class="s">From our beacon</div>
           </div>
           <div class="stat">
             <div class="k">Pageviews (${label})</div>
-            <div class="v">${num(r.pageviews)}</div>
-            <div class="s">${num(allTime.views)} since tracking began</div>
-          </div>
-          <div class="stat">
-            <div class="k">Purchases (${label})</div>
-            <div class="v">${num(r.purchases)}</div>
-            <div class="s">${num(allTime.purchases)} since Jan 2025</div>
-          </div>
-          <div class="stat">
-            <div class="k">Ad spend (${label})</div>
-            <div class="v">${money(r.adSpend)}</div>
-            <div class="s">${num(r.adClicks)} ad clicks${data.adsPaused ? " · campaigns paused" : ""}</div>
+            <div class="v">${num(b.pageviews)}</div>
+            <div class="s">From our beacon</div>
           </div>
         </div>
         <div class="statgrid2">
           <div class="card">
             <div class="ct">Pageviews by ${unit}</div>
-            <div class="ct-sub">${hourly ? (hourNote || "Every page on electricbikeacademy.com, hour by hour.") : "Every page on electricbikeacademy.com."}</div>
-            ${series.length ? barChart(series, "views", (row, v) => `${when(row)}: ${num(v)} pageviews, ${num(row.sessions || 0)} visitors`, when) : emptyTable("No pageviews in this window yet.")}
+            <div class="ct-sub">${beaconNote}</div>
+            ${beaconSeries.length ? barChart(beaconSeries, "views", (row, v) => `${when(row)}: ${num(v)} pageviews, ${num(row.sessions || 0)} visitors`, when) : emptyTable("No beacon pageviews in this window yet.")}
+          </div>
+          <div class="card">
+            <div class="ct">Top pages (${label})</div>
+            <div class="ct-sub">From our beacon. Checkout on nationaldrivertraining.com is not included.</div>
+            ${pageTable(b.topPages) || emptyTable("No beacon pageviews in this window yet.")}
+          </div>
+        </div>
+        <div class="statgrid2">
+          <div class="card">
+            <div class="ct">Where traffic comes from (${label})</div>
+            <div class="ct-sub">Humans from our beacon. LLMs from the server log.</div>
+            ${sourceTable(b.sources, `<div class="ct-sub" style="margin-top:12px;font-weight:600;color:inherit">Humans</div>`) || emptyTable("No beacon visitors in this window yet.")}
+            ${sourceTable(r.llmSources, `<div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">LLMs</div>`) || ""}
+          </div>
+          <div class="card">
+            <div class="ct">Humans vs LLMs (${label})</div>
+            <div class="ct-sub">Humans from our beacon. LLMs from the server log.</div>
+            <table style="margin-top:10px">
+              <thead><tr><th>Who</th><th style="text-align:right;width:72px">Visits</th></tr></thead>
+              <tbody>
+                <tr><td>Humans</td><td style="text-align:right;font-weight:600">${num(b.humans)}</td></tr>
+                <tr><td>LLMs / AI crawlers</td><td style="text-align:right;font-weight:600">${num(ai.in_window)}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="half-label">Google</div>
+        <div class="stats pair">
+          <div class="stat">
+            <div class="k">Purchases (${label})</div>
+            <div class="v">${num(g.purchases)}</div>
+            <div class="s">${num(allTime.purchases)} since Jan 2025</div>
+          </div>
+          <div class="stat">
+            <div class="k">Ad spend (${label})</div>
+            <div class="v">${money(g.adSpend)}</div>
+            <div class="s">${num(g.adClicks)} ad clicks${data.adsPaused ? " · campaigns paused" : ""}</div>
+          </div>
+        </div>
+        <div class="statgrid2">
+          <div class="card">
+            <div class="ct">Pageviews by ${unit}</div>
+            <div class="ct-sub">${googleViewNote}</div>
+            ${googleSeries.length ? barChart(googleSeries, "views", (row, v) => `${when(row)}: ${num(v)} pageviews, ${num(row.sessions || 0)} visitors`, when) : emptyTable("No Google pageviews in this window yet.")}
           </div>
           <div class="card">
             <div class="ct">Organic vs paid (${label})</div>
@@ -247,9 +295,9 @@
             <table style="margin-top:10px">
               <thead><tr><th>Channel</th><th style="text-align:right;width:72px">Visitors</th></tr></thead>
               <tbody>
-                <tr><td>Organic</td><td style="text-align:right;font-weight:600">${num((r.mix || {}).organic)}</td></tr>
-                <tr><td>Paid</td><td style="text-align:right;font-weight:600">${num((r.mix || {}).paid)}</td></tr>
-                <tr><td>Other (direct, referral)</td><td style="text-align:right;font-weight:600">${num((r.mix || {}).other)}</td></tr>
+                <tr><td>Organic</td><td style="text-align:right;font-weight:600">${num((g.mix || {}).organic)}</td></tr>
+                <tr><td>Paid</td><td style="text-align:right;font-weight:600">${num((g.mix || {}).paid)}</td></tr>
+                <tr><td>Other (direct, referral)</td><td style="text-align:right;font-weight:600">${num((g.mix || {}).other)}</td></tr>
               </tbody>
             </table>
           </div>
@@ -257,56 +305,28 @@
         <div class="statgrid2">
           <div class="card">
             <div class="ct">Top pages (${label})</div>
-            <div class="ct-sub" style="margin-top:12px;font-weight:600;color:inherit">Based on Beacon:</div>
-            ${pageTable(r.topPagesBeacon) || emptyTable("No beacon pageviews in this window yet.")}
-            <div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">Based on Google:</div>
-            ${pageTable(r.topPages) || emptyTable("No Google pageviews in this window yet.")}
+            <div class="ct-sub">From Google Analytics. Includes checkout on nationaldrivertraining.com.</div>
+            ${pageTable(g.topPages) || emptyTable("No Google pageviews in this window yet.")}
           </div>
           <div class="card">
             <div class="ct">Where traffic comes from (${label})</div>
-            <div class="ct-sub">${r.fromBeacon ? "Humans from our live beacon. LLMs from the server log." : "Humans from Google Analytics. LLMs from the server log."}</div>
-            ${sourceTable(r.sources, `<div class="ct-sub" style="margin-top:12px;font-weight:600;color:inherit">Humans</div>`) || emptyTable("No human traffic recorded in this window yet.")}
-            ${sourceTable(r.llmSources, `<div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">LLMs</div>`) || ""}
-            ${(r.channels || []).length ? `
-            <div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">Organic vs paid</div>
-            <table style="margin-top:10px">
-              <thead><tr><th>Channel</th><th style="text-align:right;width:72px">Visitors</th><th style="text-align:right;width:64px">Views</th></tr></thead>
-              <tbody>${r.channels.map((c) => `
-                <tr>
-                  <td>${esc(c.channel)}</td>
-                  <td class="dim" style="text-align:right">${num(c.visitors)}</td>
-                  <td style="text-align:right;font-weight:600">${num(c.views)}</td>
-                </tr>`).join("")}
-              </tbody>
-            </table>` : ""}
+            <div class="ct-sub">From Google Analytics.</div>
+            ${sourceTable(g.sources) || emptyTable("No Google traffic in this window yet.")}
           </div>
         </div>
         <div class="statgrid2">
-          <div class="card">
-            <div class="ct">Humans vs LLMs (${label})</div>
-            <div class="ct-sub">${r.fromBeacon ? "Humans from our live beacon. " : "Humans from Google Analytics. "}LLMs from the server log.</div>
-            <table style="margin-top:10px">
-              <thead><tr><th>Who</th><th style="text-align:right;width:72px">Visits</th></tr></thead>
-              <tbody>
-                <tr><td>Humans</td><td style="text-align:right;font-weight:600">${num(r.humans != null ? r.humans : r.visitors)}</td></tr>
-                <tr><td>LLMs / AI crawlers</td><td style="text-align:right;font-weight:600">${num(ai.in_window)}</td></tr>
-              </tbody>
-            </table>
-          </div>
           <div class="card">
             <div class="ct">Purchases by ${unit}</div>
             <div class="ct-sub">${hourly ? `Google's reports lag on today. Last confirmed sale: ${data.lastPurchase ? fmtDay(data.lastPurchase) : "none"}. A purchase from earlier today will show once Google processes it.` : "EBA_purchase events: the checkout thank-you that matches Jaclyn's sales count."}</div>
-            ${series.length ? barChart(series, "purchases", (row, v) => `${when(row)}: ${num(v)} purchase${v === 1 ? "" : "s"}`, when) : emptyTable("No purchases in this window yet.")}
+            ${googleSeries.length ? barChart(googleSeries, "purchases", (row, v) => `${when(row)}: ${num(v)} purchase${v === 1 ? "" : "s"}`, when) : emptyTable("No purchases in this window yet.")}
           </div>
-        </div>
-        <div class="statgrid2">
           <div class="card">
             <div class="ct">Google searches (${label})</div>
             <div class="ct-sub">Queries that showed the site in Google. Search Console lags a day or two, so 24h is empty on purpose.</div>
-            ${(r.queries || []).length ? `
+            ${(g.queries || []).length ? `
             <table style="margin-top:10px">
               <thead><tr><th>Query</th><th style="text-align:right;width:64px">Clicks</th><th style="text-align:right;width:64px">Impr</th></tr></thead>
-              <tbody>${r.queries.map((q) => `
+              <tbody>${g.queries.map((q) => `
                 <tr>
                   <td class="dim">${esc(q.query)}</td>
                   <td style="text-align:right;font-weight:600">${num(q.clicks)}</td>
@@ -315,6 +335,8 @@
               </tbody>
             </table>` : emptyTable(hourly ? "Search Console does not report today yet." : "No search queries in this window.")}
           </div>
+        </div>
+        <div class="statgrid2" style="grid-template-columns:1fr">
           <div class="card">
             <div class="ct">Ad campaigns (90d)</div>
             <div class="ct-sub">Spend in this table is always the last 90 days, regardless of the pills above.</div>
