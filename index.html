@@ -134,14 +134,14 @@
     }
     function fmtHour(h) {
       const hour = Number(String(h).slice(-2));
-      const d = new Date();
-      d.setHours(hour, 0, 0, 0);
-      return d.toLocaleTimeString("en-US", { hour: "numeric" });
+      if (Number.isNaN(hour)) return "";
+      const d = new Date(Date.UTC(2026, 0, 1, hour));
+      return d.toLocaleTimeString("en-US", { hour: "numeric", timeZone: "UTC" });
     }
     function fmtWhen(iso) {
       const d = new Date(iso);
       if (Number.isNaN(d.getTime())) return "";
-      return d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+      return d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
     }
 
     function barChart(series, key, tip, axis) {
@@ -205,13 +205,13 @@
       const googleSeries = hourly ? (g.byHour || []) : (g.byDay || []);
       const when = hourly ? ((row) => fmtHour(row.hour)) : ((row) => fmtDay(row.day));
       const beaconNote = hourly
-        ? "From our own page beacon. Live, not waiting on Google."
+        ? "From our own page beacon. Live, not waiting on Google. Times are Central."
         : (data.beaconSince
           ? `From our own page beacon. Tracking started ${fmtDay(data.beaconSince)}, so earlier days are empty.`
           : "From our own page beacon.");
       const googleViewNote = hourly && r.todayProcessing
         ? "Google has not processed today yet, so this chart is yesterday hour by hour."
-        : (hourly ? "From Google Analytics. Today can lag by a few hours." : "From Google Analytics.");
+        : (hourly ? "From Google Analytics. Today can lag by a few hours. Times are Central." : "From Google Analytics.");
       const ai = r.ai || { in_window: 0, total: 0, byAgent: [], bySection: [], byDay: [], byHour: [] };
 
       app.innerHTML = `
