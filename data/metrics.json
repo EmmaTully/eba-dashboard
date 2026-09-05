@@ -1,68 +1,3269 @@
 {
-  "sample": true,
-  "client": "Electric Bike Academy",
-  "updated": "2026-09-04T21:00:00-05:00",
-  "period": "Last 30 days",
-  "connections": [
-    { "name": "Google Analytics 4", "id": "G-EPJGD8PC4C", "status": "pending", "note": "Awaiting property Admin access" },
-    { "name": "Google Ads", "id": "AW-1063475106", "status": "pending", "note": "Awaiting MCC link / Admin invite" },
-    { "name": "Search Console", "id": "electricbikeacademy.com", "status": "pending", "note": "Property may not exist yet" },
-    { "name": "Google Business Profile", "id": "—", "status": "missing", "note": "No profile found — needs creation" },
-    { "name": "Meta Pixel / Business", "id": "detected", "status": "pending", "note": "Pixel installed; need partner access" },
-    { "name": "Website / Hosting (Dotster)", "id": "206.188.193.183", "status": "pending", "note": "Awaiting FTP/panel login" },
-    { "name": "NDT Signup Platform", "id": "nationaldrivertraining.com", "status": "pending", "note": "Checkout + revenue source of truth" }
+  "updated": "2026-09-05T19:07:00.710940+00:00",
+  "site": "electricbikeacademy.com",
+  "purchaseEvent": "EBA_purchase",
+  "lastPurchase": "2026-09-03",
+  "adsPaused": true,
+  "allTime": {
+    "sessions": 12776,
+    "users": 10952,
+    "views": 24477,
+    "purchases": 209,
+    "first_day": "2025-06-20"
+  },
+  "live": {
+    "activeUsers": 6,
+    "pages": [
+      {
+        "page": "Electric Bike Academy",
+        "users": 3,
+        "events": 12
+      },
+      {
+        "page": "EBA - Single Rider Signup",
+        "users": 2,
+        "events": 8
+      },
+      {
+        "page": "Login",
+        "users": 1,
+        "events": 3
+      }
+    ]
+  },
+  "firstParty": true,
+  "september": {
+    "purchases": 6,
+    "goal": 30,
+    "year": 2026,
+    "month": 9
+  },
+  "campaigns": [
+    {
+      "name": "Sales-Search",
+      "status": "PAUSED",
+      "spend": 948.0,
+      "clicks": 501,
+      "conversions": 64.0
+    },
+    {
+      "name": "Katy Court Ordered Campaign",
+      "status": "PAUSED",
+      "spend": 289.83,
+      "clicks": 50,
+      "conversions": 0.0
+    },
+    {
+      "name": "Campaign #1",
+      "status": "PAUSED",
+      "spend": 0.0,
+      "clicks": 0,
+      "conversions": 0.0
+    }
   ],
-  "kpis": {
-    "sessions": { "value": 4820, "delta": 12.4 },
-    "enrollments": { "value": 96, "delta": 8.0 },
-    "revenue": { "value": 5230, "delta": 9.5 },
-    "adSpend": { "value": 1840, "delta": -3.2 },
-    "cpa": { "value": 19.17, "delta": -10.4 },
-    "roas": { "value": 2.84, "delta": 13.1 }
+  "ranges": {
+    "1": {
+      "label": "24h",
+      "hourly": true,
+      "todayProcessing": false,
+      "fromBeacon": true,
+      "start": "2026-09-04",
+      "end": "2026-09-04",
+      "visitors": 4,
+      "users": 0,
+      "pageviews": 5,
+      "purchases": 0,
+      "adSpend": 11.97,
+      "adClicks": 3,
+      "byHour": [
+        {
+          "hour": "2026090420",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090421",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090422",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090423",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090500",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090501",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090502",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090503",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090504",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090505",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090506",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090507",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090508",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090509",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090510",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090511",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090512",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090513",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090514",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090515",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090516",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090517",
+          "sessions": 0,
+          "views": 0,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090518",
+          "sessions": 2,
+          "views": 2,
+          "purchases": 0
+        },
+        {
+          "hour": "2026090519",
+          "sessions": 2,
+          "views": 3,
+          "purchases": 0
+        }
+      ],
+      "byDay": [],
+      "topPages": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 16,
+          "visitors": 10
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/signup",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "views": 4,
+          "visitors": 4
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/courses.php",
+          "label": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "views": 3,
+          "visitors": 2
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 3,
+          "visitors": 1
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/faq.php",
+          "label": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "views": 2,
+          "visitors": 1
+        }
+      ],
+      "topPagesBeacon": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 4,
+          "visitors": 4
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 1,
+          "visitors": 0
+        }
+      ],
+      "sources": [
+        {
+          "source": "Direct / other",
+          "visitors": 3,
+          "views": 4
+        },
+        {
+          "source": "dashboard-test",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "llmSources": [
+        {
+          "source": "GPTBot",
+          "visitors": 3,
+          "views": 3
+        },
+        {
+          "source": "ClaudeBot",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "channels": [
+        {
+          "channel": "Direct",
+          "visitors": 8,
+          "views": 11
+        },
+        {
+          "channel": "Referral",
+          "visitors": 8,
+          "views": 11
+        },
+        {
+          "channel": "Organic Search",
+          "visitors": 3,
+          "views": 2
+        },
+        {
+          "channel": "Paid Search",
+          "visitors": 3,
+          "views": 4
+        }
+      ],
+      "queries": [],
+      "gscPages": [],
+      "ai": {
+        "in_window": 4,
+        "total": 4,
+        "first_day": "2026-09-05",
+        "byAgent": [
+          {
+            "agent": "GPTBot",
+            "hits": 3
+          },
+          {
+            "agent": "ClaudeBot",
+            "hits": 1
+          }
+        ],
+        "bySection": [
+          {
+            "section": "Homepage",
+            "hits": 2
+          },
+          {
+            "section": "Courses",
+            "hits": 1
+          },
+          {
+            "section": "Sitemap + robots",
+            "hits": 1
+          }
+        ],
+        "byHour": [
+          {
+            "hour": "2026090420",
+            "hits": 0
+          },
+          {
+            "hour": "2026090421",
+            "hits": 0
+          },
+          {
+            "hour": "2026090422",
+            "hits": 0
+          },
+          {
+            "hour": "2026090423",
+            "hits": 0
+          },
+          {
+            "hour": "2026090500",
+            "hits": 0
+          },
+          {
+            "hour": "2026090501",
+            "hits": 0
+          },
+          {
+            "hour": "2026090502",
+            "hits": 0
+          },
+          {
+            "hour": "2026090503",
+            "hits": 0
+          },
+          {
+            "hour": "2026090504",
+            "hits": 0
+          },
+          {
+            "hour": "2026090505",
+            "hits": 0
+          },
+          {
+            "hour": "2026090506",
+            "hits": 0
+          },
+          {
+            "hour": "2026090507",
+            "hits": 0
+          },
+          {
+            "hour": "2026090508",
+            "hits": 0
+          },
+          {
+            "hour": "2026090509",
+            "hits": 0
+          },
+          {
+            "hour": "2026090510",
+            "hits": 0
+          },
+          {
+            "hour": "2026090511",
+            "hits": 0
+          },
+          {
+            "hour": "2026090512",
+            "hits": 0
+          },
+          {
+            "hour": "2026090513",
+            "hits": 0
+          },
+          {
+            "hour": "2026090514",
+            "hits": 0
+          },
+          {
+            "hour": "2026090515",
+            "hits": 0
+          },
+          {
+            "hour": "2026090516",
+            "hits": 0
+          },
+          {
+            "hour": "2026090517",
+            "hits": 0
+          },
+          {
+            "hour": "2026090518",
+            "hits": 4
+          },
+          {
+            "hour": "2026090519",
+            "hits": 0
+          }
+        ],
+        "byDay": []
+      },
+      "mix": {
+        "organic": 3,
+        "paid": 3,
+        "other": 16
+      },
+      "humans": 4
+    },
+    "7": {
+      "label": "7d",
+      "hourly": false,
+      "start": "2026-08-29",
+      "end": "2026-09-04",
+      "visitors": 191,
+      "users": 166,
+      "pageviews": 405,
+      "purchases": 10,
+      "adSpend": 156.44,
+      "adClicks": 57,
+      "byDay": [
+        {
+          "day": "2026-08-29",
+          "sessions": 26,
+          "users": 24,
+          "views": 53,
+          "purchases": 1,
+          "spend": 22.68,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-30",
+          "sessions": 21,
+          "users": 21,
+          "views": 46,
+          "purchases": 1,
+          "spend": 15.18,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-31",
+          "sessions": 31,
+          "users": 26,
+          "views": 69,
+          "purchases": 2,
+          "spend": 22.16,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-09-01",
+          "sessions": 28,
+          "users": 27,
+          "views": 72,
+          "purchases": 3,
+          "spend": 17.75,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-09-02",
+          "sessions": 39,
+          "users": 30,
+          "views": 66,
+          "purchases": 1,
+          "spend": 28.76,
+          "adClicks": 12
+        },
+        {
+          "day": "2026-09-03",
+          "sessions": 24,
+          "users": 22,
+          "views": 71,
+          "purchases": 2,
+          "spend": 37.94,
+          "adClicks": 13
+        },
+        {
+          "day": "2026-09-04",
+          "sessions": 22,
+          "users": 16,
+          "views": 28,
+          "purchases": 0,
+          "spend": 11.97,
+          "adClicks": 3
+        }
+      ],
+      "byHour": [],
+      "topPages": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 184,
+          "visitors": 92
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 75,
+          "visitors": 29
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/courses.php",
+          "label": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "views": 55,
+          "visitors": 45
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/signup",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "views": 42,
+          "visitors": 27
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/faq.php",
+          "label": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "views": 17,
+          "visitors": 10
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/contact.php",
+          "label": "electricbikeacademy.com/contact.php",
+          "url": "https://electricbikeacademy.com/contact.php",
+          "views": 11,
+          "visitors": 2
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/purchase",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/purchase",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/purchase",
+          "views": 10,
+          "visitors": 10
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/about.php",
+          "label": "electricbikeacademy.com/about.php",
+          "url": "https://electricbikeacademy.com/about.php",
+          "views": 10,
+          "visitors": 10
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/home-page.php",
+          "label": "electricbikeacademy.com/home-page.php",
+          "url": "https://electricbikeacademy.com/home-page.php",
+          "views": 1,
+          "visitors": 1
+        }
+      ],
+      "topPagesBeacon": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 4,
+          "visitors": 4
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 1,
+          "visitors": 0
+        }
+      ],
+      "sources": [
+        {
+          "source": "Google",
+          "visitors": 69,
+          "views": 157
+        },
+        {
+          "source": "Direct / other",
+          "visitors": 54,
+          "views": 102
+        },
+        {
+          "source": "rbusd.org",
+          "visitors": 29,
+          "views": 59
+        },
+        {
+          "source": "nationaldrivertraining.com",
+          "visitors": 10,
+          "views": 14
+        },
+        {
+          "source": "wiseburn.org",
+          "visitors": 9,
+          "views": 16
+        },
+        {
+          "source": "Bing",
+          "visitors": 5,
+          "views": 29
+        },
+        {
+          "source": "electricbikeacademy.com",
+          "visitors": 4,
+          "views": 5
+        },
+        {
+          "source": "Yahoo",
+          "visitors": 3,
+          "views": 8
+        },
+        {
+          "source": "connectively.us",
+          "visitors": 2,
+          "views": 2
+        },
+        {
+          "source": "Facebook",
+          "visitors": 2,
+          "views": 3
+        },
+        {
+          "source": "webmail-oxcs.web.com",
+          "visitors": 2,
+          "views": 3
+        },
+        {
+          "source": "(data not available)",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "llmSources": [
+        {
+          "source": "GPTBot",
+          "visitors": 3,
+          "views": 3
+        },
+        {
+          "source": "ClaudeBot",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "channels": [
+        {
+          "channel": "Paid Search",
+          "visitors": 61,
+          "views": 146
+        },
+        {
+          "channel": "Referral",
+          "visitors": 57,
+          "views": 105
+        },
+        {
+          "channel": "Direct",
+          "visitors": 54,
+          "views": 102
+        },
+        {
+          "channel": "Organic Search",
+          "visitors": 16,
+          "views": 48
+        },
+        {
+          "channel": "Organic Social",
+          "visitors": 2,
+          "views": 3
+        },
+        {
+          "channel": "Cross-network",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "queries": [
+        {
+          "query": "electric bike academy",
+          "clicks": 2,
+          "impressions": 27,
+          "position": 2.2
+        },
+        {
+          "query": "academy electric bikes",
+          "clicks": 1,
+          "impressions": 30,
+          "position": 9.8
+        },
+        {
+          "query": "academy e bike",
+          "clicks": 0,
+          "impressions": 7,
+          "position": 8.6
+        },
+        {
+          "query": "academy e bikes",
+          "clicks": 0,
+          "impressions": 37,
+          "position": 9.3
+        },
+        {
+          "query": "academy e-bikes",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 8.5
+        },
+        {
+          "query": "academy ebike",
+          "clicks": 0,
+          "impressions": 38,
+          "position": 10.0
+        },
+        {
+          "query": "academy ebikes",
+          "clicks": 0,
+          "impressions": 9,
+          "position": 9.7
+        },
+        {
+          "query": "academy electric bike",
+          "clicks": 0,
+          "impressions": 38,
+          "position": 8.3
+        },
+        {
+          "query": "bicicleta electrica academy",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 3.3
+        },
+        {
+          "query": "e bike academy",
+          "clicks": 0,
+          "impressions": 14,
+          "position": 3.4
+        },
+        {
+          "query": "e bike academy sports",
+          "clicks": 0,
+          "impressions": 7,
+          "position": 9.6
+        },
+        {
+          "query": "e bike certification",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 46.0
+        }
+      ],
+      "gscPages": [
+        {
+          "page": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "clicks": 6,
+          "impressions": 429
+        },
+        {
+          "page": "electricbikeacademy.com/about.php",
+          "url": "https://electricbikeacademy.com/about.php",
+          "clicks": 0,
+          "impressions": 11
+        },
+        {
+          "page": "electricbikeacademy.com/contact.php",
+          "url": "https://electricbikeacademy.com/contact.php",
+          "clicks": 0,
+          "impressions": 11
+        },
+        {
+          "page": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "clicks": 0,
+          "impressions": 11
+        },
+        {
+          "page": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "clicks": 0,
+          "impressions": 12
+        },
+        {
+          "page": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "clicks": 0,
+          "impressions": 10
+        }
+      ],
+      "ai": {
+        "in_window": 4,
+        "total": 4,
+        "first_day": "2026-09-05",
+        "byAgent": [
+          {
+            "agent": "GPTBot",
+            "hits": 3
+          },
+          {
+            "agent": "ClaudeBot",
+            "hits": 1
+          }
+        ],
+        "bySection": [
+          {
+            "section": "Homepage",
+            "hits": 2
+          },
+          {
+            "section": "Courses",
+            "hits": 1
+          },
+          {
+            "section": "Sitemap + robots",
+            "hits": 1
+          }
+        ],
+        "byHour": [],
+        "byDay": [
+          {
+            "day": "2026-08-29",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-30",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-31",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-01",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-02",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-03",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-04",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-05",
+            "hits": 4
+          }
+        ]
+      },
+      "mix": {
+        "organic": 18,
+        "paid": 62,
+        "other": 111
+      },
+      "humans": 191
+    },
+    "30": {
+      "label": "30d",
+      "hourly": false,
+      "start": "2026-08-06",
+      "end": "2026-09-04",
+      "visitors": 891,
+      "users": 748,
+      "pageviews": 2111,
+      "purchases": 64,
+      "adSpend": 688.98,
+      "adClicks": 234,
+      "byDay": [
+        {
+          "day": "2026-08-06",
+          "sessions": 19,
+          "users": 17,
+          "views": 38,
+          "purchases": 0,
+          "spend": 13.76,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-07",
+          "sessions": 43,
+          "users": 41,
+          "views": 138,
+          "purchases": 3,
+          "spend": 8.83,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-08",
+          "sessions": 14,
+          "users": 13,
+          "views": 24,
+          "purchases": 0,
+          "spend": 19.19,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-08-09",
+          "sessions": 4,
+          "users": 4,
+          "views": 6,
+          "purchases": 0,
+          "spend": 7.23,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-08-10",
+          "sessions": 30,
+          "users": 28,
+          "views": 64,
+          "purchases": 1,
+          "spend": 29.98,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-11",
+          "sessions": 27,
+          "users": 20,
+          "views": 74,
+          "purchases": 3,
+          "spend": 36.52,
+          "adClicks": 13
+        },
+        {
+          "day": "2026-08-12",
+          "sessions": 19,
+          "users": 15,
+          "views": 51,
+          "purchases": 3,
+          "spend": 24.12,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-13",
+          "sessions": 32,
+          "users": 29,
+          "views": 65,
+          "purchases": 2,
+          "spend": 23.63,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-14",
+          "sessions": 61,
+          "users": 48,
+          "views": 136,
+          "purchases": 6,
+          "spend": 37.62,
+          "adClicks": 14
+        },
+        {
+          "day": "2026-08-15",
+          "sessions": 26,
+          "users": 22,
+          "views": 65,
+          "purchases": 2,
+          "spend": 37.36,
+          "adClicks": 11
+        },
+        {
+          "day": "2026-08-16",
+          "sessions": 20,
+          "users": 17,
+          "views": 70,
+          "purchases": 2,
+          "spend": 39.96,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-17",
+          "sessions": 34,
+          "users": 32,
+          "views": 70,
+          "purchases": 3,
+          "spend": 12.75,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-08-18",
+          "sessions": 37,
+          "users": 26,
+          "views": 140,
+          "purchases": 6,
+          "spend": 17.75,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-19",
+          "sessions": 34,
+          "users": 30,
+          "views": 99,
+          "purchases": 4,
+          "spend": 23.47,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-20",
+          "sessions": 30,
+          "users": 26,
+          "views": 66,
+          "purchases": 1,
+          "spend": 11.82,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-08-21",
+          "sessions": 22,
+          "users": 21,
+          "views": 34,
+          "purchases": 1,
+          "spend": 17.31,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-22",
+          "sessions": 26,
+          "users": 20,
+          "views": 62,
+          "purchases": 1,
+          "spend": 36.71,
+          "adClicks": 11
+        },
+        {
+          "day": "2026-08-23",
+          "sessions": 35,
+          "users": 23,
+          "views": 110,
+          "purchases": 5,
+          "spend": 23.19,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-24",
+          "sessions": 40,
+          "users": 30,
+          "views": 98,
+          "purchases": 3,
+          "spend": 14.84,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-25",
+          "sessions": 34,
+          "users": 28,
+          "views": 58,
+          "purchases": 2,
+          "spend": 32.65,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-26",
+          "sessions": 51,
+          "users": 43,
+          "views": 134,
+          "purchases": 5,
+          "spend": 27.08,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-27",
+          "sessions": 33,
+          "users": 27,
+          "views": 47,
+          "purchases": 0,
+          "spend": 19.67,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-28",
+          "sessions": 29,
+          "users": 22,
+          "views": 57,
+          "purchases": 1,
+          "spend": 17.1,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-29",
+          "sessions": 26,
+          "users": 24,
+          "views": 53,
+          "purchases": 1,
+          "spend": 22.68,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-30",
+          "sessions": 21,
+          "users": 21,
+          "views": 46,
+          "purchases": 1,
+          "spend": 15.18,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-31",
+          "sessions": 31,
+          "users": 26,
+          "views": 69,
+          "purchases": 2,
+          "spend": 22.16,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-09-01",
+          "sessions": 28,
+          "users": 27,
+          "views": 72,
+          "purchases": 3,
+          "spend": 17.75,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-09-02",
+          "sessions": 39,
+          "users": 30,
+          "views": 66,
+          "purchases": 1,
+          "spend": 28.76,
+          "adClicks": 12
+        },
+        {
+          "day": "2026-09-03",
+          "sessions": 24,
+          "users": 22,
+          "views": 71,
+          "purchases": 2,
+          "spend": 37.94,
+          "adClicks": 13
+        },
+        {
+          "day": "2026-09-04",
+          "sessions": 22,
+          "users": 16,
+          "views": 28,
+          "purchases": 0,
+          "spend": 11.97,
+          "adClicks": 3
+        }
+      ],
+      "byHour": [],
+      "topPages": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 889,
+          "visitors": 427
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 449,
+          "visitors": 136
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/signup",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "views": 275,
+          "visitors": 146
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/courses.php",
+          "label": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "views": 235,
+          "visitors": 160
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/faq.php",
+          "label": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "views": 86,
+          "visitors": 47
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/about.php",
+          "label": "electricbikeacademy.com/about.php",
+          "url": "https://electricbikeacademy.com/about.php",
+          "views": 65,
+          "visitors": 38
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/purchase",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/purchase",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/purchase",
+          "views": 64,
+          "visitors": 63
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/contact.php",
+          "label": "electricbikeacademy.com/contact.php",
+          "url": "https://electricbikeacademy.com/contact.php",
+          "views": 37,
+          "visitors": 20
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/home-page.php",
+          "label": "electricbikeacademy.com/home-page.php",
+          "url": "https://electricbikeacademy.com/home-page.php",
+          "views": 11,
+          "visitors": 8
+        }
+      ],
+      "topPagesBeacon": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 4,
+          "visitors": 4
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 1,
+          "visitors": 0
+        }
+      ],
+      "sources": [
+        {
+          "source": "Google",
+          "visitors": 288,
+          "views": 747
+        },
+        {
+          "source": "Direct / other",
+          "visitors": 280,
+          "views": 628
+        },
+        {
+          "source": "rbusd.org",
+          "visitors": 162,
+          "views": 422
+        },
+        {
+          "source": "wiseburn.org",
+          "visitors": 39,
+          "views": 58
+        },
+        {
+          "source": "electricbikeacademy.com",
+          "visitors": 35,
+          "views": 92
+        },
+        {
+          "source": "nationaldrivertraining.com",
+          "visitors": 28,
+          "views": 42
+        },
+        {
+          "source": "Bing",
+          "visitors": 15,
+          "views": 42
+        },
+        {
+          "source": "carlsbadusd.net",
+          "visitors": 7,
+          "views": 19
+        },
+        {
+          "source": "Facebook",
+          "visitors": 7,
+          "views": 9
+        },
+        {
+          "source": "Yahoo",
+          "visitors": 6,
+          "views": 12
+        },
+        {
+          "source": "villaprints.com",
+          "visitors": 5,
+          "views": 13
+        },
+        {
+          "source": "vistausd.org",
+          "visitors": 3,
+          "views": 3
+        }
+      ],
+      "llmSources": [
+        {
+          "source": "GPTBot",
+          "visitors": 3,
+          "views": 3
+        },
+        {
+          "source": "ClaudeBot",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "channels": [
+        {
+          "channel": "Referral",
+          "visitors": 296,
+          "views": 675
+        },
+        {
+          "channel": "Direct",
+          "visitors": 280,
+          "views": 628
+        },
+        {
+          "channel": "Paid Search",
+          "visitors": 246,
+          "views": 643
+        },
+        {
+          "channel": "Organic Search",
+          "visitors": 63,
+          "views": 158
+        },
+        {
+          "channel": "Cross-network",
+          "visitors": 2,
+          "views": 3
+        },
+        {
+          "channel": "Organic Social",
+          "visitors": 2,
+          "views": 3
+        },
+        {
+          "channel": "AI Assistant",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "queries": [
+        {
+          "query": "electric bike academy",
+          "clicks": 8,
+          "impressions": 98,
+          "position": 2.5
+        },
+        {
+          "query": "academy electric bikes",
+          "clicks": 1,
+          "impressions": 80,
+          "position": 10.6
+        },
+        {
+          "query": "academy e bike",
+          "clicks": 0,
+          "impressions": 65,
+          "position": 9.5
+        },
+        {
+          "query": "academy e bikes",
+          "clicks": 0,
+          "impressions": 110,
+          "position": 9.8
+        },
+        {
+          "query": "academy e-bikes",
+          "clicks": 0,
+          "impressions": 18,
+          "position": 10.6
+        },
+        {
+          "query": "academy ebike",
+          "clicks": 0,
+          "impressions": 138,
+          "position": 10.4
+        },
+        {
+          "query": "academy ebikes",
+          "clicks": 0,
+          "impressions": 18,
+          "position": 10.2
+        },
+        {
+          "query": "academy electric bike",
+          "clicks": 0,
+          "impressions": 187,
+          "position": 9.0
+        },
+        {
+          "query": "academy sports ebike",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 8.0
+        },
+        {
+          "query": "academy sports ebikes",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 11.0
+        },
+        {
+          "query": "academy sports electric bike",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 4.5
+        },
+        {
+          "query": "academy sports electric bikes",
+          "clicks": 0,
+          "impressions": 5,
+          "position": 10.6
+        }
+      ],
+      "gscPages": [
+        {
+          "page": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "clicks": 21,
+          "impressions": 1736
+        },
+        {
+          "page": "electricbikeacademy.com/about.php",
+          "url": "https://electricbikeacademy.com/about.php",
+          "clicks": 0,
+          "impressions": 45
+        },
+        {
+          "page": "electricbikeacademy.com/contact.php",
+          "url": "https://electricbikeacademy.com/contact.php",
+          "clicks": 0,
+          "impressions": 45
+        },
+        {
+          "page": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "clicks": 0,
+          "impressions": 45
+        },
+        {
+          "page": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "clicks": 0,
+          "impressions": 48
+        },
+        {
+          "page": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "clicks": 0,
+          "impressions": 39
+        }
+      ],
+      "ai": {
+        "in_window": 4,
+        "total": 4,
+        "first_day": "2026-09-05",
+        "byAgent": [
+          {
+            "agent": "GPTBot",
+            "hits": 3
+          },
+          {
+            "agent": "ClaudeBot",
+            "hits": 1
+          }
+        ],
+        "bySection": [
+          {
+            "section": "Homepage",
+            "hits": 2
+          },
+          {
+            "section": "Courses",
+            "hits": 1
+          },
+          {
+            "section": "Sitemap + robots",
+            "hits": 1
+          }
+        ],
+        "byHour": [],
+        "byDay": [
+          {
+            "day": "2026-08-06",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-07",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-08",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-09",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-10",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-11",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-12",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-13",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-14",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-15",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-16",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-17",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-18",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-19",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-20",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-21",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-22",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-23",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-24",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-25",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-26",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-27",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-28",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-29",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-30",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-31",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-01",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-02",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-03",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-04",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-05",
+            "hits": 4
+          }
+        ]
+      },
+      "mix": {
+        "organic": 65,
+        "paid": 248,
+        "other": 577
+      },
+      "humans": 891
+    },
+    "90": {
+      "label": "90d",
+      "hourly": false,
+      "start": "2026-06-07",
+      "end": "2026-09-04",
+      "visitors": 2329,
+      "users": 2046,
+      "pageviews": 5456,
+      "purchases": 91,
+      "adSpend": 1237.83,
+      "adClicks": 551,
+      "byDay": [
+        {
+          "day": "2026-06-07",
+          "sessions": 17,
+          "users": 16,
+          "views": 42,
+          "purchases": 0,
+          "spend": 11.58,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-06-08",
+          "sessions": 18,
+          "users": 18,
+          "views": 50,
+          "purchases": 0,
+          "spend": 12.16,
+          "adClicks": 11
+        },
+        {
+          "day": "2026-06-09",
+          "sessions": 18,
+          "users": 18,
+          "views": 59,
+          "purchases": 0,
+          "spend": 10.7,
+          "adClicks": 10
+        },
+        {
+          "day": "2026-06-10",
+          "sessions": 18,
+          "users": 16,
+          "views": 42,
+          "purchases": 0,
+          "spend": 11.02,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-06-11",
+          "sessions": 19,
+          "users": 17,
+          "views": 42,
+          "purchases": 0,
+          "spend": 8.17,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-06-12",
+          "sessions": 23,
+          "users": 17,
+          "views": 67,
+          "purchases": 1,
+          "spend": 8.82,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-06-13",
+          "sessions": 14,
+          "users": 11,
+          "views": 46,
+          "purchases": 1,
+          "spend": 8.32,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-06-14",
+          "sessions": 9,
+          "users": 9,
+          "views": 22,
+          "purchases": 0,
+          "spend": 6.45,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-06-15",
+          "sessions": 20,
+          "users": 17,
+          "views": 43,
+          "purchases": 1,
+          "spend": 7.7,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-06-16",
+          "sessions": 41,
+          "users": 26,
+          "views": 118,
+          "purchases": 3,
+          "spend": 18.6,
+          "adClicks": 11
+        },
+        {
+          "day": "2026-06-17",
+          "sessions": 48,
+          "users": 47,
+          "views": 126,
+          "purchases": 0,
+          "spend": 12.11,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-06-18",
+          "sessions": 41,
+          "users": 40,
+          "views": 91,
+          "purchases": 0,
+          "spend": 10.79,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-06-19",
+          "sessions": 52,
+          "users": 45,
+          "views": 120,
+          "purchases": 0,
+          "spend": 9.73,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-06-20",
+          "sessions": 35,
+          "users": 35,
+          "views": 104,
+          "purchases": 0,
+          "spend": 10.67,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-06-21",
+          "sessions": 35,
+          "users": 35,
+          "views": 95,
+          "purchases": 0,
+          "spend": 12.53,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-06-22",
+          "sessions": 48,
+          "users": 44,
+          "views": 131,
+          "purchases": 0,
+          "spend": 9.89,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-06-23",
+          "sessions": 43,
+          "users": 41,
+          "views": 116,
+          "purchases": 1,
+          "spend": 10.48,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-06-24",
+          "sessions": 45,
+          "users": 41,
+          "views": 120,
+          "purchases": 2,
+          "spend": 10.05,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-06-25",
+          "sessions": 48,
+          "users": 43,
+          "views": 109,
+          "purchases": 0,
+          "spend": 1.9,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-06-26",
+          "sessions": 37,
+          "users": 37,
+          "views": 83,
+          "purchases": 0,
+          "spend": 12.33,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-06-27",
+          "sessions": 61,
+          "users": 58,
+          "views": 146,
+          "purchases": 0,
+          "spend": 13.14,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-06-28",
+          "sessions": 58,
+          "users": 56,
+          "views": 135,
+          "purchases": 0,
+          "spend": 8.5,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-06-29",
+          "sessions": 47,
+          "users": 45,
+          "views": 114,
+          "purchases": 0,
+          "spend": 9.58,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-06-30",
+          "sessions": 28,
+          "users": 25,
+          "views": 50,
+          "purchases": 2,
+          "spend": 6.96,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-07-01",
+          "sessions": 25,
+          "users": 18,
+          "views": 46,
+          "purchases": 1,
+          "spend": 11.73,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-07-02",
+          "sessions": 18,
+          "users": 15,
+          "views": 38,
+          "purchases": 0,
+          "spend": 10.82,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-07-03",
+          "sessions": 13,
+          "users": 13,
+          "views": 33,
+          "purchases": 0,
+          "spend": 6.82,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-07-04",
+          "sessions": 4,
+          "users": 4,
+          "views": 7,
+          "purchases": 0,
+          "spend": 3.38,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-05",
+          "sessions": 11,
+          "users": 11,
+          "views": 33,
+          "purchases": 0,
+          "spend": 9.14,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-07-06",
+          "sessions": 28,
+          "users": 20,
+          "views": 50,
+          "purchases": 1,
+          "spend": 18.71,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-07-07",
+          "sessions": 15,
+          "users": 14,
+          "views": 28,
+          "purchases": 1,
+          "spend": 9.7,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-07-08",
+          "sessions": 19,
+          "users": 17,
+          "views": 57,
+          "purchases": 1,
+          "spend": 12.75,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-07-09",
+          "sessions": 15,
+          "users": 13,
+          "views": 29,
+          "purchases": 0,
+          "spend": 10.6,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-07-10",
+          "sessions": 5,
+          "users": 5,
+          "views": 7,
+          "purchases": 0,
+          "spend": 12.02,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-11",
+          "sessions": 6,
+          "users": 6,
+          "views": 18,
+          "purchases": 0,
+          "spend": 10.78,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-07-12",
+          "sessions": 19,
+          "users": 15,
+          "views": 30,
+          "purchases": 0,
+          "spend": 13.23,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-07-13",
+          "sessions": 13,
+          "users": 10,
+          "views": 24,
+          "purchases": 1,
+          "spend": 8.61,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-07-14",
+          "sessions": 5,
+          "users": 5,
+          "views": 13,
+          "purchases": 0,
+          "spend": 8.88,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-07-15",
+          "sessions": 31,
+          "users": 31,
+          "views": 42,
+          "purchases": 0,
+          "spend": 9.99,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-07-16",
+          "sessions": 17,
+          "users": 14,
+          "views": 31,
+          "purchases": 0,
+          "spend": 3.87,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-07-17",
+          "sessions": 19,
+          "users": 18,
+          "views": 45,
+          "purchases": 0,
+          "spend": 6.82,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-07-18",
+          "sessions": 15,
+          "users": 15,
+          "views": 31,
+          "purchases": 0,
+          "spend": 6.62,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-19",
+          "sessions": 12,
+          "users": 11,
+          "views": 20,
+          "purchases": 0,
+          "spend": 1.39,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-20",
+          "sessions": 10,
+          "users": 9,
+          "views": 21,
+          "purchases": 0,
+          "spend": 2.02,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-21",
+          "sessions": 23,
+          "users": 20,
+          "views": 37,
+          "purchases": 0,
+          "spend": 0.0,
+          "adClicks": 0
+        },
+        {
+          "day": "2026-07-22",
+          "sessions": 15,
+          "users": 12,
+          "views": 34,
+          "purchases": 1,
+          "spend": 3.64,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-23",
+          "sessions": 16,
+          "users": 15,
+          "views": 28,
+          "purchases": 0,
+          "spend": 2.21,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-24",
+          "sessions": 13,
+          "users": 10,
+          "views": 39,
+          "purchases": 1,
+          "spend": 3.34,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-25",
+          "sessions": 19,
+          "users": 18,
+          "views": 52,
+          "purchases": 1,
+          "spend": 11.85,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-07-26",
+          "sessions": 19,
+          "users": 17,
+          "views": 43,
+          "purchases": 2,
+          "spend": 18.18,
+          "adClicks": 10
+        },
+        {
+          "day": "2026-07-27",
+          "sessions": 21,
+          "users": 17,
+          "views": 59,
+          "purchases": 0,
+          "spend": 12.04,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-07-28",
+          "sessions": 17,
+          "users": 15,
+          "views": 31,
+          "purchases": 0,
+          "spend": 5.62,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-07-29",
+          "sessions": 11,
+          "users": 11,
+          "views": 12,
+          "purchases": 0,
+          "spend": 2.66,
+          "adClicks": 2
+        },
+        {
+          "day": "2026-07-30",
+          "sessions": 21,
+          "users": 19,
+          "views": 42,
+          "purchases": 1,
+          "spend": 7.96,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-07-31",
+          "sessions": 34,
+          "users": 32,
+          "views": 62,
+          "purchases": 1,
+          "spend": 6.12,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-08-01",
+          "sessions": 14,
+          "users": 7,
+          "views": 34,
+          "purchases": 1,
+          "spend": 4.34,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-08-02",
+          "sessions": 14,
+          "users": 8,
+          "views": 57,
+          "purchases": 1,
+          "spend": 25.01,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-03",
+          "sessions": 30,
+          "users": 28,
+          "views": 61,
+          "purchases": 1,
+          "spend": 10.16,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-04",
+          "sessions": 29,
+          "users": 29,
+          "views": 39,
+          "purchases": 0,
+          "spend": 10.17,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-05",
+          "sessions": 19,
+          "users": 19,
+          "views": 41,
+          "purchases": 1,
+          "spend": 5.49,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-08-06",
+          "sessions": 19,
+          "users": 17,
+          "views": 38,
+          "purchases": 0,
+          "spend": 13.76,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-07",
+          "sessions": 43,
+          "users": 41,
+          "views": 138,
+          "purchases": 3,
+          "spend": 8.83,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-08",
+          "sessions": 14,
+          "users": 13,
+          "views": 24,
+          "purchases": 0,
+          "spend": 19.19,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-08-09",
+          "sessions": 4,
+          "users": 4,
+          "views": 6,
+          "purchases": 0,
+          "spend": 7.23,
+          "adClicks": 4
+        },
+        {
+          "day": "2026-08-10",
+          "sessions": 30,
+          "users": 28,
+          "views": 64,
+          "purchases": 1,
+          "spend": 29.98,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-11",
+          "sessions": 27,
+          "users": 20,
+          "views": 74,
+          "purchases": 3,
+          "spend": 36.52,
+          "adClicks": 13
+        },
+        {
+          "day": "2026-08-12",
+          "sessions": 19,
+          "users": 15,
+          "views": 51,
+          "purchases": 3,
+          "spend": 24.12,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-13",
+          "sessions": 32,
+          "users": 29,
+          "views": 65,
+          "purchases": 2,
+          "spend": 23.63,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-14",
+          "sessions": 61,
+          "users": 48,
+          "views": 136,
+          "purchases": 6,
+          "spend": 37.62,
+          "adClicks": 14
+        },
+        {
+          "day": "2026-08-15",
+          "sessions": 26,
+          "users": 22,
+          "views": 65,
+          "purchases": 2,
+          "spend": 37.36,
+          "adClicks": 11
+        },
+        {
+          "day": "2026-08-16",
+          "sessions": 20,
+          "users": 17,
+          "views": 70,
+          "purchases": 2,
+          "spend": 39.96,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-17",
+          "sessions": 34,
+          "users": 32,
+          "views": 70,
+          "purchases": 3,
+          "spend": 12.75,
+          "adClicks": 3
+        },
+        {
+          "day": "2026-08-18",
+          "sessions": 37,
+          "users": 26,
+          "views": 140,
+          "purchases": 6,
+          "spend": 17.75,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-19",
+          "sessions": 34,
+          "users": 30,
+          "views": 99,
+          "purchases": 4,
+          "spend": 23.47,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-20",
+          "sessions": 30,
+          "users": 26,
+          "views": 66,
+          "purchases": 1,
+          "spend": 11.82,
+          "adClicks": 6
+        },
+        {
+          "day": "2026-08-21",
+          "sessions": 22,
+          "users": 21,
+          "views": 34,
+          "purchases": 1,
+          "spend": 17.31,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-22",
+          "sessions": 26,
+          "users": 20,
+          "views": 62,
+          "purchases": 1,
+          "spend": 36.71,
+          "adClicks": 11
+        },
+        {
+          "day": "2026-08-23",
+          "sessions": 35,
+          "users": 23,
+          "views": 110,
+          "purchases": 5,
+          "spend": 23.19,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-24",
+          "sessions": 40,
+          "users": 30,
+          "views": 98,
+          "purchases": 3,
+          "spend": 14.84,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-25",
+          "sessions": 34,
+          "users": 28,
+          "views": 58,
+          "purchases": 2,
+          "spend": 32.65,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-08-26",
+          "sessions": 51,
+          "users": 43,
+          "views": 134,
+          "purchases": 5,
+          "spend": 27.08,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-27",
+          "sessions": 33,
+          "users": 27,
+          "views": 47,
+          "purchases": 0,
+          "spend": 19.67,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-28",
+          "sessions": 29,
+          "users": 22,
+          "views": 57,
+          "purchases": 1,
+          "spend": 17.1,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-08-29",
+          "sessions": 26,
+          "users": 24,
+          "views": 53,
+          "purchases": 1,
+          "spend": 22.68,
+          "adClicks": 9
+        },
+        {
+          "day": "2026-08-30",
+          "sessions": 21,
+          "users": 21,
+          "views": 46,
+          "purchases": 1,
+          "spend": 15.18,
+          "adClicks": 7
+        },
+        {
+          "day": "2026-08-31",
+          "sessions": 31,
+          "users": 26,
+          "views": 69,
+          "purchases": 2,
+          "spend": 22.16,
+          "adClicks": 8
+        },
+        {
+          "day": "2026-09-01",
+          "sessions": 28,
+          "users": 27,
+          "views": 72,
+          "purchases": 3,
+          "spend": 17.75,
+          "adClicks": 5
+        },
+        {
+          "day": "2026-09-02",
+          "sessions": 39,
+          "users": 30,
+          "views": 66,
+          "purchases": 1,
+          "spend": 28.76,
+          "adClicks": 12
+        },
+        {
+          "day": "2026-09-03",
+          "sessions": 24,
+          "users": 22,
+          "views": 71,
+          "purchases": 2,
+          "spend": 37.94,
+          "adClicks": 13
+        },
+        {
+          "day": "2026-09-04",
+          "sessions": 22,
+          "users": 16,
+          "views": 28,
+          "purchases": 0,
+          "spend": 11.97,
+          "adClicks": 3
+        }
+      ],
+      "byHour": [],
+      "topPages": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 2984,
+          "visitors": 1406
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 671,
+          "visitors": 194
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/courses.php",
+          "label": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "views": 645,
+          "visitors": 399
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/signup",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/signup",
+          "views": 504,
+          "visitors": 300
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/faq.php",
+          "label": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "views": 221,
+          "visitors": 123
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/about.php",
+          "label": "electricbikeacademy.com/about.php",
+          "url": "https://electricbikeacademy.com/about.php",
+          "views": 204,
+          "visitors": 113
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/contact.php",
+          "label": "electricbikeacademy.com/contact.php",
+          "url": "https://electricbikeacademy.com/contact.php",
+          "views": 101,
+          "visitors": 55
+        },
+        {
+          "host": "nationaldrivertraining.com",
+          "path": "/ElectricBikeAcademy/purchase",
+          "label": "nationaldrivertraining.com/ElectricBikeAcademy/purchase",
+          "url": "https://nationaldrivertraining.com/ElectricBikeAcademy/purchase",
+          "views": 91,
+          "visitors": 87
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/home-page.php",
+          "label": "electricbikeacademy.com/home-page.php",
+          "url": "https://electricbikeacademy.com/home-page.php",
+          "views": 27,
+          "visitors": 20
+        },
+        {
+          "host": "localhost",
+          "path": "/new/chk.php",
+          "label": "localhost/new/chk.php",
+          "url": "https://localhost/new/chk.php",
+          "views": 7,
+          "visitors": 1
+        },
+        {
+          "host": "localhost",
+          "path": "/new/",
+          "label": "localhost/new/",
+          "url": "https://localhost/new/",
+          "views": 1,
+          "visitors": 1
+        }
+      ],
+      "topPagesBeacon": [
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/",
+          "label": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "views": 4,
+          "visitors": 4
+        },
+        {
+          "host": "electricbikeacademy.com",
+          "path": "/login.php",
+          "label": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "views": 1,
+          "visitors": 0
+        }
+      ],
+      "sources": [
+        {
+          "source": "Google",
+          "visitors": 717,
+          "views": 1864
+        },
+        {
+          "source": "Direct / other",
+          "visitors": 641,
+          "views": 1324
+        },
+        {
+          "source": "Facebook",
+          "visitors": 262,
+          "views": 670
+        },
+        {
+          "source": "rbusd.org",
+          "visitors": 214,
+          "views": 552
+        },
+        {
+          "source": "ig",
+          "visitors": 134,
+          "views": 362
+        },
+        {
+          "source": "electricbikeacademy.com",
+          "visitors": 59,
+          "views": 149
+        },
+        {
+          "source": "demodaysfestival.com",
+          "visitors": 55,
+          "views": 78
+        },
+        {
+          "source": "nationaldrivertraining.com",
+          "visitors": 43,
+          "views": 60
+        },
+        {
+          "source": "Bing",
+          "visitors": 42,
+          "views": 101
+        },
+        {
+          "source": "wiseburn.org",
+          "visitors": 39,
+          "views": 58
+        },
+        {
+          "source": "Yahoo",
+          "visitors": 28,
+          "views": 52
+        },
+        {
+          "source": "carlsbadusd.net",
+          "visitors": 16,
+          "views": 40
+        }
+      ],
+      "llmSources": [
+        {
+          "source": "GPTBot",
+          "visitors": 3,
+          "views": 3
+        },
+        {
+          "source": "ClaudeBot",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "channels": [
+        {
+          "channel": "Direct",
+          "visitors": 640,
+          "views": 1323
+        },
+        {
+          "channel": "Paid Search",
+          "visitors": 582,
+          "views": 1558
+        },
+        {
+          "channel": "Referral",
+          "visitors": 493,
+          "views": 1049
+        },
+        {
+          "channel": "Paid Social",
+          "visitors": 342,
+          "views": 892
+        },
+        {
+          "channel": "Organic Search",
+          "visitors": 198,
+          "views": 445
+        },
+        {
+          "channel": "Organic Social",
+          "visitors": 42,
+          "views": 119
+        },
+        {
+          "channel": "Cross-network",
+          "visitors": 20,
+          "views": 60
+        },
+        {
+          "channel": "Display",
+          "visitors": 4,
+          "views": 6
+        },
+        {
+          "channel": "AI Assistant",
+          "visitors": 2,
+          "views": 3
+        },
+        {
+          "channel": "Unassigned",
+          "visitors": 1,
+          "views": 1
+        }
+      ],
+      "queries": [
+        {
+          "query": "electric bike academy",
+          "clicks": 18,
+          "impressions": 292,
+          "position": 2.7
+        },
+        {
+          "query": "ebike academy",
+          "clicks": 4,
+          "impressions": 178,
+          "position": 6.1
+        },
+        {
+          "query": "e bike academy",
+          "clicks": 2,
+          "impressions": 236,
+          "position": 4.3
+        },
+        {
+          "query": "ebike academy sports",
+          "clicks": 2,
+          "impressions": 103,
+          "position": 8.8
+        },
+        {
+          "query": "academy e bike",
+          "clicks": 1,
+          "impressions": 203,
+          "position": 7.8
+        },
+        {
+          "query": "academy electric bike",
+          "clicks": 1,
+          "impressions": 663,
+          "position": 8.5
+        },
+        {
+          "query": "academy electric bikes",
+          "clicks": 1,
+          "impressions": 237,
+          "position": 9.1
+        },
+        {
+          "query": "e bike school",
+          "clicks": 1,
+          "impressions": 13,
+          "position": 8.5
+        },
+        {
+          "query": "electric bike academy sports",
+          "clicks": 1,
+          "impressions": 156,
+          "position": 7.6
+        },
+        {
+          "query": "stuff to do in brenham",
+          "clicks": 1,
+          "impressions": 1,
+          "position": 1.0
+        },
+        {
+          "query": "academy",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 5.0
+        },
+        {
+          "query": "academy e bikes",
+          "clicks": 0,
+          "impressions": 343,
+          "position": 9.1
+        }
+      ],
+      "gscPages": [
+        {
+          "page": "electricbikeacademy.com/",
+          "url": "https://electricbikeacademy.com/",
+          "clicks": 72,
+          "impressions": 5913
+        },
+        {
+          "page": "electricbikeacademy.com/courses.php",
+          "url": "https://electricbikeacademy.com/courses.php",
+          "clicks": 4,
+          "impressions": 331
+        },
+        {
+          "page": "http://www.electricbikeacademy.com/",
+          "url": "http://www.electricbikeacademy.com/",
+          "clicks": 0,
+          "impressions": 2
+        },
+        {
+          "page": "electricbikeacademy.com/about.php",
+          "url": "https://electricbikeacademy.com/about.php",
+          "clicks": 0,
+          "impressions": 130
+        },
+        {
+          "page": "electricbikeacademy.com/contact.php",
+          "url": "https://electricbikeacademy.com/contact.php",
+          "clicks": 0,
+          "impressions": 131
+        },
+        {
+          "page": "electricbikeacademy.com/faq.php",
+          "url": "https://electricbikeacademy.com/faq.php",
+          "clicks": 0,
+          "impressions": 138
+        },
+        {
+          "page": "electricbikeacademy.com/login.php",
+          "url": "https://electricbikeacademy.com/login.php",
+          "clicks": 0,
+          "impressions": 136
+        }
+      ],
+      "ai": {
+        "in_window": 4,
+        "total": 4,
+        "first_day": "2026-09-05",
+        "byAgent": [
+          {
+            "agent": "GPTBot",
+            "hits": 3
+          },
+          {
+            "agent": "ClaudeBot",
+            "hits": 1
+          }
+        ],
+        "bySection": [
+          {
+            "section": "Homepage",
+            "hits": 2
+          },
+          {
+            "section": "Courses",
+            "hits": 1
+          },
+          {
+            "section": "Sitemap + robots",
+            "hits": 1
+          }
+        ],
+        "byHour": [],
+        "byDay": [
+          {
+            "day": "2026-06-07",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-08",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-09",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-10",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-11",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-12",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-13",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-14",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-15",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-16",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-17",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-18",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-19",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-20",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-21",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-22",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-23",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-24",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-25",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-26",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-27",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-28",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-29",
+            "hits": 0
+          },
+          {
+            "day": "2026-06-30",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-01",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-02",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-03",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-04",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-05",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-06",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-07",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-08",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-09",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-10",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-11",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-12",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-13",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-14",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-15",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-16",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-17",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-18",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-19",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-20",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-21",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-22",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-23",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-24",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-25",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-26",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-27",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-28",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-29",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-30",
+            "hits": 0
+          },
+          {
+            "day": "2026-07-31",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-01",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-02",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-03",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-04",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-05",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-06",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-07",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-08",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-09",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-10",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-11",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-12",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-13",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-14",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-15",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-16",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-17",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-18",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-19",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-20",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-21",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-22",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-23",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-24",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-25",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-26",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-27",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-28",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-29",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-30",
+            "hits": 0
+          },
+          {
+            "day": "2026-08-31",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-01",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-02",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-03",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-04",
+            "hits": 0
+          },
+          {
+            "day": "2026-09-05",
+            "hits": 4
+          }
+        ]
+      },
+      "mix": {
+        "organic": 240,
+        "paid": 944,
+        "other": 1140
+      },
+      "humans": 2329
+    }
   },
-  "traffic": {
-    "labels": ["Aug 6", "Aug 9", "Aug 12", "Aug 15", "Aug 18", "Aug 21", "Aug 24", "Aug 27", "Aug 30", "Sep 2"],
-    "sessions": [410, 385, 460, 520, 495, 610, 580, 540, 470, 350],
-    "conversions": [7, 6, 9, 11, 10, 14, 12, 11, 9, 7]
-  },
-  "channels": {
-    "labels": ["Paid Search", "Organic Search", "Direct", "Referral (districts/cities)", "Social"],
-    "values": [38, 24, 18, 16, 4]
-  },
-  "ads": {
-    "labels": ["Wk of Aug 3", "Wk of Aug 10", "Wk of Aug 17", "Wk of Aug 24", "Wk of Aug 31"],
-    "spend": [420, 445, 460, 390, 125],
-    "conversions": [18, 21, 24, 20, 8]
-  },
-  "gsc": {
-    "labels": ["Wk of Aug 3", "Wk of Aug 10", "Wk of Aug 17", "Wk of Aug 24", "Wk of Aug 31"],
-    "clicks": [95, 110, 128, 121, 42],
-    "impressions": [3100, 3400, 3900, 3700, 1300]
-  },
-  "seoHealth": [
-    { "item": "robots.txt", "status": "fail", "note": "404 — does not exist" },
-    { "item": "XML sitemap", "status": "fail", "note": "404 — does not exist" },
-    { "item": "llms.txt (LLM discoverability)", "status": "fail", "note": "Not present" },
-    { "item": "Canonical tags", "status": "fail", "note": "Missing on all pages; www + non-www both resolve" },
-    { "item": "Page titles / meta", "status": "warn", "note": "Generic titles (\"FAQ\", \"Our Story\") — no keyword targeting" },
-    { "item": "Structured data", "status": "warn", "note": "Product + OnlineStore only; missing Course, FAQPage, Organization" },
-    { "item": "Crawler access (Googlebot, GPTBot, ClaudeBot, PerplexityBot)", "status": "pass", "note": "All return 200; server blocks default UAs — allow-list explicitly" },
-    { "item": "Page speed", "status": "pass", "note": "TTFB ~0.35s, WebP images, 56KB HTML" },
-    { "item": "Cross-domain tracking (checkout on NDT domain)", "status": "warn", "note": "GA4 tag on both domains — config unverified" },
-    { "item": "Google Business Profile", "status": "fail", "note": "Not found" },
-    { "item": "Social links", "status": "fail", "note": "Facebook/Instagram links are dead placeholders" }
-  ],
-  "partnerships": [
-    { "partner": "Agoura Hills / Calabasas / Westlake Village (cities)", "code": "STREETSMART", "discount": "10%", "status": "active" },
-    { "partner": "Carlsbad Unified School District", "code": "Carlsbad10", "discount": "10%", "status": "active" },
-    { "partner": "Redondo Beach Unified School District", "code": "RBUSD10", "discount": "10%", "status": "active" },
-    { "partner": "Danville PD approved list", "code": "—", "discount": "—", "status": "target" },
-    { "partner": "San Dieguito UHSD approved list", "code": "—", "discount": "—", "status": "target" }
-  ],
-  "llmVisibility": [
-    { "engine": "ChatGPT", "query": "best e-bike safety course for teens", "cited": null, "lastChecked": null },
-    { "engine": "Perplexity", "query": "best e-bike safety course for teens", "cited": null, "lastChecked": null },
-    { "engine": "Gemini", "query": "e-bike certificate course California", "cited": null, "lastChecked": null },
-    { "engine": "Copilot/Bing", "query": "online e-bike safety certification", "cited": null, "lastChecked": null }
-  ]
+  "errors": []
 }

@@ -1,148 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>Electric Bike Academy — Growth Dashboard</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-<style>
-  :root {
-    --bg: #0f1420; --panel: #171e2e; --panel2: #1d2638; --border: #263248;
-    --text: #e8ecf4; --muted: #8b97ad; --accent: #ffb020; --accent2: #38bdf8;
-    --green: #34d399; --red: #f87171; --amber: #fbbf24;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, "Segoe UI", Roboto, sans-serif; padding: 24px; }
-  .wrap { max-width: 1280px; margin: 0 auto; }
-  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
-  h1 { font-size: 22px; font-weight: 700; }
-  h1 span { color: var(--accent); }
-  .meta { color: var(--muted); font-size: 13px; }
-  .banner { background: #3b2f10; border: 1px solid #6b5518; color: var(--amber); border-radius: 10px; padding: 10px 16px; font-size: 13px; margin: 14px 0 22px; display: none; }
-  .banner.show { display: block; }
-  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 28px 0 12px; }
-  .grid { display: grid; gap: 14px; }
-  .kpis { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
-  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
-  .kpi .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
-  .kpi .value { font-size: 28px; font-weight: 700; margin: 6px 0 2px; }
-  .kpi .delta { font-size: 13px; font-weight: 600; }
-  .delta.up { color: var(--green); } .delta.down { color: var(--red); }
-  .charts { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
-  .chart-card h3 { font-size: 14px; margin-bottom: 12px; color: var(--text); font-weight: 600; }
-  .chart-box { position: relative; height: 240px; }
-  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
-  th { text-align: left; color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
-  td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
-  tr:last-child td { border-bottom: none; }
-  .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
-  .pill.pass, .pill.connected, .pill.active { background: #123528; color: var(--green); }
-  .pill.warn, .pill.pending, .pill.target { background: #3b2f10; color: var(--amber); }
-  .pill.fail, .pill.missing { background: #3a1622; color: var(--red); }
-  .pill.unknown { background: #1d2638; color: var(--muted); }
-  .two-col { grid-template-columns: 1fr 1fr; }
-  @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
-  .note { color: var(--muted); font-size: 12.5px; }
-  footer { margin-top: 34px; color: var(--muted); font-size: 12px; text-align: center; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Electric Bike Academy · Cohelm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #16202e;
+      --navy: #10182a;
+      --muted: #5c6675;
+      --faint: #9aa3b0;
+      --line: #e8eaef;
+      --panel: #f7f8fb;
+      --field: #eef0f4;
+      --accent: #f5a524;
+      --accent-hover: #e09212;
+      --success: #157347;
+      --danger: #c0392b;
+      --font-head: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-body); color: var(--ink); background: var(--panel);
+      line-height: 1.5; letter-spacing: -0.011em; -webkit-font-smoothing: antialiased; min-height: 100vh;
+    }
+    .topbar { background: var(--navy); color: #fff; }
+    .topbar .inner {
+      max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 58px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .cohelm { font-size: 15px; font-weight: 800; letter-spacing: 0.08em; text-decoration: none; color: #fff; }
+    .cohelm i { color: var(--accent); font-style: normal; }
+    .topbar .meta { font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7d879a; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 48px; }
+    .page-head { padding: 28px 0 20px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .page-head .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); margin-bottom: 6px; }
+    .page-head h1 { font-family: var(--font-head); font-size: 28px; font-weight: 800; letter-spacing: -0.02em; }
+    .range-tabs { display: flex; gap: 6px; }
+    .abtn {
+      font-size: 12px; font-weight: 600; border: 1px solid var(--line); border-radius: 999px;
+      padding: 5px 12px; background: #fff; color: var(--muted); cursor: pointer; font-family: var(--font-body);
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+    .abtn:hover { border-color: var(--ink); color: var(--ink); }
+    .abtn.primary { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .abtn.primary:hover { background: #1c2740; }
+    .note {
+      font-size: 13px; color: var(--muted); background: #fff; border: 1px solid var(--line);
+      border-radius: 12px; padding: 10px 14px; margin-bottom: 16px;
+    }
+    .note strong { color: var(--ink); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+    .stat { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+    .stat .k { font-size: 12.5px; font-weight: 500; color: var(--muted); }
+    .stat .v { font-family: var(--font-head); font-size: 28px; font-weight: 700; margin-top: 2px; }
+    .stat .s { font-size: 11.5px; color: var(--faint); margin-top: 2px; }
+    .statgrid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+    .statgrid2 .card { margin-bottom: 0; }
+    .ct { font-family: var(--font-head); font-size: 15px; font-weight: 600; }
+    .ct-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .bars { display: flex; align-items: flex-end; gap: 3px; height: 120px; margin-top: 14px; }
+    .bars .b { flex: 1; min-width: 0; display: flex; align-items: flex-end; height: 100%; }
+    .bars .b i { display: block; width: 100%; min-height: 2px; background: var(--navy); opacity: 0.88; border-radius: 3px 3px 0 0; }
+    .bars .b:hover i { opacity: 1; }
+    .bars .b.zero i { background: var(--line); opacity: 1; }
+    .chart-x { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--faint); margin-top: 6px; }
+    .bar-tip {
+      position: fixed; background: var(--ink); color: #fff; font-size: 11.5px; font-weight: 600;
+      line-height: 1.3; padding: 5px 9px; border-radius: 7px; white-space: nowrap; z-index: 60;
+      pointer-events: none; display: none;
+    }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th {
+      text-align: left; font-size: 11.5px; font-weight: 600; color: var(--faint);
+      text-transform: uppercase; letter-spacing: 0.05em; padding: 8px 10px;
+      border-bottom: 1px solid var(--line); white-space: nowrap;
+    }
+    td { font-size: 13.5px; padding: 12px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    tr:last-child td { border-bottom: none; }
+    td.dim { color: var(--muted); }
+    td a { color: inherit; }
+    .chip { display: inline-block; font-size: 11.5px; font-weight: 600; border-radius: 999px; padding: 3px 10px; }
+    .chip.paused { color: #8a6100; background: rgba(138,97,0,0.09); }
+    .chip.live { color: var(--success); background: rgba(30,142,74,0.09); }
+    .loading { text-align: center; color: var(--faint); padding: 90px 0; font-size: 14px; }
+    .updated { font-size: 12px; color: var(--faint); text-align: center; margin-top: 8px; }
+    .updated .mark { font-weight: 800; letter-spacing: 0.06em; color: var(--ink); }
+    .updated .mark i { color: var(--accent); font-style: normal; }
+    @media (max-width: 880px) {
+      .stats { grid-template-columns: 1fr 1fr; }
+      .statgrid2 { grid-template-columns: 1fr; }
+      .page-head h1 { font-size: 23px; }
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>⚡ Electric Bike Academy <span>Growth Dashboard</span></h1>
-    <div class="meta">Period: <span id="period">—</span> · Updated: <span id="updated">—</span></div>
-  </header>
-  <div class="banner" id="sampleBanner">⚠️ <strong>Sample data.</strong> Live numbers appear automatically once GA4, Google Ads, and Search Console API access is connected (see Connections below).</div>
-
-  <h2>Key Metrics</h2>
-  <div class="grid kpis" id="kpis"></div>
-
-  <h2>Performance</h2>
-  <div class="grid charts">
-    <div class="card chart-card"><h3>Sessions &amp; Enrollments</h3><div class="chart-box"><canvas id="trafficChart"></canvas></div></div>
-    <div class="card chart-card"><h3>Google Ads — Spend vs Conversions</h3><div class="chart-box"><canvas id="adsChart"></canvas></div></div>
-    <div class="card chart-card"><h3>Organic Search (Search Console)</h3><div class="chart-box"><canvas id="gscChart"></canvas></div></div>
-    <div class="card chart-card"><h3>Traffic by Channel</h3><div class="chart-box"><canvas id="channelChart"></canvas></div></div>
-  </div>
-
-  <div class="grid two-col">
-    <div>
-      <h2>SEO / GEO Health (live audit)</h2>
-      <div class="card"><table id="seoTable"><thead><tr><th>Check</th><th>Status</th><th>Note</th></tr></thead><tbody></tbody></table></div>
-    </div>
-    <div>
-      <h2>Data Connections</h2>
-      <div class="card"><table id="connTable"><thead><tr><th>Source</th><th>Status</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+  <div class="topbar">
+    <div class="inner">
+      <div class="cohelm">CO<i>HELM</i></div>
+      <div class="meta">Client report</div>
     </div>
   </div>
-
-  <div class="grid two-col">
-    <div>
-      <h2>City &amp; District Partnerships</h2>
-      <div class="card"><table id="partnerTable"><thead><tr><th>Partner</th><th>Promo Code</th><th>Status</th></tr></thead><tbody></tbody></table></div>
-    </div>
-    <div>
-      <h2>LLM / AI Search Visibility</h2>
-      <div class="card"><table id="llmTable"><thead><tr><th>Engine</th><th>Tracked Query</th><th>Cited?</th></tr></thead><tbody></tbody></table></div>
-    </div>
+  <div class="wrap" id="app">
+    <div class="loading">Loading report&hellip;</div>
   </div>
+  <script>
+    const RANGE_KEYS = ["1", "7", "30", "90"];
+    let data = null;
+    let days = "1";
 
-  <footer>Electric Bike Academy · electricbikeacademy.com · Dashboard by Hammer Corp</footer>
-</div>
+    const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[c]));
+    const num = (n) => Number(n || 0).toLocaleString("en-US");
+    const money = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+    const money2 = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-<script>
-const fmt = { money: v => "$" + v.toLocaleString(undefined, {maximumFractionDigits: 2}), num: v => v.toLocaleString(), x: v => v.toFixed(2) + "×" };
-const KPI_DEFS = [
-  ["sessions", "Sessions", fmt.num], ["enrollments", "Enrollments", fmt.num], ["revenue", "Revenue", fmt.money],
-  ["adSpend", "Ad Spend", fmt.money], ["cpa", "Cost / Enrollment", fmt.money], ["roas", "ROAS", fmt.x]
-];
-const GRID = "#263248", MUTED = "#8b97ad";
-Chart.defaults.color = MUTED; Chart.defaults.borderColor = GRID; Chart.defaults.font.family = "Inter, sans-serif";
+    function fmtDay(iso) {
+      if (!iso) return "";
+      const d = new Date(iso + "T12:00:00");
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+    }
+    function fmtHour(h) {
+      const hour = Number(String(h).slice(-2));
+      const d = new Date();
+      d.setHours(hour, 0, 0, 0);
+      return d.toLocaleTimeString("en-US", { hour: "numeric" });
+    }
+    function fmtWhen(iso) {
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return "";
+      return d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    }
 
-fetch("data/metrics.json").then(r => r.json()).then(d => {
-  document.getElementById("period").textContent = d.period;
-  document.getElementById("updated").textContent = new Date(d.updated).toLocaleString();
-  if (d.sample) document.getElementById("sampleBanner").classList.add("show");
+    function barChart(series, key, tip, axis) {
+      const max = Math.max(1, ...series.map((r) => r[key] || 0));
+      return `
+        <div class="bars">${series.map((r) => {
+          const v = r[key] || 0;
+          return `<div class="b${v ? "" : " zero"}" data-tip="${esc(tip(r, v))}"><i style="height:${v ? Math.max(4, Math.round((v / max) * 100)) : 2}%"></i></div>`;
+        }).join("")}</div>
+        <div class="chart-x"><span>${esc(axis(series[0]))}</span>${series.length > 1 ? `<span>${esc(axis(series[series.length - 1]))}</span>` : ""}</div>`;
+    }
 
-  // KPIs — invert "good" direction for cost metrics
-  document.getElementById("kpis").innerHTML = KPI_DEFS.map(([key, label, f]) => {
-    const k = d.kpis[key]; if (!k) return "";
-    const goodDown = key === "cpa" || key === "adSpend";
-    const up = goodDown ? k.delta < 0 : k.delta > 0;
-    return `<div class="card kpi"><div class="label">${label}</div><div class="value">${f(k.value)}</div>
-      <div class="delta ${up ? "up" : "down"}">${k.delta > 0 ? "▲" : "▼"} ${Math.abs(k.delta)}% vs prior</div></div>`;
-  }).join("");
+    function emptyTable(msg) {
+      return `<p class="ct-sub" style="margin-top:10px">${esc(msg)}</p>`;
+    }
 
-  new Chart(trafficChart, { type: "line", data: { labels: d.traffic.labels, datasets: [
-    { label: "Sessions", data: d.traffic.sessions, borderColor: "#38bdf8", backgroundColor: "rgba(56,189,248,.12)", fill: true, tension: .35, yAxisID: "y" },
-    { label: "Enrollments", data: d.traffic.conversions, borderColor: "#ffb020", tension: .35, yAxisID: "y1" }]},
-    options: { maintainAspectRatio: false, scales: { y: { position: "left" }, y1: { position: "right", grid: { drawOnChartArea: false } } } } });
+    function pageTable(rows) {
+      if (!rows || !rows.length) return "";
+      return `
+            <table style="margin-top:10px">
+              <thead><tr><th>Page</th><th style="text-align:right;width:72px">Views</th></tr></thead>
+              <tbody>${rows.map((p) => `
+                <tr>
+                  <td class="dim"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.label)}</a></td>
+                  <td style="text-align:right;font-weight:600">${num(p.views)}</td>
+                </tr>`).join("")}
+              </tbody>
+            </table>`;
+    }
 
-  new Chart(adsChart, { data: { labels: d.ads.labels, datasets: [
-    { type: "bar", label: "Spend ($)", data: d.ads.spend, backgroundColor: "rgba(248,113,113,.55)", borderRadius: 6, yAxisID: "y" },
-    { type: "line", label: "Conversions", data: d.ads.conversions, borderColor: "#34d399", tension: .35, yAxisID: "y1" }]},
-    options: { maintainAspectRatio: false, scales: { y: { position: "left" }, y1: { position: "right", grid: { drawOnChartArea: false } } } } });
+    function sourceTable(rows, extraHead) {
+      if (!rows || !rows.length) return "";
+      return `
+            ${extraHead || ""}
+            <table style="margin-top:10px">
+              <thead><tr><th>Source</th><th style="text-align:right;width:72px">Visitors</th><th style="text-align:right;width:64px">Views</th></tr></thead>
+              <tbody>${rows.map((s) => `
+                <tr>
+                  <td>${esc(s.source)}</td>
+                  <td class="dim" style="text-align:right">${num(s.visitors)}</td>
+                  <td style="text-align:right;font-weight:600">${num(s.views)}</td>
+                </tr>`).join("")}
+              </tbody>
+            </table>`;
+    }
 
-  new Chart(gscChart, { type: "line", data: { labels: d.gsc.labels, datasets: [
-    { label: "Clicks", data: d.gsc.clicks, borderColor: "#ffb020", tension: .35, yAxisID: "y" },
-    { label: "Impressions", data: d.gsc.impressions, borderColor: "#8b97ad", borderDash: [5,4], tension: .35, yAxisID: "y1" }]},
-    options: { maintainAspectRatio: false, scales: { y: { position: "left" }, y1: { position: "right", grid: { drawOnChartArea: false } } } } });
+    function render() {
+      const app = document.getElementById("app");
+      if (!data || !data.ranges) {
+        app.innerHTML = `<div class="loading">Couldn't load stats. Run <code>python3 pull.py</code> in eba-stats.</div>`;
+        return;
+      }
+      const r = data.ranges[days];
+      const allTime = data.allTime || {};
+      const hourly = !!r.hourly;
+      const label = r.label;
+      const unit = hourly ? "hour" : "day";
+      const series = hourly ? (r.byHour || []) : (r.byDay || []);
+      const when = hourly ? ((row) => fmtHour(row.hour)) : ((row) => fmtDay(row.day));
+      const hourNote = r.fromBeacon
+        ? "From our own page beacon. Live, not waiting on Google."
+        : (hourly && r.todayProcessing
+          ? "Google's reports have not processed today yet, so this chart is yesterday hour by hour. Your visit right now is in Live now, not missing."
+          : (hourly ? "Hour by hour today." : ""));
+      const ai = r.ai || { in_window: 0, total: 0, byAgent: [], bySection: [], byDay: [], byHour: [] };
 
-  new Chart(channelChart, { type: "doughnut", data: { labels: d.channels.labels, datasets: [{ data: d.channels.values,
-    backgroundColor: ["#38bdf8", "#34d399", "#ffb020", "#a78bfa", "#f87171"], borderColor: "#171e2e", borderWidth: 3 }] },
-    options: { maintainAspectRatio: false, plugins: { legend: { position: "right" } } } });
+      app.innerHTML = `
+        <div class="page-head">
+          <div>
+            <div class="eyebrow">Electric Bike Academy</div>
+            <h1>Performance</h1>
+          </div>
+          <div class="range-tabs">
+            ${RANGE_KEYS.map((n) => `<button class="abtn${n === days ? " primary" : ""}" data-days="${n}">${n === "1" ? "24h" : `${n}d`}</button>`).join("")}
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="k">Visitors (${label})</div>
+            <div class="v">${num(r.visitors)}</div>
+            <div class="s">${r.fromBeacon ? "From our beacon, last 24 hours" : `${num(allTime.sessions)} sessions since tracking began`}</div>
+          </div>
+          <div class="stat">
+            <div class="k">Pageviews (${label})</div>
+            <div class="v">${num(r.pageviews)}</div>
+            <div class="s">${num(allTime.views)} since tracking began</div>
+          </div>
+          <div class="stat">
+            <div class="k">Purchases (${label})</div>
+            <div class="v">${num(r.purchases)}</div>
+            <div class="s">${num(allTime.purchases)} since Jan 2025</div>
+          </div>
+          <div class="stat">
+            <div class="k">Ad spend (${label})</div>
+            <div class="v">${money(r.adSpend)}</div>
+            <div class="s">${num(r.adClicks)} ad clicks${data.adsPaused ? " · campaigns paused" : ""}</div>
+          </div>
+        </div>
+        <div class="statgrid2">
+          <div class="card">
+            <div class="ct">Pageviews by ${unit}</div>
+            <div class="ct-sub">${hourly ? (hourNote || "Every page on electricbikeacademy.com, hour by hour.") : "Every page on electricbikeacademy.com."}</div>
+            ${series.length ? barChart(series, "views", (row, v) => `${when(row)}: ${num(v)} pageviews, ${num(row.sessions || 0)} visitors`, when) : emptyTable("No pageviews in this window yet.")}
+          </div>
+          <div class="card">
+            <div class="ct">Organic vs paid (${label})</div>
+            <div class="ct-sub">From Google Analytics. Direct and school-district referrals sit in Other.</div>
+            <table style="margin-top:10px">
+              <thead><tr><th>Channel</th><th style="text-align:right;width:72px">Visitors</th></tr></thead>
+              <tbody>
+                <tr><td>Organic</td><td style="text-align:right;font-weight:600">${num((r.mix || {}).organic)}</td></tr>
+                <tr><td>Paid</td><td style="text-align:right;font-weight:600">${num((r.mix || {}).paid)}</td></tr>
+                <tr><td>Other (direct, referral)</td><td style="text-align:right;font-weight:600">${num((r.mix || {}).other)}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="statgrid2">
+          <div class="card">
+            <div class="ct">Top pages (${label})</div>
+            <div class="ct-sub" style="margin-top:12px;font-weight:600;color:inherit">Based on Beacon:</div>
+            ${pageTable(r.topPagesBeacon) || emptyTable("No beacon pageviews in this window yet.")}
+            <div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">Based on Google:</div>
+            ${pageTable(r.topPages) || emptyTable("No Google pageviews in this window yet.")}
+          </div>
+          <div class="card">
+            <div class="ct">Where traffic comes from (${label})</div>
+            <div class="ct-sub">${r.fromBeacon ? "Humans from our live beacon. LLMs from the server log." : "Humans from Google Analytics. LLMs from the server log."}</div>
+            ${sourceTable(r.sources, `<div class="ct-sub" style="margin-top:12px;font-weight:600;color:inherit">Humans</div>`) || emptyTable("No human traffic recorded in this window yet.")}
+            ${sourceTable(r.llmSources, `<div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">LLMs</div>`) || ""}
+            ${(r.channels || []).length ? `
+            <div class="ct-sub" style="margin-top:16px;font-weight:600;color:inherit">Organic vs paid</div>
+            <table style="margin-top:10px">
+              <thead><tr><th>Channel</th><th style="text-align:right;width:72px">Visitors</th><th style="text-align:right;width:64px">Views</th></tr></thead>
+              <tbody>${r.channels.map((c) => `
+                <tr>
+                  <td>${esc(c.channel)}</td>
+                  <td class="dim" style="text-align:right">${num(c.visitors)}</td>
+                  <td style="text-align:right;font-weight:600">${num(c.views)}</td>
+                </tr>`).join("")}
+              </tbody>
+            </table>` : ""}
+          </div>
+        </div>
+        <div class="statgrid2">
+          <div class="card">
+            <div class="ct">Humans vs LLMs (${label})</div>
+            <div class="ct-sub">${r.fromBeacon ? "Humans from our live beacon. " : "Humans from Google Analytics. "}LLMs from the server log.</div>
+            <table style="margin-top:10px">
+              <thead><tr><th>Who</th><th style="text-align:right;width:72px">Visits</th></tr></thead>
+              <tbody>
+                <tr><td>Humans</td><td style="text-align:right;font-weight:600">${num(r.humans != null ? r.humans : r.visitors)}</td></tr>
+                <tr><td>LLMs / AI crawlers</td><td style="text-align:right;font-weight:600">${num(ai.in_window)}</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <div class="ct">Purchases by ${unit}</div>
+            <div class="ct-sub">${hourly ? `Google's reports lag on today. Last confirmed sale: ${data.lastPurchase ? fmtDay(data.lastPurchase) : "none"}. A purchase from earlier today will show once Google processes it.` : "EBA_purchase events: the checkout thank-you that matches Jaclyn's sales count."}</div>
+            ${series.length ? barChart(series, "purchases", (row, v) => `${when(row)}: ${num(v)} purchase${v === 1 ? "" : "s"}`, when) : emptyTable("No purchases in this window yet.")}
+          </div>
+        </div>
+        <div class="statgrid2">
+          <div class="card">
+            <div class="ct">Google searches (${label})</div>
+            <div class="ct-sub">Queries that showed the site in Google. Search Console lags a day or two, so 24h is empty on purpose.</div>
+            ${(r.queries || []).length ? `
+            <table style="margin-top:10px">
+              <thead><tr><th>Query</th><th style="text-align:right;width:64px">Clicks</th><th style="text-align:right;width:64px">Impr</th></tr></thead>
+              <tbody>${r.queries.map((q) => `
+                <tr>
+                  <td class="dim">${esc(q.query)}</td>
+                  <td style="text-align:right;font-weight:600">${num(q.clicks)}</td>
+                  <td class="dim" style="text-align:right">${num(q.impressions)}</td>
+                </tr>`).join("")}
+              </tbody>
+            </table>` : emptyTable(hourly ? "Search Console does not report today yet." : "No search queries in this window.")}
+          </div>
+          <div class="card">
+            <div class="ct">Ad campaigns (90d)</div>
+            <div class="ct-sub">Spend in this table is always the last 90 days, regardless of the pills above.</div>
+            ${(data.campaigns || []).length ? `
+            <table style="margin-top:10px">
+              <thead><tr><th>Campaign</th><th style="width:80px">Status</th><th style="text-align:right;width:72px">Spend</th></tr></thead>
+              <tbody>${data.campaigns.map((c) => `
+                <tr>
+                  <td class="dim">${esc(c.name)}</td>
+                  <td><span class="chip ${c.status === "ENABLED" ? "live" : "paused"}">${esc(c.status === "ENABLED" ? "On" : "Paused")}</span></td>
+                  <td style="text-align:right;font-weight:600">${money2(c.spend)}</td>
+                </tr>`).join("")}
+              </tbody>
+            </table>` : emptyTable("No campaign rows.")}
+          </div>
+        </div>
+        <p class="updated">Prepared by <span class="mark">CO<i>HELM</i></span> for Electric Bike Academy</p>
+      `;
 
-  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  document.querySelector("#seoTable tbody").innerHTML = d.seoHealth.map(r =>
-    `<tr><td>${esc(r.item)}</td><td><span class="pill ${r.status}">${r.status}</span></td><td class="note">${esc(r.note)}</td></tr>`).join("");
-  document.querySelector("#connTable tbody").innerHTML = d.connections.map(r =>
-    `<tr><td>${esc(r.name)}<div class="note">${esc(r.id)}</div></td><td><span class="pill ${r.status}">${r.status}</span></td><td class="note">${esc(r.note)}</td></tr>`).join("");
-  document.querySelector("#partnerTable tbody").innerHTML = d.partnerships.map(r =>
-    `<tr><td>${esc(r.partner)}</td><td>${esc(r.code)}</td><td><span class="pill ${r.status}">${r.status}</span></td></tr>`).join("");
-  document.querySelector("#llmTable tbody").innerHTML = d.llmVisibility.map(r =>
-    `<tr><td>${esc(r.engine)}</td><td class="note">${esc(r.query)}</td><td><span class="pill ${r.cited === null ? "unknown" : r.cited ? "pass" : "fail"}">${r.cited === null ? "not checked" : r.cited ? "yes" : "no"}</span></td></tr>`).join("");
-});
-</script>
+      document.querySelectorAll("[data-days]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          days = btn.dataset.days;
+          render();
+        });
+      });
+    }
+
+    const barTip = document.createElement("div");
+    barTip.className = "bar-tip";
+    document.body.appendChild(barTip);
+    document.addEventListener("mouseover", (e) => {
+      const b = e.target.closest(".bars .b");
+      if (!b || !b.dataset.tip) { barTip.style.display = "none"; return; }
+      barTip.textContent = b.dataset.tip;
+      barTip.style.display = "block";
+      const r = b.getBoundingClientRect();
+      const bar = (b.querySelector("i") || b).getBoundingClientRect();
+      const w = barTip.offsetWidth;
+      barTip.style.left = Math.max(8, Math.min(r.left + r.width / 2 - w / 2, window.innerWidth - w - 8)) + "px";
+      barTip.style.top = Math.max(8, bar.top - barTip.offsetHeight - 8) + "px";
+    });
+    document.addEventListener("scroll", () => { barTip.style.display = "none"; }, true);
+
+    fetch("data/metrics.json", { cache: "no-store" })
+      .then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); })
+      .then((json) => { data = json; render(); })
+      .catch(() => render());
+  </script>
 </body>
 </html>
