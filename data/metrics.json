@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T17:08:10.847340-05:00",
+  "updated": "2026-09-06T18:54:02.314553-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -13,24 +13,8 @@
     "first_day": "2025-06-20"
   },
   "live": {
-    "activeUsers": 3,
-    "pages": [
-      {
-        "page": "E-Bike Safety Courses: Online, From $50, Certificate Included",
-        "users": 1,
-        "events": 2
-      },
-      {
-        "page": "EBA - Single Rider Signup",
-        "users": 1,
-        "events": 4
-      },
-      {
-        "page": "Online E-Bike Safety Course & Certificate | Electric Bike Academy",
-        "users": 1,
-        "events": 3
-      }
-    ]
+    "activeUsers": 0,
+    "pages": []
   },
   "firstParty": true,
   "beaconSince": "2026-09-05",
@@ -85,17 +69,9 @@
       "start": "2026-09-06",
       "end": "2026-09-06",
       "beacon": {
-        "visitors": 42,
-        "pageviews": 79,
+        "visitors": 36,
+        "pageviews": 71,
         "topPages": [
-          {
-            "host": "electricbikeacademy.com",
-            "path": "/",
-            "label": "electricbikeacademy.com/",
-            "url": "https://electricbikeacademy.com/",
-            "views": 20,
-            "visitors": 16
-          },
           {
             "host": "electricbikeacademy.com",
             "path": "/nassau",
@@ -103,6 +79,14 @@
             "url": "https://electricbikeacademy.com/nassau",
             "views": 20,
             "visitors": 11
+          },
+          {
+            "host": "electricbikeacademy.com",
+            "path": "/",
+            "label": "electricbikeacademy.com/",
+            "url": "https://electricbikeacademy.com/",
+            "views": 17,
+            "visitors": 13
           },
           {
             "host": "electricbikeacademy.com",
@@ -114,19 +98,19 @@
           },
           {
             "host": "electricbikeacademy.com",
-            "path": "/courses.php",
-            "label": "electricbikeacademy.com/courses.php",
-            "url": "https://electricbikeacademy.com/courses.php",
-            "views": 7,
-            "visitors": 3
-          },
-          {
-            "host": "electricbikeacademy.com",
             "path": "/guides/ebike-safety-course.php",
             "label": "electricbikeacademy.com/guides/ebike-safety-course.php",
             "url": "https://electricbikeacademy.com/guides/ebike-safety-course.php",
             "views": 5,
             "visitors": 2
+          },
+          {
+            "host": "electricbikeacademy.com",
+            "path": "/courses.php",
+            "label": "electricbikeacademy.com/courses.php",
+            "url": "https://electricbikeacademy.com/courses.php",
+            "views": 5,
+            "visitors": 1
           },
           {
             "host": "electricbikeacademy.com",
@@ -143,14 +127,6 @@
             "url": "https://electricbikeacademy.com/guides/palos-verdes-peninsula-ebike-course.php",
             "views": 4,
             "visitors": 0
-          },
-          {
-            "host": "electricbikeacademy.com",
-            "path": "/contact.php",
-            "label": "electricbikeacademy.com/contact.php",
-            "url": "https://electricbikeacademy.com/contact.php",
-            "views": 3,
-            "visitors": 1
           },
           {
             "host": "electricbikeacademy.com",
@@ -180,16 +156,11 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 42,
-            "views": 79
+            "visitors": 36,
+            "views": 71
           }
         ],
         "byHour": [
-          {
-            "hour": "2026090518",
-            "sessions": 4,
-            "views": 6
-          },
           {
             "hour": "2026090519",
             "sessions": 8,
@@ -304,14 +275,19 @@
             "hour": "2026090617",
             "sessions": 0,
             "views": 0
+          },
+          {
+            "hour": "2026090618",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 42
+        "humans": 36
       },
       "google": {
-        "visitors": 48,
-        "pageviews": 81,
+        "visitors": 45,
+        "pageviews": 75,
         "purchases": 1,
         "adSpend": 0,
         "adClicks": 0,
@@ -508,12 +484,6 @@
         },
         "byHour": [
           {
-            "hour": "2026090518",
-            "sessions": 3,
-            "views": 6,
-            "purchases": 0
-          },
-          {
             "hour": "2026090519",
             "sessions": 8,
             "views": 15,
@@ -650,6 +620,12 @@
             "sessions": 0,
             "views": 0,
             "purchases": 0
+          },
+          {
+            "hour": "2026090618",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
           }
         ],
         "byDay": [],
@@ -686,11 +662,16 @@
           "source": "Meta AI",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 13,
-        "total": 18,
+        "in_window": 14,
+        "total": 19,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -716,6 +697,10 @@
           {
             "agent": "Meta AI",
             "hits": 1
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 1
           }
         ],
         "bySection": [
@@ -728,19 +713,15 @@
             "hits": 4
           },
           {
-            "section": "Other",
+            "section": "Courses",
             "hits": 2
           },
           {
-            "section": "Courses",
-            "hits": 1
+            "section": "Other",
+            "hits": 2
           }
         ],
         "byHour": [
-          {
-            "hour": "2026090518",
-            "hits": 0
-          },
           {
             "hour": "2026090519",
             "hits": 0
@@ -831,6 +812,10 @@
           },
           {
             "hour": "2026090617",
+            "hits": 1
+          },
+          {
+            "hour": "2026090618",
             "hits": 0
           }
         ],
@@ -1434,11 +1419,16 @@
           "source": "Meta AI",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 18,
-        "total": 18,
+        "in_window": 19,
+        "total": 19,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -1468,6 +1458,10 @@
           {
             "agent": "Meta AI",
             "hits": 1
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 1
           }
         ],
         "bySection": [
@@ -1481,7 +1475,7 @@
           },
           {
             "section": "Courses",
-            "hits": 2
+            "hits": 3
           },
           {
             "section": "Other",
@@ -1520,7 +1514,7 @@
           },
           {
             "day": "2026-09-06",
-            "hits": 13
+            "hits": 14
           }
         ]
       }
@@ -2449,11 +2443,16 @@
           "source": "Meta AI",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 18,
-        "total": 18,
+        "in_window": 19,
+        "total": 19,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -2483,6 +2482,10 @@
           {
             "agent": "Meta AI",
             "hits": 1
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 1
           }
         ],
         "bySection": [
@@ -2496,7 +2499,7 @@
           },
           {
             "section": "Courses",
-            "hits": 2
+            "hits": 3
           },
           {
             "section": "Other",
@@ -2627,7 +2630,7 @@
           },
           {
             "day": "2026-09-06",
-            "hits": 13
+            "hits": 14
           }
         ]
       }
@@ -4417,11 +4420,16 @@
           "source": "Meta AI",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 18,
-        "total": 18,
+        "in_window": 19,
+        "total": 19,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -4451,6 +4459,10 @@
           {
             "agent": "Meta AI",
             "hits": 1
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 1
           }
         ],
         "bySection": [
@@ -4464,7 +4476,7 @@
           },
           {
             "section": "Courses",
-            "hits": 2
+            "hits": 3
           },
           {
             "section": "Other",
@@ -4835,7 +4847,7 @@
           },
           {
             "day": "2026-09-06",
-            "hits": 13
+            "hits": 14
           }
         ]
       }
