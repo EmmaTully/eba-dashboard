@@ -1,8 +1,14 @@
-name: Refresh dashboard hourly
+name: Refresh dashboard
 
+# GitHub runs scheduled workflows on a best-effort basis: they fire late and get
+# dropped outright when runners are busy, rather than queued. Asking for hourly
+# got us 5 runs in the first 19 hours. Asking every 15 minutes means several
+# attempts per hour, so enough of them land to keep the data reasonably fresh.
+# Actions minutes are free on this public repo, and the job exits without a
+# commit when nothing changed.
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 concurrency:
