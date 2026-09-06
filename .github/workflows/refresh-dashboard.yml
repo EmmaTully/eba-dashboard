@@ -1,0 +1,56 @@
+name: Refresh dashboard hourly
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-dashboard
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install API clients
+        run: pip install google-analytics-data google-api-python-client google-ads
+
+      - name: Prepare private refresh files
+        env:
+          EBA_PULL_SCRIPT: ${{ secrets.EBA_PULL_SCRIPT }}
+          EBA_GOOGLE_ADS_ENV: ${{ secrets.EBA_GOOGLE_ADS_ENV }}
+          EBA_GOOGLE_ADS_YAML: ${{ secrets.EBA_GOOGLE_ADS_YAML }}
+          EBA_HOSTING_ENV: ${{ secrets.EBA_HOSTING_ENV }}
+        run: |
+          mkdir -p eba-stats secrets
+          printf '%s' "$EBA_PULL_SCRIPT" > eba-stats/pull.py
+          printf '%s' "$EBA_GOOGLE_ADS_ENV" > secrets/google-ads.env
+          printf '%s' "$EBA_GOOGLE_ADS_YAML" > secrets/google-ads.yaml
+          printf '%s' "$EBA_HOSTING_ENV" > secrets/eba-hosting.env
+
+      - name: Pull live metrics
+        env:
+          EBA_FAIL_ON_ERRORS: "1"
+        run: python eba-stats/pull.py
+
+      - name: Publish changed data
+        run: |
+          cp eba-stats/data/metrics.json data/metrics.json
+          git config user.name "eba-dashboard-bot"
+          git config user.email "actions@github.com"
+          git add data/metrics.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh dashboard data"
+          git push
