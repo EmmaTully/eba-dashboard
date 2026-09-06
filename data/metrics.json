@@ -1,26 +1,20 @@
 {
-  "updated": "2026-09-06T12:08:05.725078-05:00",
+  "updated": "2026-09-06T14:15:24.195384-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
   "lastPurchase": "2026-09-05",
   "adsPaused": false,
   "allTime": {
-    "sessions": 12866,
+    "sessions": 12822,
     "users": 10989,
     "views": 24603,
     "purchases": 212,
     "first_day": "2025-06-20"
   },
   "live": {
-    "activeUsers": 1,
-    "pages": [
-      {
-        "page": "Online E-Bike Safety Course & Certificate | Electric Bike Academy",
-        "users": 1,
-        "events": 3
-      }
-    ]
+    "activeUsers": 0,
+    "pages": []
   },
   "firstParty": true,
   "beaconSince": "2026-09-05",
@@ -75,17 +69,9 @@
       "start": "2026-09-05",
       "end": "2026-09-05",
       "beacon": {
-        "visitors": 45,
-        "pageviews": 76,
+        "visitors": 41,
+        "pageviews": 71,
         "topPages": [
-          {
-            "host": "electricbikeacademy.com",
-            "path": "/",
-            "label": "electricbikeacademy.com/",
-            "url": "https://electricbikeacademy.com/",
-            "views": 21,
-            "visitors": 18
-          },
           {
             "host": "electricbikeacademy.com",
             "path": "/nassau",
@@ -96,10 +82,18 @@
           },
           {
             "host": "electricbikeacademy.com",
+            "path": "/",
+            "label": "electricbikeacademy.com/",
+            "url": "https://electricbikeacademy.com/",
+            "views": 17,
+            "visitors": 14
+          },
+          {
+            "host": "electricbikeacademy.com",
             "path": "/login.php",
             "label": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
-            "views": 11,
+            "views": 10,
             "visitors": 7
           },
           {
@@ -162,26 +156,11 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 44,
-            "views": 75
-          },
-          {
-            "source": "dashboard-test",
-            "visitors": 1,
-            "views": 1
+            "visitors": 41,
+            "views": 71
           }
         ],
         "byHour": [
-          {
-            "hour": "2026090513",
-            "sessions": 2,
-            "views": 2
-          },
-          {
-            "hour": "2026090514",
-            "sessions": 4,
-            "views": 6
-          },
           {
             "hour": "2026090515",
             "sessions": 3,
@@ -291,15 +270,25 @@
             "hour": "2026090612",
             "sessions": 1,
             "views": 1
+          },
+          {
+            "hour": "2026090613",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026090614",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 45
+        "humans": 41
       },
       "google": {
-        "visitors": 63,
-        "pageviews": 104,
-        "purchases": 2,
+        "visitors": 52,
+        "pageviews": 88,
+        "purchases": 1,
         "adSpend": 0,
         "adClicks": 0,
         "topPages": [
@@ -495,18 +484,6 @@
         },
         "byHour": [
           {
-            "hour": "2026090513",
-            "sessions": 7,
-            "views": 10,
-            "purchases": 1
-          },
-          {
-            "hour": "2026090514",
-            "sessions": 4,
-            "views": 6,
-            "purchases": 0
-          },
-          {
             "hour": "2026090515",
             "sessions": 4,
             "views": 5,
@@ -637,6 +614,18 @@
             "sessions": 0,
             "views": 0,
             "purchases": 0
+          },
+          {
+            "hour": "2026090613",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026090614",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
           }
         ],
         "byDay": [],
@@ -644,11 +633,6 @@
         "gscPages": []
       },
       "llmSources": [
-        {
-          "source": "GPTBot",
-          "visitors": 5,
-          "views": 5
-        },
         {
           "source": "OpenAI search",
           "visitors": 5,
@@ -660,9 +644,9 @@
           "views": 4
         },
         {
-          "source": "ClaudeBot",
-          "visitors": 1,
-          "views": 1
+          "source": "GPTBot",
+          "visitors": 2,
+          "views": 2
         },
         {
           "source": "DuckAssist",
@@ -676,14 +660,10 @@
         }
       ],
       "ai": {
-        "in_window": 17,
+        "in_window": 13,
         "total": 17,
         "first_day": "2026-09-05",
         "byAgent": [
-          {
-            "agent": "GPTBot",
-            "hits": 5
-          },
           {
             "agent": "OpenAI search",
             "hits": 5
@@ -693,8 +673,8 @@
             "hits": 4
           },
           {
-            "agent": "ClaudeBot",
-            "hits": 1
+            "agent": "GPTBot",
+            "hits": 2
           },
           {
             "agent": "DuckAssist",
@@ -708,15 +688,15 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 8
+            "hits": 7
           },
           {
             "section": "Homepage",
-            "hits": 6
+            "hits": 4
           },
           {
             "section": "Courses",
-            "hits": 2
+            "hits": 1
           },
           {
             "section": "Other",
@@ -724,14 +704,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026090513",
-            "hits": 4
-          },
-          {
-            "hour": "2026090514",
-            "hits": 1
-          },
           {
             "hour": "2026090515",
             "hits": 0
@@ -818,6 +790,14 @@
           },
           {
             "hour": "2026090612",
+            "hits": 0
+          },
+          {
+            "hour": "2026090613",
+            "hits": 0
+          },
+          {
+            "hour": "2026090614",
             "hits": 0
           }
         ],
@@ -3351,7 +3331,7 @@
           },
           {
             "channel": "Referral",
-            "visitors": 500,
+            "visitors": 499,
             "views": 1065
           },
           {
@@ -3393,7 +3373,7 @@
         "mix": {
           "organic": 239,
           "paid": 950,
-          "other": 1189
+          "other": 1188
         },
         "byHour": [],
         "byDay": [
