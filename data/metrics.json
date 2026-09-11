@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T00:16:47.243708-05:00",
+  "updated": "2026-09-11T04:54:47.718239-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -69,16 +69,16 @@
       "start": "2026-09-10",
       "end": "2026-09-10",
       "beacon": {
-        "visitors": 27,
-        "pageviews": 37,
+        "visitors": 21,
+        "pageviews": 27,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 25,
-            "visitors": 20
+            "views": 17,
+            "visitors": 15
           },
           {
             "host": "electricbikeacademy.com",
@@ -93,8 +93,8 @@
             "path": "/courses.php",
             "label": "electricbikeacademy.com/courses.php",
             "url": "https://electricbikeacademy.com/courses.php",
-            "views": 5,
-            "visitors": 2
+            "views": 3,
+            "visitors": 1
           },
           {
             "host": "electricbikeacademy.com",
@@ -108,31 +108,11 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 27,
-            "views": 37
+            "visitors": 21,
+            "views": 27
           }
         ],
         "byHour": [
-          {
-            "hour": "2026091001",
-            "sessions": 1,
-            "views": 1
-          },
-          {
-            "hour": "2026091002",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091003",
-            "sessions": 0,
-            "views": 1
-          },
-          {
-            "hour": "2026091004",
-            "sessions": 1,
-            "views": 1
-          },
           {
             "hour": "2026091005",
             "sessions": 0,
@@ -232,14 +212,34 @@
             "hour": "2026091100",
             "sessions": 0,
             "views": 0
+          },
+          {
+            "hour": "2026091101",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091102",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091103",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091104",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 27
+        "humans": 21
       },
       "google": {
-        "visitors": 9,
-        "pageviews": 17,
+        "visitors": 0,
+        "pageviews": 0,
         "purchases": 0,
         "adSpend": 0,
         "adClicks": 0,
@@ -274,30 +274,6 @@
         },
         "byHour": [
           {
-            "hour": "2026091001",
-            "sessions": 8,
-            "views": 16,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091002",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091003",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091004",
-            "sessions": 1,
-            "views": 1,
-            "purchases": 0
-          },
-          {
             "hour": "2026091005",
             "sessions": 0,
             "views": 0,
@@ -413,6 +389,30 @@
           },
           {
             "hour": "2026091100",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091101",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091102",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091103",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091104",
             "sessions": 0,
             "views": 0,
             "purchases": 0
@@ -425,8 +425,8 @@
       "llmSources": [
         {
           "source": "Amazonbot",
-          "visitors": 4,
-          "views": 4
+          "visitors": 5,
+          "views": 5
         },
         {
           "source": "Bytespider",
@@ -437,21 +437,16 @@
           "source": "OpenAI search",
           "visitors": 2,
           "views": 2
-        },
-        {
-          "source": "ChatGPT (reading as a user)",
-          "visitors": 1,
-          "views": 1
         }
       ],
       "ai": {
         "in_window": 10,
-        "total": 80,
+        "total": 81,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Amazonbot",
-            "hits": 4
+            "hits": 5
           },
           {
             "agent": "Bytespider",
@@ -460,10 +455,6 @@
           {
             "agent": "OpenAI search",
             "hits": 2
-          },
-          {
-            "agent": "ChatGPT (reading as a user)",
-            "hits": 1
           }
         ],
         "bySection": [
@@ -473,30 +464,18 @@
           },
           {
             "section": "Homepage",
-            "hits": 4
+            "hits": 3
           },
           {
             "section": "About",
             "hits": 1
+          },
+          {
+            "section": "Courses",
+            "hits": 1
           }
         ],
         "byHour": [
-          {
-            "hour": "2026091001",
-            "hits": 0
-          },
-          {
-            "hour": "2026091002",
-            "hits": 0
-          },
-          {
-            "hour": "2026091003",
-            "hits": 1
-          },
-          {
-            "hour": "2026091004",
-            "hits": 0
-          },
           {
             "hour": "2026091005",
             "hits": 0
@@ -575,6 +554,22 @@
           },
           {
             "hour": "2026091100",
+            "hits": 0
+          },
+          {
+            "hour": "2026091101",
+            "hits": 0
+          },
+          {
+            "hour": "2026091102",
+            "hits": 0
+          },
+          {
+            "hour": "2026091103",
+            "hits": 1
+          },
+          {
+            "hour": "2026091104",
             "hits": 0
           }
         ],
@@ -1198,8 +1193,8 @@
         },
         {
           "source": "Amazonbot",
-          "visitors": 9,
-          "views": 9
+          "visitors": 10,
+          "views": 10
         },
         {
           "source": "Claude (user)",
@@ -1248,8 +1243,8 @@
         }
       ],
       "ai": {
-        "in_window": 80,
-        "total": 80,
+        "in_window": 81,
+        "total": 81,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -1262,7 +1257,7 @@
           },
           {
             "agent": "Amazonbot",
-            "hits": 9
+            "hits": 10
           },
           {
             "agent": "Claude (user)",
@@ -1316,7 +1311,7 @@
           },
           {
             "section": "Courses",
-            "hits": 4
+            "hits": 5
           },
           {
             "section": "FAQ",
@@ -1367,7 +1362,7 @@
           },
           {
             "day": "2026-09-11",
-            "hits": 0
+            "hits": 1
           }
         ]
       }
@@ -2316,8 +2311,8 @@
         },
         {
           "source": "Amazonbot",
-          "visitors": 9,
-          "views": 9
+          "visitors": 10,
+          "views": 10
         },
         {
           "source": "Claude (user)",
@@ -2366,8 +2361,8 @@
         }
       ],
       "ai": {
-        "in_window": 80,
-        "total": 80,
+        "in_window": 81,
+        "total": 81,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -2380,7 +2375,7 @@
           },
           {
             "agent": "Amazonbot",
-            "hits": 9
+            "hits": 10
           },
           {
             "agent": "Claude (user)",
@@ -2434,7 +2429,7 @@
           },
           {
             "section": "Courses",
-            "hits": 4
+            "hits": 5
           },
           {
             "section": "FAQ",
@@ -2577,7 +2572,7 @@
           },
           {
             "day": "2026-09-11",
-            "hits": 0
+            "hits": 1
           }
         ]
       }
@@ -4382,8 +4377,8 @@
         },
         {
           "source": "Amazonbot",
-          "visitors": 9,
-          "views": 9
+          "visitors": 10,
+          "views": 10
         },
         {
           "source": "Claude (user)",
@@ -4432,8 +4427,8 @@
         }
       ],
       "ai": {
-        "in_window": 80,
-        "total": 80,
+        "in_window": 81,
+        "total": 81,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -4446,7 +4441,7 @@
           },
           {
             "agent": "Amazonbot",
-            "hits": 9
+            "hits": 10
           },
           {
             "agent": "Claude (user)",
@@ -4500,7 +4495,7 @@
           },
           {
             "section": "Courses",
-            "hits": 4
+            "hits": 5
           },
           {
             "section": "FAQ",
@@ -4883,7 +4878,7 @@
           },
           {
             "day": "2026-09-11",
-            "hits": 0
+            "hits": 1
           }
         ]
       }
