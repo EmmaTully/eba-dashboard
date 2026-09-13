@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T14:48:59.219050-05:00",
+  "updated": "2026-09-13T17:05:02.359163-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -69,16 +69,16 @@
       "start": "2026-09-13",
       "end": "2026-09-13",
       "beacon": {
-        "visitors": 10,
-        "pageviews": 12,
+        "visitors": 8,
+        "pageviews": 10,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 8,
-            "visitors": 7
+            "views": 6,
+            "visitors": 5
           },
           {
             "host": "electricbikeacademy.com",
@@ -100,26 +100,11 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 10,
-            "views": 12
+            "visitors": 8,
+            "views": 10
           }
         ],
         "byHour": [
-          {
-            "hour": "2026091215",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091216",
-            "sessions": 1,
-            "views": 1
-          },
-          {
-            "hour": "2026091217",
-            "sessions": 1,
-            "views": 1
-          },
           {
             "hour": "2026091218",
             "sessions": 0,
@@ -224,14 +209,29 @@
             "hour": "2026091314",
             "sessions": 0,
             "views": 0
+          },
+          {
+            "hour": "2026091315",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091316",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091317",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 10
+        "humans": 8
       },
       "google": {
-        "visitors": 9,
-        "pageviews": 11,
+        "visitors": 6,
+        "pageviews": 9,
         "purchases": 0,
         "adSpend": 0,
         "adClicks": 0,
@@ -319,24 +319,6 @@
           "other": 11
         },
         "byHour": [
-          {
-            "hour": "2026091215",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091216",
-            "sessions": 2,
-            "views": 1,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091217",
-            "sessions": 1,
-            "views": 1,
-            "purchases": 0
-          },
           {
             "hour": "2026091218",
             "sessions": 0,
@@ -462,6 +444,24 @@
             "sessions": 0,
             "views": 0,
             "purchases": 0
+          },
+          {
+            "hour": "2026091315",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091316",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091317",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
           }
         ],
         "byDay": [],
@@ -481,8 +481,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 2,
-          "views": 2
+          "visitors": 3,
+          "views": 3
         },
         {
           "source": "Claude (user)",
@@ -501,8 +501,8 @@
         }
       ],
       "ai": {
-        "in_window": 25,
-        "total": 163,
+        "in_window": 26,
+        "total": 164,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -515,7 +515,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 2
+            "hits": 3
           },
           {
             "agent": "Claude (user)",
@@ -533,7 +533,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 11
+            "hits": 12
           },
           {
             "section": "Homepage",
@@ -561,18 +561,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026091215",
-            "hits": 0
-          },
-          {
-            "hour": "2026091216",
-            "hits": 0
-          },
-          {
-            "hour": "2026091217",
-            "hits": 0
-          },
           {
             "hour": "2026091218",
             "hits": 0
@@ -656,6 +644,18 @@
           {
             "hour": "2026091314",
             "hits": 2
+          },
+          {
+            "hour": "2026091315",
+            "hits": 0
+          },
+          {
+            "hour": "2026091316",
+            "hits": 1
+          },
+          {
+            "hour": "2026091317",
+            "hits": 0
           }
         ],
         "byDay": []
@@ -1268,8 +1268,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 28,
-          "views": 28
+          "visitors": 29,
+          "views": 29
         },
         {
           "source": "ClaudeBot",
@@ -1333,8 +1333,8 @@
         }
       ],
       "ai": {
-        "in_window": 158,
-        "total": 163,
+        "in_window": 159,
+        "total": 164,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -1343,7 +1343,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 28
+            "hits": 29
           },
           {
             "agent": "ClaudeBot",
@@ -1397,7 +1397,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 79
+            "hits": 80
           },
           {
             "section": "Homepage",
@@ -1460,7 +1460,7 @@
           },
           {
             "day": "2026-09-13",
-            "hits": 14
+            "hits": 15
           }
         ]
       }
@@ -2404,8 +2404,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 28,
-          "views": 28
+          "visitors": 29,
+          "views": 29
         },
         {
           "source": "ClaudeBot",
@@ -2469,8 +2469,8 @@
         }
       ],
       "ai": {
-        "in_window": 163,
-        "total": 163,
+        "in_window": 164,
+        "total": 164,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -2479,7 +2479,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 28
+            "hits": 29
           },
           {
             "agent": "ClaudeBot",
@@ -2533,7 +2533,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 81
+            "hits": 82
           },
           {
             "section": "Homepage",
@@ -2688,7 +2688,7 @@
           },
           {
             "day": "2026-09-13",
-            "hits": 14
+            "hits": 15
           }
         ]
       }
@@ -4488,8 +4488,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 28,
-          "views": 28
+          "visitors": 29,
+          "views": 29
         },
         {
           "source": "ClaudeBot",
@@ -4553,8 +4553,8 @@
         }
       ],
       "ai": {
-        "in_window": 163,
-        "total": 163,
+        "in_window": 164,
+        "total": 164,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -4563,7 +4563,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 28
+            "hits": 29
           },
           {
             "agent": "ClaudeBot",
@@ -4617,7 +4617,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 81
+            "hits": 82
           },
           {
             "section": "Homepage",
@@ -5012,7 +5012,7 @@
           },
           {
             "day": "2026-09-13",
-            "hits": 14
+            "hits": 15
           }
         ]
       }
