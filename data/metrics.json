@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T04:31:16.646821-05:00",
+  "updated": "2026-09-18T08:51:08.955250-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -207,26 +207,6 @@
         ],
         "byHour": [
           {
-            "hour": "2026091705",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091706",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091707",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091708",
-            "sessions": 0,
-            "views": 0
-          },
-          {
             "hour": "2026091709",
             "sessions": 0,
             "views": 0
@@ -323,6 +303,26 @@
           },
           {
             "hour": "2026091804",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091805",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091806",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091807",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026091808",
             "sessions": 0,
             "views": 0
           }
@@ -519,30 +519,6 @@
         },
         "byHour": [
           {
-            "hour": "2026091705",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091706",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091707",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091708",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
             "hour": "2026091709",
             "sessions": 0,
             "views": 0,
@@ -661,6 +637,30 @@
             "sessions": 0,
             "views": 0,
             "purchases": 0
+          },
+          {
+            "hour": "2026091805",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091806",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091807",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026091808",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
           }
         ],
         "byDay": [],
@@ -670,11 +670,16 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 9,
-          "views": 9
+          "visitors": 16,
+          "views": 16
         },
         {
           "source": "Amazonbot",
+          "visitors": 2,
+          "views": 2
+        },
+        {
+          "source": "OpenAI search",
           "visitors": 2,
           "views": 2
         },
@@ -684,22 +689,26 @@
           "views": 1
         },
         {
-          "source": "OpenAI search",
+          "source": "GPTBot",
           "visitors": 1,
           "views": 1
         }
       ],
       "ai": {
-        "in_window": 13,
-        "total": 216,
+        "in_window": 22,
+        "total": 226,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 9
+            "hits": 16
           },
           {
             "agent": "Amazonbot",
+            "hits": 2
+          },
+          {
+            "agent": "OpenAI search",
             "hits": 2
           },
           {
@@ -707,49 +716,37 @@
             "hits": 1
           },
           {
-            "agent": "OpenAI search",
+            "agent": "GPTBot",
             "hits": 1
           }
         ],
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 5
+            "hits": 8
           },
           {
             "section": "About",
-            "hits": 3
+            "hits": 4
           },
           {
             "section": "Homepage",
-            "hits": 2
+            "hits": 4
           },
           {
             "section": "FAQ",
-            "hits": 2
+            "hits": 3
           },
           {
             "section": "Courses",
+            "hits": 2
+          },
+          {
+            "section": "Other",
             "hits": 1
           }
         ],
         "byHour": [
-          {
-            "hour": "2026091705",
-            "hits": 1
-          },
-          {
-            "hour": "2026091706",
-            "hits": 0
-          },
-          {
-            "hour": "2026091707",
-            "hits": 0
-          },
-          {
-            "hour": "2026091708",
-            "hits": 0
-          },
           {
             "hour": "2026091709",
             "hits": 0
@@ -828,6 +825,22 @@
           },
           {
             "hour": "2026091804",
+            "hits": 0
+          },
+          {
+            "hour": "2026091805",
+            "hits": 7
+          },
+          {
+            "hour": "2026091806",
+            "hits": 2
+          },
+          {
+            "hour": "2026091807",
+            "hits": 1
+          },
+          {
+            "hour": "2026091808",
             "hits": 0
           }
         ],
@@ -1406,13 +1419,13 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 60,
-          "views": 60
+          "visitors": 68,
+          "views": 68
         },
         {
           "source": "OpenAI search",
-          "visitors": 17,
-          "views": 17
+          "visitors": 18,
+          "views": 18
         },
         {
           "source": "Applebot",
@@ -1436,8 +1449,8 @@
         },
         {
           "source": "GPTBot",
-          "visitors": 3,
-          "views": 3
+          "visitors": 4,
+          "views": 4
         },
         {
           "source": "DuckAssist",
@@ -1476,17 +1489,17 @@
         }
       ],
       "ai": {
-        "in_window": 137,
-        "total": 216,
+        "in_window": 147,
+        "total": 226,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 60
+            "hits": 68
           },
           {
             "agent": "OpenAI search",
-            "hits": 17
+            "hits": 18
           },
           {
             "agent": "Applebot",
@@ -1506,7 +1519,7 @@
           },
           {
             "agent": "GPTBot",
-            "hits": 3
+            "hits": 4
           },
           {
             "agent": "DuckAssist",
@@ -1540,27 +1553,27 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 75
+            "hits": 79
           },
           {
             "section": "Homepage",
-            "hits": 22
+            "hits": 24
           },
           {
             "section": "Other",
-            "hits": 14
+            "hits": 15
           },
           {
             "section": "Courses",
-            "hits": 10
+            "hits": 11
           },
           {
             "section": "FAQ",
-            "hits": 8
+            "hits": 9
           },
           {
             "section": "About",
-            "hits": 7
+            "hits": 8
           },
           {
             "section": "Contact",
@@ -1599,7 +1612,7 @@
           },
           {
             "day": "2026-09-18",
-            "hits": 0
+            "hits": 10
           }
         ]
       }
@@ -2543,13 +2556,13 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 77,
-          "views": 77
+          "visitors": 85,
+          "views": 85
         },
         {
           "source": "OpenAI search",
-          "visitors": 38,
-          "views": 38
+          "visitors": 39,
+          "views": 39
         },
         {
           "source": "Applebot",
@@ -2567,6 +2580,11 @@
           "views": 16
         },
         {
+          "source": "GPTBot",
+          "visitors": 9,
+          "views": 9
+        },
+        {
           "source": "Common Crawl",
           "visitors": 9,
           "views": 9
@@ -2575,11 +2593,6 @@
           "source": "Claude (user)",
           "visitors": 9,
           "views": 9
-        },
-        {
-          "source": "GPTBot",
-          "visitors": 8,
-          "views": 8
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -2613,17 +2626,17 @@
         }
       ],
       "ai": {
-        "in_window": 216,
-        "total": 216,
+        "in_window": 226,
+        "total": 226,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 77
+            "hits": 85
           },
           {
             "agent": "OpenAI search",
-            "hits": 38
+            "hits": 39
           },
           {
             "agent": "Applebot",
@@ -2638,16 +2651,16 @@
             "hits": 16
           },
           {
+            "agent": "GPTBot",
+            "hits": 9
+          },
+          {
             "agent": "Common Crawl",
             "hits": 9
           },
           {
             "agent": "Claude (user)",
             "hits": 9
-          },
-          {
-            "agent": "GPTBot",
-            "hits": 8
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -2677,27 +2690,27 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 112
+            "hits": 116
           },
           {
             "section": "Homepage",
-            "hits": 41
+            "hits": 43
           },
           {
             "section": "Other",
-            "hits": 24
+            "hits": 25
           },
           {
             "section": "Courses",
-            "hits": 14
+            "hits": 15
           },
           {
             "section": "FAQ",
-            "hits": 12
+            "hits": 13
           },
           {
             "section": "About",
-            "hits": 9
+            "hits": 10
           },
           {
             "section": "Contact",
@@ -2832,7 +2845,7 @@
           },
           {
             "day": "2026-09-18",
-            "hits": 0
+            "hits": 10
           }
         ]
       }
@@ -4632,13 +4645,13 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 77,
-          "views": 77
+          "visitors": 85,
+          "views": 85
         },
         {
           "source": "OpenAI search",
-          "visitors": 38,
-          "views": 38
+          "visitors": 39,
+          "views": 39
         },
         {
           "source": "Applebot",
@@ -4656,6 +4669,11 @@
           "views": 16
         },
         {
+          "source": "GPTBot",
+          "visitors": 9,
+          "views": 9
+        },
+        {
           "source": "Common Crawl",
           "visitors": 9,
           "views": 9
@@ -4664,11 +4682,6 @@
           "source": "Claude (user)",
           "visitors": 9,
           "views": 9
-        },
-        {
-          "source": "GPTBot",
-          "visitors": 8,
-          "views": 8
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -4702,17 +4715,17 @@
         }
       ],
       "ai": {
-        "in_window": 216,
-        "total": 216,
+        "in_window": 226,
+        "total": 226,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 77
+            "hits": 85
           },
           {
             "agent": "OpenAI search",
-            "hits": 38
+            "hits": 39
           },
           {
             "agent": "Applebot",
@@ -4727,16 +4740,16 @@
             "hits": 16
           },
           {
+            "agent": "GPTBot",
+            "hits": 9
+          },
+          {
             "agent": "Common Crawl",
             "hits": 9
           },
           {
             "agent": "Claude (user)",
             "hits": 9
-          },
-          {
-            "agent": "GPTBot",
-            "hits": 8
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -4766,27 +4779,27 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 112
+            "hits": 116
           },
           {
             "section": "Homepage",
-            "hits": 41
+            "hits": 43
           },
           {
             "section": "Other",
-            "hits": 24
+            "hits": 25
           },
           {
             "section": "Courses",
-            "hits": 14
+            "hits": 15
           },
           {
             "section": "FAQ",
-            "hits": 12
+            "hits": 13
           },
           {
             "section": "About",
-            "hits": 9
+            "hits": 10
           },
           {
             "section": "Contact",
@@ -5161,7 +5174,7 @@
           },
           {
             "day": "2026-09-18",
-            "hits": 0
+            "hits": 10
           }
         ]
       }
