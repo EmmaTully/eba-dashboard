@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T06:49:07.462592-05:00",
+  "updated": "2026-09-20T10:22:26.816002-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -114,26 +114,6 @@
         ],
         "byHour": [
           {
-            "hour": "2026091907",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091908",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091909",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026091910",
-            "sessions": 0,
-            "views": 0
-          },
-          {
             "hour": "2026091911",
             "sessions": 1,
             "views": 10
@@ -230,6 +210,26 @@
           },
           {
             "hour": "2026092006",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092007",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092008",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092009",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092010",
             "sessions": 0,
             "views": 0
           }
@@ -349,30 +349,6 @@
         },
         "byHour": [
           {
-            "hour": "2026091907",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091908",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091909",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026091910",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
             "hour": "2026091911",
             "sessions": 0,
             "views": 0,
@@ -491,6 +467,30 @@
             "sessions": 0,
             "views": 0,
             "purchases": 0
+          },
+          {
+            "hour": "2026092007",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092008",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092009",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092010",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
           }
         ],
         "byDay": [],
@@ -500,13 +500,23 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 9,
-          "views": 9
+          "visitors": 10,
+          "views": 10
+        },
+        {
+          "source": "Google AI",
+          "visitors": 4,
+          "views": 4
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 4,
+          "views": 4
         },
         {
           "source": "OpenAI search",
-          "visitors": 2,
-          "views": 2
+          "visitors": 3,
+          "views": 3
         },
         {
           "source": "ClaudeBot",
@@ -515,22 +525,75 @@
         },
         {
           "source": "ChatGPT (reading as a user)",
+          "visitors": 2,
+          "views": 2
+        },
+        {
+          "source": "Meta AI",
+          "visitors": 2,
+          "views": 2
+        },
+        {
+          "source": "Claude search",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Perplexity (user)",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Mistral",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "DuckAssist",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "You.com",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "GPTBot",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Cohere",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Grok",
           "visitors": 1,
           "views": 1
         }
       ],
       "ai": {
-        "in_window": 14,
-        "total": 269,
+        "in_window": 35,
+        "total": 290,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 9
+            "hits": 10
+          },
+          {
+            "agent": "Google AI",
+            "hits": 4
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 4
           },
           {
             "agent": "OpenAI search",
-            "hits": 2
+            "hits": 3
           },
           {
             "agent": "ClaudeBot",
@@ -538,17 +601,57 @@
           },
           {
             "agent": "ChatGPT (reading as a user)",
+            "hits": 2
+          },
+          {
+            "agent": "Meta AI",
+            "hits": 2
+          },
+          {
+            "agent": "Claude search",
+            "hits": 1
+          },
+          {
+            "agent": "Perplexity (user)",
+            "hits": 1
+          },
+          {
+            "agent": "Mistral",
+            "hits": 1
+          },
+          {
+            "agent": "DuckAssist",
+            "hits": 1
+          },
+          {
+            "agent": "You.com",
+            "hits": 1
+          },
+          {
+            "agent": "GPTBot",
+            "hits": 1
+          },
+          {
+            "agent": "Cohere",
+            "hits": 1
+          },
+          {
+            "agent": "Grok",
             "hits": 1
           }
         ],
         "bySection": [
+          {
+            "section": "Other",
+            "hits": 21
+          },
           {
             "section": "Sitemap + robots",
             "hits": 5
           },
           {
             "section": "Homepage",
-            "hits": 3
+            "hits": 4
           },
           {
             "section": "About",
@@ -561,29 +664,9 @@
           {
             "section": "FAQ",
             "hits": 1
-          },
-          {
-            "section": "Other",
-            "hits": 1
           }
         ],
         "byHour": [
-          {
-            "hour": "2026091907",
-            "hits": 0
-          },
-          {
-            "hour": "2026091908",
-            "hits": 0
-          },
-          {
-            "hour": "2026091909",
-            "hits": 0
-          },
-          {
-            "hour": "2026091910",
-            "hits": 0
-          },
           {
             "hour": "2026091911",
             "hits": 0
@@ -662,6 +745,22 @@
           },
           {
             "hour": "2026092006",
+            "hits": 0
+          },
+          {
+            "hour": "2026092007",
+            "hits": 21
+          },
+          {
+            "hour": "2026092008",
+            "hits": 0
+          },
+          {
+            "hour": "2026092009",
+            "hits": 0
+          },
+          {
+            "hour": "2026092010",
             "hits": 0
           }
         ],
@@ -1134,8 +1233,8 @@
           {
             "query": "academy e bike",
             "clicks": 0,
-            "impressions": 8,
-            "position": 8.4
+            "impressions": 9,
+            "position": 8.6
           },
           {
             "query": "academy e bikes",
@@ -1152,8 +1251,8 @@
           {
             "query": "academy ebike",
             "clicks": 0,
-            "impressions": 9,
-            "position": 9.6
+            "impressions": 10,
+            "position": 9.9
           },
           {
             "query": "academy ebikes",
@@ -1164,14 +1263,14 @@
           {
             "query": "academy electric bike",
             "clicks": 0,
-            "impressions": 24,
-            "position": 9.5
+            "impressions": 32,
+            "position": 9.3
           },
           {
             "query": "academy electric bikes",
             "clicks": 0,
-            "impressions": 5,
-            "position": 9.4
+            "impressions": 6,
+            "position": 9.8
           },
           {
             "query": "academy sports ebike",
@@ -1188,8 +1287,8 @@
           {
             "query": "bicicleta electrica academy",
             "clicks": 0,
-            "impressions": 3,
-            "position": 3.7
+            "impressions": 4,
+            "position": 4.2
           },
           {
             "query": "bike academy",
@@ -1203,50 +1302,55 @@
             "page": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
             "clicks": 6,
-            "impressions": 281
+            "impressions": 336
           },
           {
             "page": "electricbikeacademy.com/about.php",
             "url": "https://electricbikeacademy.com/about.php",
             "clicks": 0,
-            "impressions": 31
+            "impressions": 40
           },
           {
             "page": "electricbikeacademy.com/contact.php",
             "url": "https://electricbikeacademy.com/contact.php",
             "clicks": 0,
-            "impressions": 31
+            "impressions": 40
           },
           {
             "page": "electricbikeacademy.com/courses.php",
             "url": "https://electricbikeacademy.com/courses.php",
             "clicks": 0,
-            "impressions": 41
+            "impressions": 53
           },
           {
             "page": "electricbikeacademy.com/faq.php",
             "url": "https://electricbikeacademy.com/faq.php",
             "clicks": 0,
-            "impressions": 29
+            "impressions": 38
           },
           {
             "page": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
             "clicks": 0,
-            "impressions": 20
+            "impressions": 25
           }
         ]
       },
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 72,
-          "views": 72
+          "visitors": 73,
+          "views": 73
         },
         {
           "source": "OpenAI search",
-          "visitors": 17,
-          "views": 17
+          "visitors": 18,
+          "views": 18
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 12,
+          "views": 12
         },
         {
           "source": "Applebot",
@@ -1255,21 +1359,21 @@
         },
         {
           "source": "GPTBot",
-          "visitors": 10,
-          "views": 10
-        },
-        {
-          "source": "Amazonbot",
-          "visitors": 8,
-          "views": 8
-        },
-        {
-          "source": "ChatGPT (reading as a user)",
-          "visitors": 4,
-          "views": 4
+          "visitors": 11,
+          "views": 11
         },
         {
           "source": "Google AI",
+          "visitors": 7,
+          "views": 7
+        },
+        {
+          "source": "ChatGPT (reading as a user)",
+          "visitors": 5,
+          "views": 5
+        },
+        {
+          "source": "Meta AI",
           "visitors": 3,
           "views": 3
         },
@@ -1279,33 +1383,62 @@
           "views": 2
         },
         {
+          "source": "DuckAssist",
+          "visitors": 2,
+          "views": 2
+        },
+        {
           "source": "ClaudeBot",
           "visitors": 2,
           "views": 2
         },
         {
-          "source": "Meta AI",
+          "source": "Claude search",
           "visitors": 1,
           "views": 1
         },
         {
-          "source": "DuckAssist",
+          "source": "Perplexity (user)",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Mistral",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "You.com",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Cohere",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Grok",
           "visitors": 1,
           "views": 1
         }
       ],
       "ai": {
-        "in_window": 131,
-        "total": 269,
+        "in_window": 152,
+        "total": 290,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 72
+            "hits": 73
           },
           {
             "agent": "OpenAI search",
-            "hits": 17
+            "hits": 18
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 12
           },
           {
             "agent": "Applebot",
@@ -1313,18 +1446,18 @@
           },
           {
             "agent": "GPTBot",
-            "hits": 10
-          },
-          {
-            "agent": "Amazonbot",
-            "hits": 8
-          },
-          {
-            "agent": "ChatGPT (reading as a user)",
-            "hits": 4
+            "hits": 11
           },
           {
             "agent": "Google AI",
+            "hits": 7
+          },
+          {
+            "agent": "ChatGPT (reading as a user)",
+            "hits": 5
+          },
+          {
+            "agent": "Meta AI",
             "hits": 3
           },
           {
@@ -1332,15 +1465,35 @@
             "hits": 2
           },
           {
+            "agent": "DuckAssist",
+            "hits": 2
+          },
+          {
             "agent": "ClaudeBot",
             "hits": 2
           },
           {
-            "agent": "Meta AI",
+            "agent": "Claude search",
             "hits": 1
           },
           {
-            "agent": "DuckAssist",
+            "agent": "Perplexity (user)",
+            "hits": 1
+          },
+          {
+            "agent": "Mistral",
+            "hits": 1
+          },
+          {
+            "agent": "You.com",
+            "hits": 1
+          },
+          {
+            "agent": "Cohere",
+            "hits": 1
+          },
+          {
+            "agent": "Grok",
             "hits": 1
           }
         ],
@@ -1351,6 +1504,10 @@
           },
           {
             "section": "Homepage",
+            "hits": 28
+          },
+          {
+            "section": "Other",
             "hits": 27
           },
           {
@@ -1364,10 +1521,6 @@
           {
             "section": "FAQ",
             "hits": 11
-          },
-          {
-            "section": "Other",
-            "hits": 7
           },
           {
             "section": "Contact",
@@ -1410,7 +1563,7 @@
           },
           {
             "day": "2026-09-20",
-            "hits": 0
+            "hits": 21
           }
         ]
       }
@@ -2242,13 +2395,13 @@
           {
             "query": "electric bike academy",
             "clicks": 8,
-            "impressions": 84,
+            "impressions": 88,
             "position": 2.2
           },
           {
             "query": "academy electric bikes",
             "clicks": 1,
-            "impressions": 86,
+            "impressions": 87,
             "position": 9.9
           },
           {
@@ -2266,7 +2419,7 @@
           {
             "query": "academy e bike",
             "clicks": 0,
-            "impressions": 59,
+            "impressions": 60,
             "position": 8.8
           },
           {
@@ -2284,7 +2437,7 @@
           {
             "query": "academy ebike",
             "clicks": 0,
-            "impressions": 119,
+            "impressions": 120,
             "position": 9.7
           },
           {
@@ -2296,7 +2449,7 @@
           {
             "query": "academy electric bike",
             "clicks": 0,
-            "impressions": 181,
+            "impressions": 189,
             "position": 8.9
           },
           {
@@ -2317,50 +2470,55 @@
             "page": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
             "clicks": 27,
-            "impressions": 1830
+            "impressions": 1885
           },
           {
             "page": "electricbikeacademy.com/about.php",
             "url": "https://electricbikeacademy.com/about.php",
             "clicks": 0,
-            "impressions": 87
+            "impressions": 96
           },
           {
             "page": "electricbikeacademy.com/contact.php",
             "url": "https://electricbikeacademy.com/contact.php",
             "clicks": 0,
-            "impressions": 84
+            "impressions": 93
           },
           {
             "page": "electricbikeacademy.com/courses.php",
             "url": "https://electricbikeacademy.com/courses.php",
             "clicks": 0,
-            "impressions": 114
+            "impressions": 126
           },
           {
             "page": "electricbikeacademy.com/faq.php",
             "url": "https://electricbikeacademy.com/faq.php",
             "clicks": 0,
-            "impressions": 84
+            "impressions": 93
           },
           {
             "page": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
             "clicks": 0,
-            "impressions": 59
+            "impressions": 64
           }
         ]
       },
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 110,
-          "views": 110
+          "visitors": 111,
+          "views": 111
         },
         {
           "source": "OpenAI search",
-          "visitors": 43,
-          "views": 43
+          "visitors": 44,
+          "views": 44
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 22,
+          "views": 22
         },
         {
           "source": "Applebot",
@@ -2373,19 +2531,14 @@
           "views": 18
         },
         {
-          "source": "Amazonbot",
-          "visitors": 18,
-          "views": 18
-        },
-        {
           "source": "GPTBot",
-          "visitors": 16,
-          "views": 16
+          "visitors": 17,
+          "views": 17
         },
         {
           "source": "ChatGPT (reading as a user)",
-          "visitors": 10,
-          "views": 10
+          "visitors": 11,
+          "views": 11
         },
         {
           "source": "Common Crawl",
@@ -2398,43 +2551,72 @@
           "views": 9
         },
         {
-          "source": "Meta AI",
-          "visitors": 4,
-          "views": 4
+          "source": "Google AI",
+          "visitors": 8,
+          "views": 8
         },
         {
-          "source": "Google AI",
-          "visitors": 4,
-          "views": 4
+          "source": "Meta AI",
+          "visitors": 6,
+          "views": 6
         },
         {
           "source": "DuckAssist",
-          "visitors": 3,
-          "views": 3
+          "visitors": 4,
+          "views": 4
         },
         {
           "source": "Grok",
-          "visitors": 2,
-          "views": 2
+          "visitors": 3,
+          "views": 3
         },
         {
           "source": "PerplexityBot",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Claude search",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Perplexity (user)",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Mistral",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "You.com",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Cohere",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 269,
-        "total": 269,
+        "in_window": 290,
+        "total": 290,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 110
+            "hits": 111
           },
           {
             "agent": "OpenAI search",
-            "hits": 43
+            "hits": 44
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 22
           },
           {
             "agent": "Applebot",
@@ -2445,16 +2627,12 @@
             "hits": 18
           },
           {
-            "agent": "Amazonbot",
-            "hits": 18
-          },
-          {
             "agent": "GPTBot",
-            "hits": 16
+            "hits": 17
           },
           {
             "agent": "ChatGPT (reading as a user)",
-            "hits": 10
+            "hits": 11
           },
           {
             "agent": "Common Crawl",
@@ -2465,23 +2643,43 @@
             "hits": 9
           },
           {
-            "agent": "Meta AI",
-            "hits": 4
+            "agent": "Google AI",
+            "hits": 8
           },
           {
-            "agent": "Google AI",
-            "hits": 4
+            "agent": "Meta AI",
+            "hits": 6
           },
           {
             "agent": "DuckAssist",
-            "hits": 3
+            "hits": 4
           },
           {
             "agent": "Grok",
-            "hits": 2
+            "hits": 3
           },
           {
             "agent": "PerplexityBot",
+            "hits": 1
+          },
+          {
+            "agent": "Claude search",
+            "hits": 1
+          },
+          {
+            "agent": "Perplexity (user)",
+            "hits": 1
+          },
+          {
+            "agent": "Mistral",
+            "hits": 1
+          },
+          {
+            "agent": "You.com",
+            "hits": 1
+          },
+          {
+            "agent": "Cohere",
             "hits": 1
           }
         ],
@@ -2492,11 +2690,11 @@
           },
           {
             "section": "Homepage",
-            "hits": 52
+            "hits": 53
           },
           {
             "section": "Other",
-            "hits": 29
+            "hits": 49
           },
           {
             "section": "Courses",
@@ -2643,7 +2841,7 @@
           },
           {
             "day": "2026-09-20",
-            "hits": 0
+            "hits": 21
           }
         ]
       }
@@ -4325,37 +4523,37 @@
           {
             "query": "electric bike academy",
             "clicks": 19,
-            "impressions": 274,
+            "impressions": 278,
             "position": 2.6
           },
           {
             "query": "ebike academy",
             "clicks": 4,
-            "impressions": 157,
-            "position": 5.6
+            "impressions": 160,
+            "position": 5.5
           },
           {
             "query": "academy e bike",
             "clicks": 1,
-            "impressions": 188,
+            "impressions": 189,
             "position": 8.3
           },
           {
             "query": "academy electric bike",
             "clicks": 1,
-            "impressions": 573,
-            "position": 8.8
+            "impressions": 581,
+            "position": 8.9
           },
           {
             "query": "academy electric bikes",
             "clicks": 1,
-            "impressions": 218,
+            "impressions": 219,
             "position": 9.5
           },
           {
             "query": "e bike academy",
             "clicks": 1,
-            "impressions": 201,
+            "impressions": 203,
             "position": 4.0
           },
           {
@@ -4400,13 +4598,13 @@
             "page": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
             "clicks": 77,
-            "impressions": 5513
+            "impressions": 5568
           },
           {
             "page": "electricbikeacademy.com/courses.php",
             "url": "https://electricbikeacademy.com/courses.php",
             "clicks": 4,
-            "impressions": 319
+            "impressions": 331
           },
           {
             "page": "http://www.electricbikeacademy.com/",
@@ -4418,38 +4616,43 @@
             "page": "electricbikeacademy.com/about.php",
             "url": "https://electricbikeacademy.com/about.php",
             "clicks": 0,
-            "impressions": 167
+            "impressions": 176
           },
           {
             "page": "electricbikeacademy.com/contact.php",
             "url": "https://electricbikeacademy.com/contact.php",
             "clicks": 0,
-            "impressions": 164
+            "impressions": 173
           },
           {
             "page": "electricbikeacademy.com/faq.php",
             "url": "https://electricbikeacademy.com/faq.php",
             "clicks": 0,
-            "impressions": 170
+            "impressions": 179
           },
           {
             "page": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
             "clicks": 0,
-            "impressions": 138
+            "impressions": 143
           }
         ]
       },
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 110,
-          "views": 110
+          "visitors": 111,
+          "views": 111
         },
         {
           "source": "OpenAI search",
-          "visitors": 43,
-          "views": 43
+          "visitors": 44,
+          "views": 44
+        },
+        {
+          "source": "Amazonbot",
+          "visitors": 22,
+          "views": 22
         },
         {
           "source": "Applebot",
@@ -4462,19 +4665,14 @@
           "views": 18
         },
         {
-          "source": "Amazonbot",
-          "visitors": 18,
-          "views": 18
-        },
-        {
           "source": "GPTBot",
-          "visitors": 16,
-          "views": 16
+          "visitors": 17,
+          "views": 17
         },
         {
           "source": "ChatGPT (reading as a user)",
-          "visitors": 10,
-          "views": 10
+          "visitors": 11,
+          "views": 11
         },
         {
           "source": "Common Crawl",
@@ -4487,43 +4685,72 @@
           "views": 9
         },
         {
-          "source": "Meta AI",
-          "visitors": 4,
-          "views": 4
+          "source": "Google AI",
+          "visitors": 8,
+          "views": 8
         },
         {
-          "source": "Google AI",
-          "visitors": 4,
-          "views": 4
+          "source": "Meta AI",
+          "visitors": 6,
+          "views": 6
         },
         {
           "source": "DuckAssist",
-          "visitors": 3,
-          "views": 3
+          "visitors": 4,
+          "views": 4
         },
         {
           "source": "Grok",
-          "visitors": 2,
-          "views": 2
+          "visitors": 3,
+          "views": 3
         },
         {
           "source": "PerplexityBot",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Claude search",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Perplexity (user)",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Mistral",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "You.com",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Cohere",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 269,
-        "total": 269,
+        "in_window": 290,
+        "total": 290,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 110
+            "hits": 111
           },
           {
             "agent": "OpenAI search",
-            "hits": 43
+            "hits": 44
+          },
+          {
+            "agent": "Amazonbot",
+            "hits": 22
           },
           {
             "agent": "Applebot",
@@ -4534,16 +4761,12 @@
             "hits": 18
           },
           {
-            "agent": "Amazonbot",
-            "hits": 18
-          },
-          {
             "agent": "GPTBot",
-            "hits": 16
+            "hits": 17
           },
           {
             "agent": "ChatGPT (reading as a user)",
-            "hits": 10
+            "hits": 11
           },
           {
             "agent": "Common Crawl",
@@ -4554,23 +4777,43 @@
             "hits": 9
           },
           {
-            "agent": "Meta AI",
-            "hits": 4
+            "agent": "Google AI",
+            "hits": 8
           },
           {
-            "agent": "Google AI",
-            "hits": 4
+            "agent": "Meta AI",
+            "hits": 6
           },
           {
             "agent": "DuckAssist",
-            "hits": 3
+            "hits": 4
           },
           {
             "agent": "Grok",
-            "hits": 2
+            "hits": 3
           },
           {
             "agent": "PerplexityBot",
+            "hits": 1
+          },
+          {
+            "agent": "Claude search",
+            "hits": 1
+          },
+          {
+            "agent": "Perplexity (user)",
+            "hits": 1
+          },
+          {
+            "agent": "Mistral",
+            "hits": 1
+          },
+          {
+            "agent": "You.com",
+            "hits": 1
+          },
+          {
+            "agent": "Cohere",
             "hits": 1
           }
         ],
@@ -4581,11 +4824,11 @@
           },
           {
             "section": "Homepage",
-            "hits": 52
+            "hits": 53
           },
           {
             "section": "Other",
-            "hits": 29
+            "hits": 49
           },
           {
             "section": "Courses",
@@ -4972,7 +5215,7 @@
           },
           {
             "day": "2026-09-20",
-            "hits": 0
+            "hits": 21
           }
         ]
       }
