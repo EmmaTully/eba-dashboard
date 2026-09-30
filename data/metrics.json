@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-29T15:06:37.150574-05:00",
+  "updated": "2026-09-29T21:25:21.691453-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
-  "lastPurchase": "2026-09-28",
+  "lastPurchase": "2026-09-29",
   "adsPaused": false,
   "allTime": {
-    "sessions": 13230,
+    "sessions": 13253,
     "users": 11247,
-    "views": 25255,
-    "purchases": 224,
+    "views": 25265,
+    "purchases": 225,
     "first_day": "2025-06-20"
   },
   "live": {
@@ -19,7 +19,7 @@
   "firstParty": true,
   "beaconSince": "2026-09-05",
   "september": {
-    "purchases": 21,
+    "purchases": 22,
     "goal": 30,
     "year": 2026,
     "month": 9
@@ -65,89 +65,38 @@
     "1": {
       "label": "24h",
       "hourly": true,
-      "todayProcessing": true,
-      "start": "2026-09-28",
-      "end": "2026-09-28",
+      "todayProcessing": false,
+      "start": "2026-09-29",
+      "end": "2026-09-29",
       "beacon": {
-        "visitors": 9,
-        "pageviews": 20,
+        "visitors": 10,
+        "pageviews": 13,
         "topPages": [
-          {
-            "host": "electricbikeacademy.com",
-            "path": "/login.php",
-            "label": "electricbikeacademy.com/login.php",
-            "url": "https://electricbikeacademy.com/login.php",
-            "views": 8,
-            "visitors": 1
-          },
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 5,
-            "visitors": 4
+            "views": 7,
+            "visitors": 7
           },
           {
             "host": "electricbikeacademy.com",
-            "path": "/contact.php",
-            "label": "electricbikeacademy.com/contact.php",
-            "url": "https://electricbikeacademy.com/contact.php",
-            "views": 5,
-            "visitors": 4
-          },
-          {
-            "host": "electricbikeacademy.com",
-            "path": "/schools.php",
-            "label": "electricbikeacademy.com/schools.php",
-            "url": "https://electricbikeacademy.com/schools.php",
-            "views": 2,
-            "visitors": 0
+            "path": "/login.php",
+            "label": "electricbikeacademy.com/login.php",
+            "url": "https://electricbikeacademy.com/login.php",
+            "views": 6,
+            "visitors": 3
           }
         ],
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 8,
-            "views": 19
-          },
-          {
-            "source": "ChatGPT",
-            "visitors": 1,
-            "views": 1
+            "visitors": 10,
+            "views": 13
           }
         ],
         "byHour": [
-          {
-            "hour": "2026092816",
-            "sessions": 4,
-            "views": 4
-          },
-          {
-            "hour": "2026092817",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026092818",
-            "sessions": 1,
-            "views": 1
-          },
-          {
-            "hour": "2026092819",
-            "sessions": 1,
-            "views": 2
-          },
-          {
-            "hour": "2026092820",
-            "sessions": 0,
-            "views": 10
-          },
-          {
-            "hour": "2026092821",
-            "sessions": 0,
-            "views": 0
-          },
           {
             "hour": "2026092822",
             "sessions": 1,
@@ -235,16 +184,46 @@
           },
           {
             "hour": "2026092915",
+            "sessions": 4,
+            "views": 6
+          },
+          {
+            "hour": "2026092916",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092917",
+            "sessions": 3,
+            "views": 4
+          },
+          {
+            "hour": "2026092918",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092919",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026092920",
             "sessions": 1,
             "views": 1
+          },
+          {
+            "hour": "2026092921",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 9
+        "humans": 10
       },
       "google": {
-        "visitors": 9,
-        "pageviews": 22,
+        "visitors": 7,
+        "pageviews": 13,
         "purchases": 1,
         "adSpend": 0,
         "adClicks": 0,
@@ -359,42 +338,6 @@
         },
         "byHour": [
           {
-            "hour": "2026092816",
-            "sessions": 3,
-            "views": 4,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092817",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092818",
-            "sessions": 1,
-            "views": 1,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092819",
-            "sessions": 1,
-            "views": 4,
-            "purchases": 1
-          },
-          {
-            "hour": "2026092820",
-            "sessions": 1,
-            "views": 10,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092821",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
             "hour": "2026092822",
             "sessions": 2,
             "views": 2,
@@ -498,6 +441,42 @@
           },
           {
             "hour": "2026092915",
+            "sessions": 1,
+            "views": 7,
+            "purchases": 1
+          },
+          {
+            "hour": "2026092916",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092917",
+            "sessions": 3,
+            "views": 3,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092918",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092919",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092920",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026092921",
             "sessions": 0,
             "views": 0,
             "purchases": 0
@@ -510,18 +489,18 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 10,
-          "views": 10
+          "visitors": 16,
+          "views": 16
+        },
+        {
+          "source": "Applebot",
+          "visitors": 4,
+          "views": 4
         },
         {
           "source": "OpenAI search",
           "visitors": 3,
           "views": 3
-        },
-        {
-          "source": "Applebot",
-          "visitors": 2,
-          "views": 2
         },
         {
           "source": "PerplexityBot",
@@ -532,16 +511,6 @@
           "source": "Claude search",
           "visitors": 2,
           "views": 2
-        },
-        {
-          "source": "ChatGPT (reading as a user)",
-          "visitors": 1,
-          "views": 1
-        },
-        {
-          "source": "Amazonbot",
-          "visitors": 1,
-          "views": 1
         },
         {
           "source": "Common Crawl",
@@ -560,21 +529,21 @@
         }
       ],
       "ai": {
-        "in_window": 24,
-        "total": 450,
+        "in_window": 30,
+        "total": 461,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 10
+            "hits": 16
+          },
+          {
+            "agent": "Applebot",
+            "hits": 4
           },
           {
             "agent": "OpenAI search",
             "hits": 3
-          },
-          {
-            "agent": "Applebot",
-            "hits": 2
           },
           {
             "agent": "PerplexityBot",
@@ -583,14 +552,6 @@
           {
             "agent": "Claude search",
             "hits": 2
-          },
-          {
-            "agent": "ChatGPT (reading as a user)",
-            "hits": 1
-          },
-          {
-            "agent": "Amazonbot",
-            "hits": 1
           },
           {
             "agent": "Common Crawl",
@@ -615,43 +576,19 @@
             "hits": 7
           },
           {
-            "section": "Other",
-            "hits": 5
+            "section": "Courses",
+            "hits": 7
           },
           {
-            "section": "Courses",
-            "hits": 3
+            "section": "Other",
+            "hits": 6
           },
           {
             "section": "FAQ",
-            "hits": 1
+            "hits": 2
           }
         ],
         "byHour": [
-          {
-            "hour": "2026092816",
-            "hits": 1
-          },
-          {
-            "hour": "2026092817",
-            "hits": 0
-          },
-          {
-            "hour": "2026092818",
-            "hits": 0
-          },
-          {
-            "hour": "2026092819",
-            "hits": 3
-          },
-          {
-            "hour": "2026092820",
-            "hits": 1
-          },
-          {
-            "hour": "2026092821",
-            "hits": 1
-          },
           {
             "hour": "2026092822",
             "hits": 0
@@ -723,6 +660,30 @@
           {
             "hour": "2026092915",
             "hits": 0
+          },
+          {
+            "hour": "2026092916",
+            "hits": 4
+          },
+          {
+            "hour": "2026092917",
+            "hits": 0
+          },
+          {
+            "hour": "2026092918",
+            "hits": 0
+          },
+          {
+            "hour": "2026092919",
+            "hits": 0
+          },
+          {
+            "hour": "2026092920",
+            "hits": 7
+          },
+          {
+            "hour": "2026092921",
+            "hits": 0
           }
         ],
         "byDay": []
@@ -735,24 +696,24 @@
       "start": "2026-09-22",
       "end": "2026-09-28",
       "beacon": {
-        "visitors": 129,
-        "pageviews": 221,
+        "visitors": 136,
+        "pageviews": 231,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 98,
-            "visitors": 74
+            "views": 102,
+            "visitors": 78
           },
           {
             "host": "electricbikeacademy.com",
             "path": "/login.php",
             "label": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
-            "views": 60,
-            "visitors": 27
+            "views": 66,
+            "visitors": 30
           },
           {
             "host": "electricbikeacademy.com",
@@ -814,8 +775,8 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 126,
-            "views": 218
+            "visitors": 133,
+            "views": 228
           },
           {
             "source": "Google",
@@ -872,11 +833,11 @@
           },
           {
             "day": "2026-09-29",
-            "sessions": 2,
-            "views": 2
+            "sessions": 9,
+            "views": 12
           }
         ],
-        "humans": 129
+        "humans": 136
       },
       "google": {
         "visitors": 108,
@@ -1249,8 +1210,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 92,
-          "views": 92
+          "visitors": 99,
+          "views": 99
         },
         {
           "source": "OpenAI search",
@@ -1259,8 +1220,8 @@
         },
         {
           "source": "Applebot",
-          "visitors": 8,
-          "views": 8
+          "visitors": 12,
+          "views": 12
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -1324,13 +1285,13 @@
         }
       ],
       "ai": {
-        "in_window": 156,
-        "total": 450,
+        "in_window": 167,
+        "total": 461,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 92
+            "hits": 99
           },
           {
             "agent": "OpenAI search",
@@ -1338,7 +1299,7 @@
           },
           {
             "agent": "Applebot",
-            "hits": 8
+            "hits": 12
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -1392,27 +1353,27 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 49
+            "hits": 51
           },
           {
             "section": "Homepage",
-            "hits": 31
+            "hits": 34
           },
           {
             "section": "Other",
-            "hits": 30
+            "hits": 31
           },
           {
             "section": "Courses",
-            "hits": 24
+            "hits": 28
+          },
+          {
+            "section": "FAQ",
+            "hits": 11
           },
           {
             "section": "About",
             "hits": 11
-          },
-          {
-            "section": "FAQ",
-            "hits": 10
           },
           {
             "section": "Contact",
@@ -1451,7 +1412,7 @@
           },
           {
             "day": "2026-09-29",
-            "hits": 18
+            "hits": 29
           }
         ]
       }
@@ -1463,24 +1424,24 @@
       "start": "2026-08-30",
       "end": "2026-09-28",
       "beacon": {
-        "visitors": 424,
-        "pageviews": 696,
+        "visitors": 431,
+        "pageviews": 706,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 292,
-            "visitors": 234
+            "views": 296,
+            "visitors": 238
           },
           {
             "host": "electricbikeacademy.com",
             "path": "/login.php",
             "label": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
-            "views": 175,
-            "visitors": 80
+            "views": 181,
+            "visitors": 83
           },
           {
             "host": "electricbikeacademy.com",
@@ -1590,8 +1551,8 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 416,
-            "views": 688
+            "visitors": 423,
+            "views": 698
           },
           {
             "source": "Google",
@@ -1768,11 +1729,11 @@
           },
           {
             "day": "2026-09-29",
-            "sessions": 2,
-            "views": 2
+            "sessions": 9,
+            "views": 12
           }
         ],
-        "humans": 424
+        "humans": 431
       },
       "google": {
         "visitors": 619,
@@ -2418,8 +2379,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 203,
-          "views": 203
+          "visitors": 210,
+          "views": 210
         },
         {
           "source": "OpenAI search",
@@ -2428,8 +2389,8 @@
         },
         {
           "source": "Applebot",
-          "visitors": 30,
-          "views": 30
+          "visitors": 34,
+          "views": 34
         },
         {
           "source": "Amazonbot",
@@ -2513,13 +2474,13 @@
         }
       ],
       "ai": {
-        "in_window": 450,
-        "total": 450,
+        "in_window": 461,
+        "total": 461,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 203
+            "hits": 210
           },
           {
             "agent": "OpenAI search",
@@ -2527,7 +2488,7 @@
           },
           {
             "agent": "Applebot",
-            "hits": 30
+            "hits": 34
           },
           {
             "agent": "Amazonbot",
@@ -2597,27 +2558,27 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 179
+            "hits": 181
           },
           {
             "section": "Homepage",
-            "hits": 85
+            "hits": 88
           },
           {
             "section": "Other",
-            "hits": 79
+            "hits": 80
           },
           {
             "section": "Courses",
-            "hits": 45
+            "hits": 49
+          },
+          {
+            "section": "FAQ",
+            "hits": 27
           },
           {
             "section": "About",
             "hits": 27
-          },
-          {
-            "section": "FAQ",
-            "hits": 26
           },
           {
             "section": "Contact",
@@ -2752,7 +2713,7 @@
           },
           {
             "day": "2026-09-29",
-            "hits": 18
+            "hits": 29
           }
         ]
       }
@@ -2764,24 +2725,24 @@
       "start": "2026-07-01",
       "end": "2026-09-28",
       "beacon": {
-        "visitors": 424,
-        "pageviews": 696,
+        "visitors": 431,
+        "pageviews": 706,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 292,
-            "visitors": 234
+            "views": 296,
+            "visitors": 238
           },
           {
             "host": "electricbikeacademy.com",
             "path": "/login.php",
             "label": "electricbikeacademy.com/login.php",
             "url": "https://electricbikeacademy.com/login.php",
-            "views": 175,
-            "visitors": 80
+            "views": 181,
+            "visitors": 83
           },
           {
             "host": "electricbikeacademy.com",
@@ -2891,8 +2852,8 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 416,
-            "views": 688
+            "visitors": 423,
+            "views": 698
           },
           {
             "source": "Google",
@@ -3369,11 +3330,11 @@
           },
           {
             "day": "2026-09-29",
-            "sessions": 2,
-            "views": 2
+            "sessions": 9,
+            "views": 12
           }
         ],
-        "humans": 424
+        "humans": 431
       },
       "google": {
         "visitors": 1960,
@@ -4575,8 +4536,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 203,
-          "views": 203
+          "visitors": 210,
+          "views": 210
         },
         {
           "source": "OpenAI search",
@@ -4585,8 +4546,8 @@
         },
         {
           "source": "Applebot",
-          "visitors": 30,
-          "views": 30
+          "visitors": 34,
+          "views": 34
         },
         {
           "source": "Amazonbot",
@@ -4670,13 +4631,13 @@
         }
       ],
       "ai": {
-        "in_window": 450,
-        "total": 450,
+        "in_window": 461,
+        "total": 461,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 203
+            "hits": 210
           },
           {
             "agent": "OpenAI search",
@@ -4684,7 +4645,7 @@
           },
           {
             "agent": "Applebot",
-            "hits": 30
+            "hits": 34
           },
           {
             "agent": "Amazonbot",
@@ -4754,27 +4715,27 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 179
+            "hits": 181
           },
           {
             "section": "Homepage",
-            "hits": 85
+            "hits": 88
           },
           {
             "section": "Other",
-            "hits": 79
+            "hits": 80
           },
           {
             "section": "Courses",
-            "hits": 45
+            "hits": 49
+          },
+          {
+            "section": "FAQ",
+            "hits": 27
           },
           {
             "section": "About",
             "hits": 27
-          },
-          {
-            "section": "FAQ",
-            "hits": 26
           },
           {
             "section": "Contact",
@@ -5149,7 +5110,7 @@
           },
           {
             "day": "2026-09-29",
-            "hits": 18
+            "hits": 29
           }
         ]
       }
