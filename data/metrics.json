@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T10:35:03.741572-05:00",
+  "updated": "2026-09-30T15:18:55.588357-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -7,8 +7,8 @@
   "adsPaused": false,
   "allTime": {
     "sessions": 13261,
-    "users": 11249,
-    "views": 25269,
+    "users": 11253,
+    "views": 25271,
     "purchases": 225,
     "first_day": "2025-06-20"
   },
@@ -65,20 +65,20 @@
     "1": {
       "label": "24h",
       "hourly": true,
-      "todayProcessing": true,
-      "start": "2026-09-29",
-      "end": "2026-09-29",
+      "todayProcessing": false,
+      "start": "2026-09-30",
+      "end": "2026-09-30",
       "beacon": {
-        "visitors": 12,
-        "pageviews": 15,
+        "visitors": 11,
+        "pageviews": 14,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 8,
-            "visitors": 8
+            "views": 7,
+            "visitors": 7
           },
           {
             "host": "electricbikeacademy.com",
@@ -100,36 +100,11 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 12,
-            "views": 15
+            "visitors": 11,
+            "views": 14
           }
         ],
         "byHour": [
-          {
-            "hour": "2026092911",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026092912",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026092913",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026092914",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026092915",
-            "sessions": 4,
-            "views": 6
-          },
           {
             "hour": "2026092916",
             "sessions": 0,
@@ -224,15 +199,40 @@
             "hour": "2026093010",
             "sessions": 1,
             "views": 1
+          },
+          {
+            "hour": "2026093011",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026093012",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026093013",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026093014",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026093015",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 12
+        "humans": 11
       },
       "google": {
-        "visitors": 8,
-        "pageviews": 14,
-        "purchases": 1,
+        "visitors": 9,
+        "pageviews": 9,
+        "purchases": 0,
         "adSpend": 0,
         "adClicks": 0,
         "topPages": [
@@ -318,36 +318,6 @@
         },
         "byHour": [
           {
-            "hour": "2026092911",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092912",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092913",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092914",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026092915",
-            "sessions": 1,
-            "views": 7,
-            "purchases": 1
-          },
-          {
             "hour": "2026092916",
             "sessions": 0,
             "views": 0,
@@ -427,8 +397,8 @@
           },
           {
             "hour": "2026093005",
-            "sessions": 0,
-            "views": 0,
+            "sessions": 1,
+            "views": 1,
             "purchases": 0
           },
           {
@@ -445,8 +415,8 @@
           },
           {
             "hour": "2026093008",
-            "sessions": 0,
-            "views": 0,
+            "sessions": 1,
+            "views": 1,
             "purchases": 0
           },
           {
@@ -460,6 +430,36 @@
             "sessions": 0,
             "views": 0,
             "purchases": 0
+          },
+          {
+            "hour": "2026093011",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026093012",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026093013",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026093014",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026093015",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
           }
         ],
         "byDay": [],
@@ -469,8 +469,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 18,
-          "views": 18
+          "visitors": 19,
+          "views": 19
         },
         {
           "source": "Applebot",
@@ -488,16 +488,6 @@
           "views": 8
         },
         {
-          "source": "Claude search",
-          "visitors": 6,
-          "views": 6
-        },
-        {
-          "source": "OpenAI search",
-          "visitors": 6,
-          "views": 6
-        },
-        {
           "source": "You.com",
           "visitors": 6,
           "views": 6
@@ -513,17 +503,12 @@
           "views": 6
         },
         {
-          "source": "GPTBot",
-          "visitors": 5,
-          "views": 5
-        },
-        {
-          "source": "Google AI",
-          "visitors": 5,
-          "views": 5
-        },
-        {
           "source": "DuckAssist",
+          "visitors": 5,
+          "views": 5
+        },
+        {
+          "source": "OpenAI search",
           "visitors": 5,
           "views": 5
         },
@@ -533,7 +518,22 @@
           "views": 4
         },
         {
+          "source": "GPTBot",
+          "visitors": 4,
+          "views": 4
+        },
+        {
+          "source": "Google AI",
+          "visitors": 4,
+          "views": 4
+        },
+        {
           "source": "Perplexity (user)",
+          "visitors": 4,
+          "views": 4
+        },
+        {
+          "source": "Claude search",
           "visitors": 4,
           "views": 4
         },
@@ -541,11 +541,6 @@
           "source": "Amazonbot",
           "visitors": 4,
           "views": 4
-        },
-        {
-          "source": "Common Crawl",
-          "visitors": 3,
-          "views": 3
         },
         {
           "source": "ClaudeBot",
@@ -558,19 +553,24 @@
           "views": 3
         },
         {
+          "source": "Common Crawl",
+          "visitors": 2,
+          "views": 2
+        },
+        {
           "source": "Cohere",
           "visitors": 2,
           "views": 2
         }
       ],
       "ai": {
-        "in_window": 110,
-        "total": 554,
+        "in_window": 105,
+        "total": 555,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 18
+            "hits": 19
           },
           {
             "agent": "Applebot",
@@ -585,14 +585,6 @@
             "hits": 8
           },
           {
-            "agent": "Claude search",
-            "hits": 6
-          },
-          {
-            "agent": "OpenAI search",
-            "hits": 6
-          },
-          {
             "agent": "You.com",
             "hits": 6
           },
@@ -605,15 +597,11 @@
             "hits": 6
           },
           {
-            "agent": "GPTBot",
-            "hits": 5
-          },
-          {
-            "agent": "Google AI",
-            "hits": 5
-          },
-          {
             "agent": "DuckAssist",
+            "hits": 5
+          },
+          {
+            "agent": "OpenAI search",
             "hits": 5
           },
           {
@@ -621,16 +609,24 @@
             "hits": 4
           },
           {
+            "agent": "GPTBot",
+            "hits": 4
+          },
+          {
+            "agent": "Google AI",
+            "hits": 4
+          },
+          {
             "agent": "Perplexity (user)",
+            "hits": 4
+          },
+          {
+            "agent": "Claude search",
             "hits": 4
           },
           {
             "agent": "Amazonbot",
             "hits": 4
-          },
-          {
-            "agent": "Common Crawl",
-            "hits": 3
           },
           {
             "agent": "ClaudeBot",
@@ -641,6 +637,10 @@
             "hits": 3
           },
           {
+            "agent": "Common Crawl",
+            "hits": 2
+          },
+          {
             "agent": "Cohere",
             "hits": 2
           }
@@ -648,11 +648,7 @@
         "bySection": [
           {
             "section": "Other",
-            "hits": 91
-          },
-          {
-            "section": "Homepage",
-            "hits": 6
+            "hits": 87
           },
           {
             "section": "Sitemap + robots",
@@ -663,31 +659,15 @@
             "hits": 6
           },
           {
+            "section": "Homepage",
+            "hits": 5
+          },
+          {
             "section": "FAQ",
             "hits": 1
           }
         ],
         "byHour": [
-          {
-            "hour": "2026092911",
-            "hits": 0
-          },
-          {
-            "hour": "2026092912",
-            "hits": 0
-          },
-          {
-            "hour": "2026092913",
-            "hits": 5
-          },
-          {
-            "hour": "2026092914",
-            "hits": 1
-          },
-          {
-            "hour": "2026092915",
-            "hits": 0
-          },
           {
             "hour": "2026092916",
             "hits": 4
@@ -762,6 +742,26 @@
           },
           {
             "hour": "2026093010",
+            "hits": 0
+          },
+          {
+            "hour": "2026093011",
+            "hits": 1
+          },
+          {
+            "hour": "2026093012",
+            "hits": 0
+          },
+          {
+            "hour": "2026093013",
+            "hits": 0
+          },
+          {
+            "hour": "2026093014",
+            "hits": 0
+          },
+          {
+            "hour": "2026093015",
             "hits": 0
           }
         ],
@@ -1281,8 +1281,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 102,
-          "views": 102
+          "visitors": 103,
+          "views": 103
         },
         {
           "source": "OpenAI search",
@@ -1376,13 +1376,13 @@
         }
       ],
       "ai": {
-        "in_window": 244,
-        "total": 554,
+        "in_window": 245,
+        "total": 555,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 102
+            "hits": 103
           },
           {
             "agent": "OpenAI search",
@@ -1464,7 +1464,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 48
+            "hits": 49
           },
           {
             "section": "Homepage",
@@ -1519,7 +1519,7 @@
           },
           {
             "day": "2026-09-30",
-            "hits": 93
+            "hits": 94
           }
         ]
       }
@@ -2486,8 +2486,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 221,
-          "views": 221
+          "visitors": 222,
+          "views": 222
         },
         {
           "source": "OpenAI search",
@@ -2581,13 +2581,13 @@
         }
       ],
       "ai": {
-        "in_window": 554,
-        "total": 554,
+        "in_window": 555,
+        "total": 555,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 221
+            "hits": 222
           },
           {
             "agent": "OpenAI search",
@@ -2665,7 +2665,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 184
+            "hits": 185
           },
           {
             "section": "Other",
@@ -2820,7 +2820,7 @@
           },
           {
             "day": "2026-09-30",
-            "hits": 93
+            "hits": 94
           }
         ]
       }
@@ -4643,8 +4643,8 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 221,
-          "views": 221
+          "visitors": 222,
+          "views": 222
         },
         {
           "source": "OpenAI search",
@@ -4738,13 +4738,13 @@
         }
       ],
       "ai": {
-        "in_window": 554,
-        "total": 554,
+        "in_window": 555,
+        "total": 555,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 221
+            "hits": 222
           },
           {
             "agent": "OpenAI search",
@@ -4822,7 +4822,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 184
+            "hits": 185
           },
           {
             "section": "Other",
@@ -5217,7 +5217,7 @@
           },
           {
             "day": "2026-09-30",
-            "hits": 93
+            "hits": 94
           }
         ]
       }
