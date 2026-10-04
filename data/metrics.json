@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T03:47:56.776726-05:00",
+  "updated": "2026-10-04T09:36:09.228977-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -7,20 +7,14 @@
   "adsPaused": false,
   "allTime": {
     "sessions": 13287,
-    "users": 11301,
-    "views": 25451,
+    "users": 11305,
+    "views": 25453,
     "purchases": 226,
     "first_day": "2025-06-20"
   },
   "live": {
-    "activeUsers": 3,
-    "pages": [
-      {
-        "page": "E-Bike Safety Programs for Schools, Cities & States | Electric Bike Academy",
-        "users": 3,
-        "events": 10
-      }
-    ]
+    "activeUsers": 0,
+    "pages": []
   },
   "firstParty": true,
   "beaconSince": "2026-09-05",
@@ -71,9 +65,9 @@
     "1": {
       "label": "24h",
       "hourly": true,
-      "todayProcessing": true,
-      "start": "2026-10-03",
-      "end": "2026-10-03",
+      "todayProcessing": false,
+      "start": "2026-10-04",
+      "end": "2026-10-04",
       "beacon": {
         "visitors": 37,
         "pageviews": 136,
@@ -159,36 +153,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026100304",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026100305",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026100306",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026100307",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026100308",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026100309",
-            "sessions": 0,
-            "views": 0
-          },
           {
             "hour": "2026100310",
             "sessions": 1,
@@ -278,14 +242,44 @@
             "hour": "2026100403",
             "sessions": 3,
             "views": 4
+          },
+          {
+            "hour": "2026100404",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026100405",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026100406",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026100407",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026100408",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026100409",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
         "humans": 37
       },
       "google": {
-        "visitors": 29,
-        "pageviews": 133,
+        "visitors": 32,
+        "pageviews": 135,
         "purchases": 1,
         "adSpend": 0,
         "adClicks": 0,
@@ -435,42 +429,6 @@
         },
         "byHour": [
           {
-            "hour": "2026100304",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026100305",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026100306",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026100307",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026100308",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026100309",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
             "hour": "2026100310",
             "sessions": 1,
             "views": 3,
@@ -568,12 +526,48 @@
           },
           {
             "hour": "2026100402",
-            "sessions": 0,
+            "sessions": 1,
             "views": 0,
             "purchases": 0
           },
           {
             "hour": "2026100403",
+            "sessions": 2,
+            "views": 2,
+            "purchases": 0
+          },
+          {
+            "hour": "2026100404",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026100405",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026100406",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026100407",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026100408",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026100409",
             "sessions": 0,
             "views": 0,
             "purchases": 0
@@ -586,23 +580,8 @@
       "llmSources": [
         {
           "source": "Meta AI",
-          "visitors": 4,
-          "views": 4
-        },
-        {
-          "source": "ChatGPT (reading as a user)",
           "visitors": 3,
           "views": 3
-        },
-        {
-          "source": "GPTBot",
-          "visitors": 2,
-          "views": 2
-        },
-        {
-          "source": "OpenAI search",
-          "visitors": 2,
-          "views": 2
         },
         {
           "source": "DuckAssist",
@@ -615,31 +594,39 @@
           "views": 2
         },
         {
+          "source": "ChatGPT (reading as a user)",
+          "visitors": 2,
+          "views": 2
+        },
+        {
+          "source": "OpenAI search",
+          "visitors": 2,
+          "views": 2
+        },
+        {
           "source": "Amazonbot",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "GPTBot",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "Bytespider",
           "visitors": 1,
           "views": 1
         }
       ],
       "ai": {
-        "in_window": 16,
-        "total": 612,
+        "in_window": 14,
+        "total": 614,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Meta AI",
-            "hits": 4
-          },
-          {
-            "agent": "ChatGPT (reading as a user)",
             "hits": 3
-          },
-          {
-            "agent": "GPTBot",
-            "hits": 2
-          },
-          {
-            "agent": "OpenAI search",
-            "hits": 2
           },
           {
             "agent": "DuckAssist",
@@ -650,14 +637,30 @@
             "hits": 2
           },
           {
+            "agent": "ChatGPT (reading as a user)",
+            "hits": 2
+          },
+          {
+            "agent": "OpenAI search",
+            "hits": 2
+          },
+          {
             "agent": "Amazonbot",
+            "hits": 1
+          },
+          {
+            "agent": "GPTBot",
+            "hits": 1
+          },
+          {
+            "agent": "Bytespider",
             "hits": 1
           }
         ],
         "bySection": [
           {
             "section": "Homepage",
-            "hits": 8
+            "hits": 6
           },
           {
             "section": "Sitemap + robots",
@@ -669,30 +672,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026100304",
-            "hits": 0
-          },
-          {
-            "hour": "2026100305",
-            "hits": 0
-          },
-          {
-            "hour": "2026100306",
-            "hits": 0
-          },
-          {
-            "hour": "2026100307",
-            "hits": 2
-          },
-          {
-            "hour": "2026100308",
-            "hits": 1
-          },
-          {
-            "hour": "2026100309",
-            "hits": 1
-          },
           {
             "hour": "2026100310",
             "hits": 2
@@ -764,6 +743,30 @@
           {
             "hour": "2026100403",
             "hits": 0
+          },
+          {
+            "hour": "2026100404",
+            "hits": 0
+          },
+          {
+            "hour": "2026100405",
+            "hits": 0
+          },
+          {
+            "hour": "2026100406",
+            "hits": 0
+          },
+          {
+            "hour": "2026100407",
+            "hits": 1
+          },
+          {
+            "hour": "2026100408",
+            "hits": 0
+          },
+          {
+            "hour": "2026100409",
+            "hits": 1
           }
         ],
         "byDay": []
@@ -1351,13 +1354,13 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 85,
-          "views": 85
+          "visitors": 86,
+          "views": 86
         },
         {
           "source": "OpenAI search",
-          "visitors": 18,
-          "views": 18
+          "visitors": 19,
+          "views": 19
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -1446,17 +1449,17 @@
         }
       ],
       "ai": {
-        "in_window": 228,
-        "total": 612,
+        "in_window": 230,
+        "total": 614,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 85
+            "hits": 86
           },
           {
             "agent": "OpenAI search",
-            "hits": 18
+            "hits": 19
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -1534,7 +1537,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 42
+            "hits": 44
           },
           {
             "section": "Homepage",
@@ -1593,7 +1596,7 @@
           },
           {
             "day": "2026-10-04",
-            "hits": 1
+            "hits": 3
           }
         ]
       }
@@ -2560,13 +2563,13 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 241,
-          "views": 241
+          "visitors": 242,
+          "views": 242
         },
         {
           "source": "OpenAI search",
-          "visitors": 77,
-          "views": 77
+          "visitors": 78,
+          "views": 78
         },
         {
           "source": "Applebot",
@@ -2655,17 +2658,17 @@
         }
       ],
       "ai": {
-        "in_window": 612,
-        "total": 612,
+        "in_window": 614,
+        "total": 614,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 241
+            "hits": 242
           },
           {
             "agent": "OpenAI search",
-            "hits": 77
+            "hits": 78
           },
           {
             "agent": "Applebot",
@@ -2739,7 +2742,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 203
+            "hits": 205
           },
           {
             "section": "Other",
@@ -2894,7 +2897,7 @@
           },
           {
             "day": "2026-10-04",
-            "hits": 1
+            "hits": 3
           }
         ]
       }
@@ -4717,13 +4720,13 @@
       "llmSources": [
         {
           "source": "Bytespider",
-          "visitors": 241,
-          "views": 241
+          "visitors": 242,
+          "views": 242
         },
         {
           "source": "OpenAI search",
-          "visitors": 77,
-          "views": 77
+          "visitors": 78,
+          "views": 78
         },
         {
           "source": "Applebot",
@@ -4812,17 +4815,17 @@
         }
       ],
       "ai": {
-        "in_window": 612,
-        "total": 612,
+        "in_window": 614,
+        "total": 614,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "Bytespider",
-            "hits": 241
+            "hits": 242
           },
           {
             "agent": "OpenAI search",
-            "hits": 77
+            "hits": 78
           },
           {
             "agent": "Applebot",
@@ -4896,7 +4899,7 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 203
+            "hits": 205
           },
           {
             "section": "Other",
@@ -5291,7 +5294,7 @@
           },
           {
             "day": "2026-10-04",
-            "hits": 1
+            "hits": 3
           }
         ]
       }
