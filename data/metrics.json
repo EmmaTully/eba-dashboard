@@ -1,31 +1,20 @@
 {
-  "updated": "2026-10-11T14:38:23.158314-05:00",
+  "updated": "2026-10-11T18:10:16.693086-05:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
   "lastPurchase": "2026-10-08",
   "adsPaused": false,
   "allTime": {
-    "sessions": 13407,
+    "sessions": 13420,
     "users": 11375,
-    "views": 25629,
+    "views": 25639,
     "purchases": 228,
     "first_day": "2025-06-20"
   },
   "live": {
-    "activeUsers": 2,
-    "pages": [
-      {
-        "page": "California E-Bike Laws: 2026\u20132027 Guide for Riders, Parents & Schools | Electric Bike Academy",
-        "users": 1,
-        "events": 3
-      },
-      {
-        "page": "Online E-Bike Safety Course & Certificate | Electric Bike Academy",
-        "users": 1,
-        "events": 7
-      }
-    ]
+    "activeUsers": 0,
+    "pages": []
   },
   "firstParty": true,
   "beaconSince": "2026-09-05",
@@ -76,9 +65,9 @@
     "1": {
       "label": "24h",
       "hourly": true,
-      "todayProcessing": true,
-      "start": "2026-10-10",
-      "end": "2026-10-10",
+      "todayProcessing": false,
+      "start": "2026-10-11",
+      "end": "2026-10-11",
       "beacon": {
         "visitors": 13,
         "pageviews": 21,
@@ -140,26 +129,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026101015",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026101016",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026101017",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026101018",
-            "sessions": 0,
-            "views": 0
-          },
           {
             "hour": "2026101019",
             "sessions": 4,
@@ -259,14 +228,34 @@
             "hour": "2026101114",
             "sessions": 1,
             "views": 2
+          },
+          {
+            "hour": "2026101115",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026101116",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026101117",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026101118",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
         "humans": 13
       },
       "google": {
-        "visitors": 4,
-        "pageviews": 5,
+        "visitors": 11,
+        "pageviews": 15,
         "purchases": 0,
         "adSpend": 0,
         "adClicks": 0,
@@ -326,30 +315,6 @@
           "other": 4
         },
         "byHour": [
-          {
-            "hour": "2026101015",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026101016",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026101017",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026101018",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
           {
             "hour": "2026101019",
             "sessions": 3,
@@ -436,14 +401,14 @@
           },
           {
             "hour": "2026101109",
-            "sessions": 0,
-            "views": 0,
+            "sessions": 1,
+            "views": 1,
             "purchases": 0
           },
           {
             "hour": "2026101110",
-            "sessions": 0,
-            "views": 0,
+            "sessions": 1,
+            "views": 2,
             "purchases": 0
           },
           {
@@ -454,18 +419,42 @@
           },
           {
             "hour": "2026101112",
-            "sessions": 0,
-            "views": 0,
+            "sessions": 4,
+            "views": 6,
             "purchases": 0
           },
           {
             "hour": "2026101113",
+            "sessions": 1,
+            "views": 1,
+            "purchases": 0
+          },
+          {
+            "hour": "2026101114",
             "sessions": 0,
             "views": 0,
             "purchases": 0
           },
           {
-            "hour": "2026101114",
+            "hour": "2026101115",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026101116",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026101117",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026101118",
             "sessions": 0,
             "views": 0,
             "purchases": 0
@@ -477,19 +466,9 @@
       },
       "llmSources": [
         {
-          "source": "GPTBot",
-          "visitors": 9,
-          "views": 9
-        },
-        {
-          "source": "ClaudeBot",
-          "visitors": 8,
-          "views": 8
-        },
-        {
           "source": "ChatGPT (reading as a user)",
-          "visitors": 6,
-          "views": 6
+          "visitors": 5,
+          "views": 5
         },
         {
           "source": "Bytespider",
@@ -502,72 +481,39 @@
           "views": 4
         },
         {
-          "source": "OpenAI search",
-          "visitors": 3,
-          "views": 3
-        },
-        {
           "source": "Applebot",
           "visitors": 3,
           "views": 3
         },
         {
-          "source": "OpenAI ads",
-          "visitors": 2,
-          "views": 2
-        },
-        {
-          "source": "Meta AI",
-          "visitors": 2,
-          "views": 2
-        },
-        {
-          "source": "Common Crawl",
-          "visitors": 2,
-          "views": 2
-        },
-        {
-          "source": "DuckAssist",
-          "visitors": 1,
-          "views": 1
-        },
-        {
-          "source": "Perplexity (user)",
-          "visitors": 1,
-          "views": 1
-        },
-        {
-          "source": "Grok",
-          "visitors": 1,
-          "views": 1
-        },
-        {
-          "source": "You.com",
-          "visitors": 1,
-          "views": 1
+          "source": "OpenAI search",
+          "visitors": 3,
+          "views": 3
         },
         {
           "source": "Amazonbot",
           "visitors": 1,
           "views": 1
+        },
+        {
+          "source": "Meta AI",
+          "visitors": 1,
+          "views": 1
+        },
+        {
+          "source": "GPTBot",
+          "visitors": 1,
+          "views": 1
         }
       ],
       "ai": {
-        "in_window": 48,
-        "total": 898,
+        "in_window": 22,
+        "total": 899,
         "first_day": "2026-09-05",
         "byAgent": [
           {
-            "agent": "GPTBot",
-            "hits": 9
-          },
-          {
-            "agent": "ClaudeBot",
-            "hits": 8
-          },
-          {
             "agent": "ChatGPT (reading as a user)",
-            "hits": 6
+            "hits": 5
           },
           {
             "agent": "Bytespider",
@@ -578,54 +524,34 @@
             "hits": 4
           },
           {
-            "agent": "OpenAI search",
-            "hits": 3
-          },
-          {
             "agent": "Applebot",
             "hits": 3
           },
           {
-            "agent": "OpenAI ads",
-            "hits": 2
-          },
-          {
-            "agent": "Meta AI",
-            "hits": 2
-          },
-          {
-            "agent": "Common Crawl",
-            "hits": 2
-          },
-          {
-            "agent": "DuckAssist",
-            "hits": 1
-          },
-          {
-            "agent": "Perplexity (user)",
-            "hits": 1
-          },
-          {
-            "agent": "Grok",
-            "hits": 1
-          },
-          {
-            "agent": "You.com",
-            "hits": 1
+            "agent": "OpenAI search",
+            "hits": 3
           },
           {
             "agent": "Amazonbot",
+            "hits": 1
+          },
+          {
+            "agent": "Meta AI",
+            "hits": 1
+          },
+          {
+            "agent": "GPTBot",
             "hits": 1
           }
         ],
         "bySection": [
           {
-            "section": "Other",
-            "hits": 34
+            "section": "Sitemap + robots",
+            "hits": 12
           },
           {
-            "section": "Sitemap + robots",
-            "hits": 11
+            "section": "Other",
+            "hits": 7
           },
           {
             "section": "Homepage",
@@ -633,22 +559,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026101015",
-            "hits": 0
-          },
-          {
-            "hour": "2026101016",
-            "hits": 27
-          },
-          {
-            "hour": "2026101017",
-            "hits": 0
-          },
-          {
-            "hour": "2026101018",
-            "hits": 2
-          },
           {
             "hour": "2026101019",
             "hits": 1
@@ -727,6 +637,22 @@
           },
           {
             "hour": "2026101114",
+            "hits": 0
+          },
+          {
+            "hour": "2026101115",
+            "hits": 0
+          },
+          {
+            "hour": "2026101116",
+            "hits": 0
+          },
+          {
+            "hour": "2026101117",
+            "hits": 1
+          },
+          {
+            "hour": "2026101118",
             "hits": 0
           }
         ],
@@ -1289,14 +1215,14 @@
           "views": 25
         },
         {
-          "source": "Meta AI",
+          "source": "OpenAI search",
           "visitors": 23,
           "views": 23
         },
         {
-          "source": "OpenAI search",
-          "visitors": 22,
-          "views": 22
+          "source": "Meta AI",
+          "visitors": 23,
+          "views": 23
         },
         {
           "source": "DuckAssist",
@@ -1375,8 +1301,8 @@
         }
       ],
       "ai": {
-        "in_window": 294,
-        "total": 898,
+        "in_window": 295,
+        "total": 899,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -1392,12 +1318,12 @@
             "hits": 25
           },
           {
-            "agent": "Meta AI",
+            "agent": "OpenAI search",
             "hits": 23
           },
           {
-            "agent": "OpenAI search",
-            "hits": 22
+            "agent": "Meta AI",
+            "hits": 23
           },
           {
             "agent": "DuckAssist",
@@ -1467,7 +1393,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 71
+            "hits": 72
           },
           {
             "section": "Homepage",
@@ -1522,7 +1448,7 @@
           },
           {
             "day": "2026-10-11",
-            "hits": 11
+            "hits": 12
           }
         ]
       }
@@ -2491,8 +2417,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 77,
-          "views": 77
+          "visitors": 78,
+          "views": 78
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -2586,8 +2512,8 @@
         }
       ],
       "ai": {
-        "in_window": 819,
-        "total": 898,
+        "in_window": 820,
+        "total": 899,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -2596,7 +2522,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 77
+            "hits": 78
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -2678,7 +2604,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 236
+            "hits": 237
           },
           {
             "section": "Homepage",
@@ -2829,7 +2755,7 @@
           },
           {
             "day": "2026-10-11",
-            "hits": 11
+            "hits": 12
           }
         ]
       }
@@ -4653,8 +4579,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 98,
-          "views": 98
+          "visitors": 99,
+          "views": 99
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -4748,8 +4674,8 @@
         }
       ],
       "ai": {
-        "in_window": 898,
-        "total": 898,
+        "in_window": 899,
+        "total": 899,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -4758,7 +4684,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 98
+            "hits": 99
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -4840,7 +4766,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 273
+            "hits": 274
           },
           {
             "section": "Homepage",
@@ -5231,7 +5157,7 @@
           },
           {
             "day": "2026-10-11",
-            "hits": 11
+            "hits": 12
           }
         ]
       }
