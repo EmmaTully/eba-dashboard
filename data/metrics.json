@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T06:08:43.307729-06:00",
+  "updated": "2026-11-08T11:55:37.551495-06:00",
   "timezone": "America/Chicago",
   "site": "electricbikeacademy.com",
   "purchaseEvent": "EBA_purchase",
@@ -69,16 +69,16 @@
       "start": "2026-11-07",
       "end": "2026-11-07",
       "beacon": {
-        "visitors": 7,
-        "pageviews": 11,
+        "visitors": 5,
+        "pageviews": 9,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
             "path": "/",
             "label": "electricbikeacademy.com/",
             "url": "https://electricbikeacademy.com/",
-            "views": 7,
-            "visitors": 6
+            "views": 4,
+            "visitors": 3
           },
           {
             "host": "electricbikeacademy.com",
@@ -95,41 +95,24 @@
             "url": "https://electricbikeacademy.com/schools.php",
             "views": 2,
             "visitors": 0
+          },
+          {
+            "host": "electricbikeacademy.com",
+            "path": "/resources/e-bike-laws-by-state-2026-2027",
+            "label": "electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
+            "url": "https://electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
+            "views": 1,
+            "visitors": 1
           }
         ],
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 7,
-            "views": 11
+            "visitors": 5,
+            "views": 9
           }
         ],
         "byHour": [
-          {
-            "hour": "2026110707",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026110708",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026110709",
-            "sessions": 3,
-            "views": 3
-          },
-          {
-            "hour": "2026110710",
-            "sessions": 0,
-            "views": 0
-          },
-          {
-            "hour": "2026110711",
-            "sessions": 0,
-            "views": 0
-          },
           {
             "hour": "2026110712",
             "sessions": 1,
@@ -224,14 +207,39 @@
             "hour": "2026110806",
             "sessions": 0,
             "views": 0
+          },
+          {
+            "hour": "2026110807",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026110808",
+            "sessions": 1,
+            "views": 1
+          },
+          {
+            "hour": "2026110809",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026110810",
+            "sessions": 0,
+            "views": 0
+          },
+          {
+            "hour": "2026110811",
+            "sessions": 0,
+            "views": 0
           }
         ],
         "byDay": [],
-        "humans": 7
+        "humans": 5
       },
       "google": {
-        "visitors": 6,
-        "pageviews": 6,
+        "visitors": 2,
+        "pageviews": 2,
         "purchases": 0,
         "adSpend": 0,
         "adClicks": 0,
@@ -294,36 +302,6 @@
         },
         "byHour": [
           {
-            "hour": "2026110707",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026110708",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026110709",
-            "sessions": 4,
-            "views": 4,
-            "purchases": 0
-          },
-          {
-            "hour": "2026110710",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
-            "hour": "2026110711",
-            "sessions": 0,
-            "views": 0,
-            "purchases": 0
-          },
-          {
             "hour": "2026110712",
             "sessions": 0,
             "views": 0,
@@ -433,6 +411,36 @@
           },
           {
             "hour": "2026110806",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026110807",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026110808",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026110809",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026110810",
+            "sessions": 0,
+            "views": 0,
+            "purchases": 0
+          },
+          {
+            "hour": "2026110811",
             "sessions": 0,
             "views": 0,
             "purchases": 0
@@ -445,16 +453,6 @@
       "llmSources": [
         {
           "source": "OpenAI search",
-          "visitors": 4,
-          "views": 4
-        },
-        {
-          "source": "Applebot",
-          "visitors": 4,
-          "views": 4
-        },
-        {
-          "source": "Bytespider",
           "visitors": 3,
           "views": 3
         },
@@ -464,9 +462,19 @@
           "views": 3
         },
         {
+          "source": "Applebot",
+          "visitors": 2,
+          "views": 2
+        },
+        {
           "source": "Amazonbot",
           "visitors": 2,
           "views": 2
+        },
+        {
+          "source": "Bytespider",
+          "visitors": 1,
+          "views": 1
         },
         {
           "source": "GPTBot",
@@ -475,20 +483,12 @@
         }
       ],
       "ai": {
-        "in_window": 17,
-        "total": 1806,
+        "in_window": 12,
+        "total": 1808,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "OpenAI search",
-            "hits": 4
-          },
-          {
-            "agent": "Applebot",
-            "hits": 4
-          },
-          {
-            "agent": "Bytespider",
             "hits": 3
           },
           {
@@ -496,8 +496,16 @@
             "hits": 3
           },
           {
+            "agent": "Applebot",
+            "hits": 2
+          },
+          {
             "agent": "Amazonbot",
             "hits": 2
+          },
+          {
+            "agent": "Bytespider",
+            "hits": 1
           },
           {
             "agent": "GPTBot",
@@ -507,11 +515,11 @@
         "bySection": [
           {
             "section": "Sitemap + robots",
-            "hits": 10
+            "hits": 6
           },
           {
             "section": "Other",
-            "hits": 4
+            "hits": 3
           },
           {
             "section": "Homepage",
@@ -519,26 +527,6 @@
           }
         ],
         "byHour": [
-          {
-            "hour": "2026110707",
-            "hits": 3
-          },
-          {
-            "hour": "2026110708",
-            "hits": 1
-          },
-          {
-            "hour": "2026110709",
-            "hits": 0
-          },
-          {
-            "hour": "2026110710",
-            "hits": 1
-          },
-          {
-            "hour": "2026110711",
-            "hits": 2
-          },
           {
             "hour": "2026110712",
             "hits": 1
@@ -613,6 +601,26 @@
           },
           {
             "hour": "2026110806",
+            "hits": 0
+          },
+          {
+            "hour": "2026110807",
+            "hits": 0
+          },
+          {
+            "hour": "2026110808",
+            "hits": 2
+          },
+          {
+            "hour": "2026110809",
+            "hits": 0
+          },
+          {
+            "hour": "2026110810",
+            "hits": 0
+          },
+          {
+            "hour": "2026110811",
             "hits": 0
           }
         ],
@@ -626,8 +634,8 @@
       "start": "2026-11-01",
       "end": "2026-11-07",
       "beacon": {
-        "visitors": 98,
-        "pageviews": 155,
+        "visitors": 99,
+        "pageviews": 156,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
@@ -690,8 +698,8 @@
             "path": "/resources/e-bike-laws-by-state-2026-2027",
             "label": "electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
             "url": "https://electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
-            "views": 4,
-            "visitors": 2
+            "views": 5,
+            "visitors": 3
           },
           {
             "host": "electricbikeacademy.com",
@@ -753,8 +761,8 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 96,
-            "views": 153
+            "visitors": 97,
+            "views": 154
           },
           {
             "source": "ChatGPT",
@@ -806,11 +814,11 @@
           },
           {
             "day": "2026-11-08",
-            "sessions": 1,
-            "views": 5
+            "sessions": 2,
+            "views": 6
           }
         ],
-        "humans": 98
+        "humans": 99
       },
       "google": {
         "visitors": 93,
@@ -1252,8 +1260,8 @@
       "llmSources": [
         {
           "source": "OpenAI search",
-          "visitors": 28,
-          "views": 28
+          "visitors": 29,
+          "views": 29
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -1292,8 +1300,8 @@
         },
         {
           "source": "GPTBot",
-          "visitors": 9,
-          "views": 9
+          "visitors": 10,
+          "views": 10
         },
         {
           "source": "Perplexity (user)",
@@ -1347,13 +1355,13 @@
         }
       ],
       "ai": {
-        "in_window": 192,
-        "total": 1806,
+        "in_window": 194,
+        "total": 1808,
         "first_day": "2026-09-05",
         "byAgent": [
           {
             "agent": "OpenAI search",
-            "hits": 28
+            "hits": 29
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -1385,7 +1393,7 @@
           },
           {
             "agent": "GPTBot",
-            "hits": 9
+            "hits": 10
           },
           {
             "agent": "Perplexity (user)",
@@ -1435,7 +1443,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 78
+            "hits": 80
           },
           {
             "section": "Homepage",
@@ -1490,7 +1498,7 @@
           },
           {
             "day": "2026-11-08",
-            "hits": 1
+            "hits": 3
           }
         ]
       }
@@ -1502,8 +1510,8 @@
       "start": "2026-10-09",
       "end": "2026-11-07",
       "beacon": {
-        "visitors": 406,
-        "pageviews": 650,
+        "visitors": 407,
+        "pageviews": 651,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
@@ -1587,19 +1595,19 @@
           },
           {
             "host": "electricbikeacademy.com",
+            "path": "/resources/e-bike-laws-by-state-2026-2027",
+            "label": "electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
+            "url": "https://electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
+            "views": 5,
+            "visitors": 3
+          },
+          {
+            "host": "electricbikeacademy.com",
             "path": "/guides",
             "label": "electricbikeacademy.com/guides",
             "url": "https://electricbikeacademy.com/guides",
             "views": 4,
             "visitors": 4
-          },
-          {
-            "host": "electricbikeacademy.com",
-            "path": "/resources/e-bike-laws-by-state-2026-2027",
-            "label": "electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
-            "url": "https://electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
-            "views": 4,
-            "visitors": 2
           },
           {
             "host": "electricbikeacademy.com",
@@ -1629,8 +1637,8 @@
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 402,
-            "views": 646
+            "visitors": 403,
+            "views": 647
           },
           {
             "source": "ChatGPT",
@@ -1797,11 +1805,11 @@
           },
           {
             "day": "2026-11-08",
-            "sessions": 1,
-            "views": 5
+            "sessions": 2,
+            "views": 6
           }
         ],
-        "humans": 406
+        "humans": 407
       },
       "google": {
         "visitors": 376,
@@ -2465,8 +2473,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 120,
-          "views": 120
+          "visitors": 121,
+          "views": 121
         },
         {
           "source": "ChatGPT (reading as a user)",
@@ -2495,8 +2503,8 @@
         },
         {
           "source": "GPTBot",
-          "visitors": 50,
-          "views": 50
+          "visitors": 51,
+          "views": 51
         },
         {
           "source": "Meta AI",
@@ -2550,8 +2558,8 @@
         }
       ],
       "ai": {
-        "in_window": 1011,
-        "total": 1806,
+        "in_window": 1013,
+        "total": 1808,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -2564,7 +2572,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 120
+            "hits": 121
           },
           {
             "agent": "ChatGPT (reading as a user)",
@@ -2588,7 +2596,7 @@
           },
           {
             "agent": "GPTBot",
-            "hits": 50
+            "hits": 51
           },
           {
             "agent": "Meta AI",
@@ -2638,7 +2646,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 406
+            "hits": 408
           },
           {
             "section": "Homepage",
@@ -2789,7 +2797,7 @@
           },
           {
             "day": "2026-11-08",
-            "hits": 1
+            "hits": 3
           }
         ]
       }
@@ -2801,8 +2809,8 @@
       "start": "2026-08-10",
       "end": "2026-11-07",
       "beacon": {
-        "visitors": 997,
-        "pageviews": 1694,
+        "visitors": 998,
+        "pageviews": 1695,
         "topPages": [
           {
             "host": "electricbikeacademy.com",
@@ -2918,18 +2926,18 @@
           },
           {
             "host": "electricbikeacademy.com",
-            "path": "/guides/palos-verdes-peninsula-ebike-course.php",
-            "label": "electricbikeacademy.com/guides/palos-verdes-peninsula-ebike-course.php",
-            "url": "https://electricbikeacademy.com/guides/palos-verdes-peninsula-ebike-course.php",
-            "views": 4,
-            "visitors": 0
+            "path": "/resources/e-bike-laws-by-state-2026-2027",
+            "label": "electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
+            "url": "https://electricbikeacademy.com/resources/e-bike-laws-by-state-2026-2027",
+            "views": 5,
+            "visitors": 3
           }
         ],
         "sources": [
           {
             "source": "Direct / other",
-            "visitors": 983,
-            "views": 1679
+            "visitors": 984,
+            "views": 1680
           },
           {
             "source": "ChatGPT",
@@ -3406,11 +3414,11 @@
           },
           {
             "day": "2026-11-08",
-            "sessions": 1,
-            "views": 5
+            "sessions": 2,
+            "views": 6
           }
         ],
-        "humans": 997
+        "humans": 998
       },
       "google": {
         "visitors": 1791,
@@ -4619,8 +4627,8 @@
         },
         {
           "source": "OpenAI search",
-          "visitors": 210,
-          "views": 210
+          "visitors": 211,
+          "views": 211
         },
         {
           "source": "ClaudeBot",
@@ -4654,8 +4662,8 @@
         },
         {
           "source": "GPTBot",
-          "visitors": 84,
-          "views": 84
+          "visitors": 85,
+          "views": 85
         },
         {
           "source": "Meta AI",
@@ -4714,8 +4722,8 @@
         }
       ],
       "ai": {
-        "in_window": 1806,
-        "total": 1806,
+        "in_window": 1808,
+        "total": 1808,
         "first_day": "2026-09-05",
         "byAgent": [
           {
@@ -4724,7 +4732,7 @@
           },
           {
             "agent": "OpenAI search",
-            "hits": 210
+            "hits": 211
           },
           {
             "agent": "ClaudeBot",
@@ -4752,7 +4760,7 @@
           },
           {
             "agent": "GPTBot",
-            "hits": 84
+            "hits": 85
           },
           {
             "agent": "Meta AI",
@@ -4806,7 +4814,7 @@
           },
           {
             "section": "Sitemap + robots",
-            "hits": 648
+            "hits": 650
           },
           {
             "section": "Homepage",
@@ -5197,7 +5205,7 @@
           },
           {
             "day": "2026-11-08",
-            "hits": 1
+            "hits": 3
           }
         ]
       }
